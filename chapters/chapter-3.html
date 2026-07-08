@@ -14,7 +14,7 @@
 <div class="app">
 <aside>
   <div class="brand"><div class="kicker">NTU COE Math Prep</div><h1>Chapter 3<br>Matrices</h1><a class="home-link" href="../index.html">Home</a></div>
-  <div class="progress"><div class="bar"><div class="fill" id="fill"></div></div><div class="plabel" id="plabel">0 / 12 sections done</div></div>
+  <div class="progress"><div class="bar"><div class="fill" id="fill"></div></div><div class="plabel" id="plabel">0 / 13 sections done</div></div>
   <div id="nav"></div>
 </aside>
 <main>
@@ -234,7 +234,7 @@ Find \(A^{-1}\).<button class="btn" onclick="rv(this)">Reveal solution</button><
 </section>
 
 <section id="c3s12">
-<div class="sk">Section 12 of 12</div><h2><span class="swipe">Cramer's Rule & Practice</span></h2>
+<div class="sk">Section 12 of 13</div><h2><span class="swipe">Cramer's Rule & Practice</span></h2>
 <p class="intro">Cramer's rule solves \(Ax=b\) using determinants, when \(\det(A)\ne0\).</p>
 <div class="key"><b>Cramer's rule</b>If \(A\) is \(n\times n\) and \(\det(A)\ne0\), then the unique solution of \(Ax=b\) is \(x_j=\dfrac{\det(A_j)}{\det(A)}\), where \(A_j\) replaces column \(j\) of \(A\) by \(b\).</div>
 <div class="viz">
@@ -266,13 +266,65 @@ evaluate \(\det(A)\).<button class="btn" onclick="rv(this)">Reveal solution</but
 <button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Let \(X=\frac1x\), \(Y=\frac1y\), and \(Z=\frac1z\).</span><span class="step">Solve \(\begin{bmatrix}1&2&1\\3&4&1\\8&6&7\end{bmatrix}\begin{bmatrix}X\\Y\\Z\end{bmatrix}=\begin{bmatrix}1\\5\\0\end{bmatrix}\).</span><span class="step">This gives \(X=1,\ Y=1,\ Z=-2\).</span><span class="step"><span class="ans">\(x=1,\ y=1,\ z=-\frac12\)</span>.</span></div></div></div>
 </section>
 
+<section id="c3s13">
+<div class="sk">Section 13 of 13</div><h2><span class="swipe">Study Sheet</span></h2>
+<p class="intro">For matrices, start with size. Most mistakes happen before the arithmetic begins.</p>
+<div class="viz">
+<svg viewBox="0 0 650 230" role="img" aria-label="Matrix study flow">
+  <defs><marker id="arrow3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#3457c5"/></marker></defs>
+  <rect x="35" y="76" width="120" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="95" y="106" text-anchor="middle" font-weight="800">size</text><text x="95" y="129" text-anchor="middle" fill="#5a6379">defined?</text>
+  <rect x="205" y="76" width="120" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="265" y="106" text-anchor="middle" font-weight="800">operate</text><text x="265" y="129" text-anchor="middle" fill="#5a6379">row by column</text>
+  <rect x="375" y="76" width="120" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="435" y="106" text-anchor="middle" font-weight="800">determinant</text><text x="435" y="129" text-anchor="middle" fill="#5a6379">square only</text>
+  <rect x="545" y="76" width="80" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="585" y="106" text-anchor="middle" font-weight="800">inverse</text><text x="585" y="129" text-anchor="middle" fill="#5a6379">if nonzero</text>
+  <path d="M157 111 H199" stroke="#3457c5" stroke-width="3" marker-end="url(#arrow3)"/><path d="M327 111 H369" stroke="#3457c5" stroke-width="3" marker-end="url(#arrow3)"/><path d="M497 111 H539" stroke="#3457c5" stroke-width="3" marker-end="url(#arrow3)"/>
+  <text x="325" y="190" text-anchor="middle" fill="#5a6379">A matrix method is valid only when the size and determinant conditions are satisfied.</text>
+</svg>
+</div>
+<div class="formula-box">
+  <div class="formula-head"><b>Formula bank</b><button class="vbtn" onclick="revealFormula(this)">Reveal formulas</button></div>
+  <div class="formula-body"><div class="formula-grid">
+    <div class="formula-item">\((AB)_{ij}=\displaystyle\sum_k a_{ik}b_{kj}\)</div>
+    <div class="formula-item">\((AB)^T=B^TA^T\)</div>
+    <div class="formula-item">\(\det\begin{bmatrix}a&b\\c&d\end{bmatrix}=ad-bc\)</div>
+    <div class="formula-item">\(\displaystyle A^{-1}=\frac1{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}\)</div>
+    <div class="formula-item">\(C_{ij}=(-1)^{i+j}M_{ij}\)</div>
+    <div class="formula-item">\(\operatorname{adj}(A)=C^T\)</div>
+    <div class="formula-item">\(\displaystyle A^{-1}=\frac1{\det(A)}\operatorname{adj}(A)\)</div>
+    <div class="formula-item">\(\displaystyle x_j=\frac{\det(A_j)}{\det(A)}\)</div>
+  </div></div>
+</div>
+<h3>Common mistakes</h3>
+<div class="mistake-grid">
+  <div class="mistake"><b>Size check</b>Matrices of different sizes cannot be added or subtracted.</div>
+  <div class="mistake"><b>Order matters</b>Usually \(AB\ne BA\), even when both products exist.</div>
+  <div class="mistake"><b>Square only</b>Determinants and inverses are defined only for square matrices.</div>
+  <div class="mistake"><b>Adjoint step</b>The adjoint is the transpose of the cofactor matrix, not the cofactor matrix itself.</div>
+</div>
+<h3>Quick recall</h3>
+<div class="recall-grid">
+  <div class="recall-card"><div class="front">When is \(AB\) defined?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">When columns of \(A\) equal rows of \(B\).</div></div>
+  <div class="recall-card"><div class="front">What size is \(AB\) if \(A\) is \(m\times n\) and \(B\) is \(n\times p\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">The product is \(m\times p\).</div></div>
+  <div class="recall-card"><div class="front">When does \(A^{-1}\) exist?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">When \(A\) is square and \(\det(A)\ne0\).</div></div>
+  <div class="recall-card"><div class="front">What condition does Cramer's rule need?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(\det(A)\ne0\), so the system has a unique solution.</div></div>
+</div>
+<div class="summary-sheet">
+  <h3>End of chapter sheet</h3>
+  <div class="summary-list">
+    <div>Always write the matrix sizes before deciding whether an operation is valid.</div>
+    <div>Matrix multiplication means row dot column, one output entry at a time.</div>
+    <div>Use determinants to test invertibility and to solve systems with Cramer's rule.</div>
+    <div>For inverse by adjoint, compute cofactors, transpose them, then divide by the determinant.</div>
+  </div>
+</div>
+</section>
+
 <div class="secnav"><button class="prev" id="prev">Previous</button><button class="next" id="next">Next section</button></div>
 </main>
 </div>
 
 <script>
 window.tutorSections=[
-["c3s1","Notation"],["c3s2","Types"],["c3s3","Equality"],["c3s4","Arithmetic"],["c3s5","Multiplication"],["c3s6","Transpose"],["c3s7","Inverses"],["c3s8","Powers"],["c3s9","Cofactors"],["c3s10","Expansion"],["c3s11","Adjoint"],["c3s12","Practice"]
+["c3s1","Notation"],["c3s2","Types"],["c3s3","Equality"],["c3s4","Arithmetic"],["c3s5","Multiplication"],["c3s6","Transpose"],["c3s7","Inverses"],["c3s8","Powers"],["c3s9","Cofactors"],["c3s10","Expansion"],["c3s11","Adjoint"],["c3s12","Practice"],["c3s13","Study Sheet"]
 ];
 function c3SetActive(btn){if(btn){btn.parentElement.querySelectorAll(".vbtn").forEach(b=>b.classList.remove("on"));btn.classList.add("on")}}
 function c3EntryDemo(mode,btn){c3SetActive(btn);const box=document.getElementById("c3-entry-box"),read=document.getElementById("c3-entry-read"),row=document.getElementById("c3-row-highlight"),col=document.getElementById("c3-col-highlight"),rowLabel=document.getElementById("c3-row-label"),colLabel=document.getElementById("c3-col-label"),rowTick=document.getElementById("c3-row-tick"),colTick=document.getElementById("c3-col-tick");const data={21:[175,104,"row 2","column 1","\\(A_{21}\\) means row \\(2\\), column \\(1\\)."],34:[415,152,"row 3","column 4","\\(A_{34}\\) means row \\(3\\), column \\(4\\)."],ij:[335,104,"row i","column j","\\(A_{ij}\\) means row \\(i\\), column \\(j\\)."]}[mode];if(box&&data){const x=data[0],y=data[1],cx=x+25,cy=y+16;box.setAttribute("x",x);box.setAttribute("y",y);if(row)row.setAttribute("y",y);if(col)col.setAttribute("x",x);if(rowLabel){rowLabel.setAttribute("y",cy+6);rowLabel.textContent=data[2]}if(colLabel){colLabel.setAttribute("x",cx);colLabel.textContent=data[3]}if(rowTick){rowTick.setAttribute("y1",cy);rowTick.setAttribute("y2",cy)}if(colTick){colTick.setAttribute("x1",cx);colTick.setAttribute("x2",cx)}read.innerHTML=data[4];if(window.renderTutorMath)renderTutorMath(read);}}

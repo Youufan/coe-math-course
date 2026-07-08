@@ -14,7 +14,7 @@
 <div class="app">
 <aside>
   <div class="brand"><div class="kicker">NTU COE Math Prep</div><h1>Chapter 0<br>Fundamentals</h1><a class="home-link" href="../index.html">Home</a></div>
-  <div class="progress"><div class="bar"><div class="fill" id="fill"></div></div><div class="plabel" id="plabel">0 / 13 sections done</div></div>
+  <div class="progress"><div class="bar"><div class="fill" id="fill"></div></div><div class="plabel" id="plabel">0 / 14 sections done</div></div>
   <div id="nav"></div>
 </aside>
 <main>
@@ -154,7 +154,7 @@
 </section>
 
 <section id="s13">
-<div class="sk">Section 13 of 13</div><h2><span class="swipe">Chapter Exercises</span></h2>
+<div class="sk">Section 13 of 14</div><h2><span class="swipe">Chapter Exercises</span></h2>
 <p class="intro">Mixed practice. Attempt first; reveal only when you want to check.</p>
 <div class="ex"><div class="exh"><span class="tag try">Q1</span> Sets</div><div class="exb">\(A=[0,4]\), \(B=(1,3)\), \(C=\mathbb{Z}\). Find \(A\cup B\), \(A\cap B\), \(A\setminus B\), \(B\setminus A\), \(B\cup C\), \(B\setminus C\), \(A\cap(B\cup C)\), \((A\cap B)\cup(A\cap C)\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(A\cup B=\)<span class="ans">\([0,4]\)</span>, \(A\cap B=\)<span class="ans">\((1,3)\)</span>.</span><span class="step">\(A\setminus B=\)<span class="ans">\([0,1]\cup[3,4]\)</span>, \(B\setminus A=\)<span class="ans">\(\varnothing\)</span>.</span><span class="step">\(B\cup C=\)<span class="ans">\(\mathbb{Z}\cup(1,3)\)</span>, \(B\setminus C=\)<span class="ans">\((1,2)\cup(2,3)\)</span>.</span><span class="step">\(A\cap(B\cup C)=\)<span class="ans">\(\{0,1,2,3,4\}\cup(1,3)\)</span>.</span><span class="step">\((A\cap B)\cup(A\cap C)=\)<span class="ans">\((1,3)\cup\{0,1,2,3,4\}\)</span>. Same as previous.</span></div></div></div>
 <div class="ex"><div class="exh"><span class="tag try">Q2</span> Integer set</div><div class="exb">\(S=\{x\in\mathbb{Z}:(x-10)(x+10)\lt 0\}\). List \(S\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Product is negative between roots \(-10\) and \(10\).</span><span class="step"><span class="ans">\(S=\{-9,-8,\ldots,-1,0,1,\ldots,8,9\}\)</span>.</span></div></div></div>
@@ -167,6 +167,56 @@
 <div class="ex"><div class="exh"><span class="tag try">Q10</span> Sigma notation</div><div class="exb">Write in sigma notation: odd numbers \(1\) to \(99\); \(\frac13+\frac19+\cdots+\frac{1}{243}\); \(\frac13+\frac18+\frac{1}{15}+\frac{1}{24}+\frac{1}{35}+\frac{1}{48}\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step"><span class="ans">\(\sum_{k=1}^{50}(2k-1)\)</span>.</span><span class="step"><span class="ans">\(\sum_{k=1}^{5}\left(\frac13\right)^k\)</span>.</span><span class="step">Denominators \(3,8,15,24,35,48=k^2+2k=k(k+2)\), \(k=1,\ldots,6\). <span class="ans">\(\sum_{k=1}^{6}\frac{1}{k(k+2)}\)</span>.</span></div></div></div>
 <div class="ex"><div class="exh"><span class="tag try">Q11</span> Trig equations</div><div class="exb">Solve \(\sin5\theta=\frac12\) and \(\sin4\theta=\frac{\sqrt3}{2}\) for \(-\pi\le\theta\le\pi\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">For \(\sin5\theta=\frac12\), let \(u=5\theta\), so \(-5\pi\le u\le5\pi\). \(u=\frac{\pi}{6}+2k\pi\) or \(u=\frac{5\pi}{6}+2k\pi\).</span><span class="step"><span class="ans">\(\theta\in\{-\frac{23\pi}{30},-\frac{19\pi}{30},-\frac{11\pi}{30},-\frac{7\pi}{30},\frac{\pi}{30},\frac{\pi}{6},\frac{13\pi}{30},\frac{17\pi}{30},\frac{25\pi}{30},\frac{29\pi}{30}\}\)</span>.</span><span class="step">For \(\sin4\theta=\frac{\sqrt3}{2}\), \(u=4\theta\) in \([-4\pi,4\pi]\). \(u=\frac{\pi}{3}+2k\pi\) or \(u=\frac{2\pi}{3}+2k\pi\).</span><span class="step"><span class="ans">\(\theta\in\{-\frac{11\pi}{12},-\frac{5\pi}{6},-\frac{5\pi}{12},-\frac{\pi}{3},\frac{\pi}{12},\frac{\pi}{6},\frac{7\pi}{12},\frac{2\pi}{3}\}\)</span>.</span></div></div></div>
 <div class="ex"><div class="exh"><span class="tag try">Q12 and Q13</span> Induction</div><div class="exb">Guess \(\sum_{k=m}^{\infty}r^k\) for \(|r|\lt 1\). Prove one: \(1+5+\cdots+(4n-3)=n(2n-1)\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Geometric tail: <span class="ans">\(\sum_{k=m}^{\infty}r^k=\frac{r^m}{1-r}\)</span>.</span><span class="step">Base \(n=1\): \(1=1(1)\).</span><span class="step">Assume sum to \(k\) is \(k(2k-1)\). Add next term \(4(k+1)-3=4k+1\).</span><span class="step">\(k(2k-1)+4k+1=2k^2+3k+1=(k+1)(2k+1)\), which is formula for \(k+1\).</span></div></div></div>
+</section>
+
+<section id="s14">
+<div class="sk">Section 14 of 14</div><h2><span class="swipe">Study Sheet</span></h2>
+<p class="intro">Use this page for fast recall before moving on. Reveal only what you need.</p>
+<div class="viz">
+<svg viewBox="0 0 680 170" role="img" aria-label="Chapter 0 learning map">
+  <defs><marker id="arrow0" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#3457c5"/></marker></defs>
+  <rect x="22" y="38" width="118" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="81" y="68" text-anchor="middle" font-weight="800">sets</text><text x="81" y="91" text-anchor="middle" fill="#5a6379">domains</text>
+  <rect x="190" y="38" width="118" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="249" y="68" text-anchor="middle" font-weight="800">functions</text><text x="249" y="91" text-anchor="middle" fill="#5a6379">maps</text>
+  <rect x="358" y="38" width="118" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="417" y="68" text-anchor="middle" font-weight="800">algebra</text><text x="417" y="91" text-anchor="middle" fill="#5a6379">solve</text>
+  <rect x="526" y="38" width="118" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="585" y="68" text-anchor="middle" font-weight="800">proofs</text><text x="585" y="91" text-anchor="middle" fill="#5a6379">induction</text>
+  <path d="M142 73 H184" stroke="#3457c5" stroke-width="3" marker-end="url(#arrow0)"/><path d="M310 73 H352" stroke="#3457c5" stroke-width="3" marker-end="url(#arrow0)"/><path d="M478 73 H520" stroke="#3457c5" stroke-width="3" marker-end="url(#arrow0)"/>
+  <text x="340" y="140" text-anchor="middle" fill="#5a6379">Most errors come from missing restrictions before calculating.</text>
+</svg>
+</div>
+<div class="formula-box">
+  <div class="formula-head"><b>Formula bank</b><button class="vbtn" onclick="revealFormula(this)">Reveal formulas</button></div>
+  <div class="formula-body"><div class="formula-grid">
+    <div class="formula-item">\(\sqrt{f(x)}\) needs \(f(x)\ge0\)</div>
+    <div class="formula-item">\(\ln f(x)\) needs \(f(x)\gt0\)</div>
+    <div class="formula-item">\(\displaystyle \sum_{k=0}^{n}ar^k=\frac{a(1-r^{n+1})}{1-r}\)</div>
+    <div class="formula-item">\(\displaystyle \sum_{k=0}^{\infty}ar^k=\frac{a}{1-r},\ |r|\lt1\)</div>
+    <div class="formula-item">\(\sin^2x+\cos^2x=1\)</div>
+    <div class="formula-item">Induction: base case, assume \(P(k)\), prove \(P(k+1)\)</div>
+  </div></div>
+</div>
+<h3>Common mistakes</h3>
+<div class="mistake-grid">
+  <div class="mistake"><b>Domain first</b>Do not simplify away restrictions such as denominator \(=0\).</div>
+  <div class="mistake"><b>Inverse check</b>A function needs a one to one restriction before an inverse is a function.</div>
+  <div class="mistake"><b>Log input</b>\(\ln 0\) and \(\ln(\text{negative})\) are not real numbers.</div>
+  <div class="mistake"><b>Induction gap</b>The assumption is only \(P(k)\). You still have to prove \(P(k+1)\).</div>
+</div>
+<h3>Quick recall</h3>
+<div class="recall-grid">
+  <div class="recall-card"><div class="front">What does \([a,b)\) mean?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">All \(x\) with \(a\le x\lt b\). Include \(a\), exclude \(b\).</div></div>
+  <div class="recall-card"><div class="front">When does \(\ln f(x)\) exist in real algebra?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">Only when \(f(x)\gt0\).</div></div>
+  <div class="recall-card"><div class="front">What are the two trig values to memorise first?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(\sin\theta\) is the \(y\) coordinate. \(\cos\theta\) is the \(x\) coordinate on the unit circle.</div></div>
+  <div class="recall-card"><div class="front">What makes an infinite geometric series converge?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">The common ratio must satisfy \(|r|\lt1\).</div></div>
+</div>
+<div class="summary-sheet">
+  <h3>End of chapter sheet</h3>
+  <div class="summary-list">
+    <div>Translate sets into number lines before combining them.</div>
+    <div>For functions, check domain, range, and whether inputs repeat outputs.</div>
+    <div>For equations with roots, logs, fractions, and absolute values, list restrictions first.</div>
+    <div>For induction, write the statement \(P(n)\) clearly before starting.</div>
+  </div>
+</div>
 </section>
 
 <div class="secnav"><button class="prev" id="prev">Previous</button><button class="next" id="next">Next section</button></div>

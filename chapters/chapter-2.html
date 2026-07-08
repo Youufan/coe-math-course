@@ -14,7 +14,7 @@
 <div class="app">
 <aside>
   <div class="brand"><div class="kicker">NTU COE Math Prep</div><h1>Chapter 2<br>Vectors</h1><a class="home-link" href="../index.html">Home</a></div>
-  <div class="progress"><div class="bar"><div class="fill" id="fill"></div></div><div class="plabel" id="plabel">0 / 11 sections done</div></div>
+  <div class="progress"><div class="bar"><div class="fill" id="fill"></div></div><div class="plabel" id="plabel">0 / 12 sections done</div></div>
   <div id="nav"></div>
 </aside>
 <main>
@@ -191,7 +191,7 @@
 </section>
 
 <section id="c2s11">
-<div class="sk">Section 11 of 11</div><h2><span class="swipe">Chapter Practice</span></h2>
+<div class="sk">Section 11 of 12</div><h2><span class="swipe">Chapter Practice</span></h2>
 <p class="intro">Mixed practice from the chapter. Try first, then reveal the route.</p>
 <div class="ex"><div class="exh"><span class="tag try">PRACTICE 1</span> Dot, cross, projection</div><div class="exb">Let \(\mathbf u=\mathbf i+\mathbf j-5\mathbf k\) and \(\mathbf v=2\mathbf i+\mathbf j-\mathbf k\). Find \(\|\mathbf u\|\), \(\|\mathbf v\|\), \(\mathbf u\cdot\mathbf v\), \(\mathbf u\times\mathbf v\), \(\mathbf v\times\mathbf u\), and \(\operatorname{proj}_{\mathbf v}\mathbf u\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(\|\mathbf u\|=\sqrt{27}=3\sqrt3\), \(\|\mathbf v\|=\sqrt6\).</span><span class="step">\(\mathbf u\cdot\mathbf v=1(2)+1(1)+(-5)(-1)=8\).</span><span class="step">\(\mathbf u\times\mathbf v=(4,-9,-1)\), so \(\mathbf v\times\mathbf u=(-4,9,1)\).</span><span class="step">\(\operatorname{proj}_{\mathbf v}\mathbf u=\frac{8}{6}(2,1,-1)=\)<span class="ans">\(\left(\frac83,\frac43,-\frac43\right)\)</span>.</span></div></div></div>
 <div class="ex"><div class="exh"><span class="tag try">PRACTICE 2</span> Parallelogram</div><div class="exb">For parallelogram \(ABPC\), let \(A=(1,0,0)\), \(B=(0,1,0)\), \(C=(0,0,1)\). Find its area, vertex \(P\), and angle between the diagonals.<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(\overrightarrow{AB}=(-1,1,0)\), \(\overrightarrow{AC}=(-1,0,1)\).</span><span class="step">Area \(=\|\overrightarrow{AB}\times\overrightarrow{AC}\|=\sqrt3\).</span><span class="step">For parallelogram \(ABPC\), \(P=B+C-A=(-1,1,1)\).</span><span class="step">Diagonals: \(\overrightarrow{AP}=(-2,1,1)\), \(\overrightarrow{BC}=(0,-1,1)\). Dot \(=0\), so angle is <span class="ans">\(\frac{\pi}{2}\)</span>.</span></div></div></div>
@@ -200,12 +200,63 @@
 <div class="ex"><div class="exh"><span class="tag try">PRACTICE 5</span> Distances</div><div class="exb">Find distances: (a) \(S=(3,-1,4)\) to \(\ell:x=4-t,\ y=3+2t,\ z=-5+3t\). (b) \(S=(2,-3,4)\) to \(x+2y+2z=13\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">(a) Use point \(P=(4,3,-5)\) and direction \(\mathbf v=(-1,2,3)\). \(\overrightarrow{PS}=(-1,-4,9)\).</span><span class="step">\(\|\overrightarrow{PS}\times\mathbf v\|=18\sqrt3\), and \(\|\mathbf v\|=\sqrt{14}\).</span><span class="step">Distance \(=\frac{18\sqrt3}{\sqrt{14}}=\)<span class="ans">\(\frac{9\sqrt{42}}{7}\)</span>.</span><span class="step">(b) Normal \((1,2,2)\), norm \(3\). Substitute \(S\): \(2-6+8-13=-9\). Distance \(=\)<span class="ans">\(3\)</span>.</span></div></div></div>
 </section>
 
+<section id="c2s12">
+<div class="sk">Section 12 of 12</div><h2><span class="swipe">Study Sheet</span></h2>
+<p class="intro">A quick vector checklist. Decide whether the answer should be a scalar, a vector, a line, or a plane.</p>
+<div class="viz">
+<svg viewBox="0 0 620 230" role="img" aria-label="Vector operation map">
+  <defs><marker id="arrow2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#3457c5"/></marker></defs>
+  <line x1="88" y1="178" x2="258" y2="78" stroke="#3457c5" stroke-width="5" marker-end="url(#arrow2)"/><line x1="88" y1="178" x2="338" y2="154" stroke="#1f8a5f" stroke-width="5" marker-end="url(#arrow2)"/>
+  <line x1="258" y1="78" x2="338" y2="154" stroke="#d94f35" stroke-width="4" marker-end="url(#arrow2)"/><line x1="88" y1="178" x2="338" y2="154" stroke="#1c2437" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="160" y="108" fill="#3457c5" font-weight="800">u</text><text x="230" y="184" fill="#1f8a5f" font-weight="800">v</text><text x="310" y="102" fill="#d94f35" font-weight="800">v minus u</text>
+  <rect x="410" y="48" width="160" height="50" rx="10" fill="#fff" stroke="#dedfd6"/><text x="490" y="78" text-anchor="middle" font-weight="800">dot gives angle</text>
+  <rect x="410" y="124" width="160" height="50" rx="10" fill="#fff" stroke="#dedfd6"/><text x="490" y="154" text-anchor="middle" font-weight="800">cross gives normal</text>
+</svg>
+</div>
+<div class="formula-box">
+  <div class="formula-head"><b>Formula bank</b><button class="vbtn" onclick="revealFormula(this)">Reveal formulas</button></div>
+  <div class="formula-body"><div class="formula-grid">
+    <div class="formula-item">\(\|\mathbf u\|=\sqrt{u_1^2+u_2^2+u_3^2}\)</div>
+    <div class="formula-item">\(\mathbf u\cdot\mathbf v=\|\mathbf u\|\|\mathbf v\|\cos\theta\)</div>
+    <div class="formula-item">\(\displaystyle \operatorname{proj}_{\mathbf v}\mathbf u=\frac{\mathbf u\cdot\mathbf v}{\mathbf v\cdot\mathbf v}\mathbf v\)</div>
+    <div class="formula-item">\(\|\mathbf u\times\mathbf v\|=\|\mathbf u\|\|\mathbf v\|\sin\theta\)</div>
+    <div class="formula-item">Line: \(\mathbf r=\mathbf r_0+t\mathbf v\)</div>
+    <div class="formula-item">Plane: \(\mathbf n\cdot(\mathbf r-\mathbf r_0)=0\)</div>
+    <div class="formula-item">\(\displaystyle d_{\text{point to line}}=\frac{\|\overrightarrow{PS}\times\mathbf v\|}{\|\mathbf v\|}\)</div>
+    <div class="formula-item">\(\displaystyle d_{\text{point to plane}}=\frac{|\overrightarrow{PS}\cdot\mathbf n|}{\|\mathbf n\|}\)</div>
+  </div></div>
+</div>
+<h3>Common mistakes</h3>
+<div class="mistake-grid">
+  <div class="mistake"><b>Dot or cross</b>Dot product gives a scalar. Cross product gives a vector.</div>
+  <div class="mistake"><b>Order matters</b>\(\mathbf u\times\mathbf v=-(\mathbf v\times\mathbf u)\).</div>
+  <div class="mistake"><b>Line versus plane</b>A line needs a direction vector. A plane needs a normal vector.</div>
+  <div class="mistake"><b>Distance formulas</b>Keep the absolute value for point to plane distance.</div>
+</div>
+<h3>Quick recall</h3>
+<div class="recall-grid">
+  <div class="recall-card"><div class="front">When are two vectors perpendicular?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">When \(\mathbf u\cdot\mathbf v=0\), provided both vectors are nonzero.</div></div>
+  <div class="recall-card"><div class="front">What does \(\mathbf u\times\mathbf v\) point along?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">A direction perpendicular to both \(\mathbf u\) and \(\mathbf v\), following the right hand rule.</div></div>
+  <div class="recall-card"><div class="front">What is the area of the parallelogram from \(\mathbf u,\mathbf v\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(\|\mathbf u\times\mathbf v\|\).</div></div>
+  <div class="recall-card"><div class="front">How do you get a plane through three points?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">Use two direction vectors from the points, then cross them to get a normal.</div></div>
+</div>
+<div class="summary-sheet">
+  <h3>End of chapter sheet</h3>
+  <div class="summary-list">
+    <div>Use components to calculate; use diagrams to decide direction.</div>
+    <div>Use dot product for angle, projection, and perpendicular checks.</div>
+    <div>Use cross product for area, normals, and perpendicular vectors in three dimensions.</div>
+    <div>For lines and planes, identify point, direction, and normal before writing equations.</div>
+  </div>
+</div>
+</section>
+
 <div class="secnav"><button class="prev" id="prev">Previous</button><button class="next" id="next">Next section</button></div>
 </main>
 </div>
 <script>
 window.tutorSections=[
-["c2s1","Directed Segments"],["c2s2","Operations"],["c2s3","Coordinates"],["c2s4","Norms"],["c2s5","Dot Product"],["c2s6","Projections"],["c2s7","Cross Product"],["c2s8","Area & Volume"],["c2s9","Lines"],["c2s10","Planes"],["c2s11","Practice"]
+["c2s1","Directed Segments"],["c2s2","Operations"],["c2s3","Coordinates"],["c2s4","Norms"],["c2s5","Dot Product"],["c2s6","Projections"],["c2s7","Cross Product"],["c2s8","Area & Volume"],["c2s9","Lines"],["c2s10","Planes"],["c2s11","Practice"],["c2s12","Study Sheet"]
 ];
 function c2SetActive(btn){if(btn){btn.parentElement.querySelectorAll(".vbtn").forEach(b=>b.classList.remove("on"));btn.classList.add("on")}}
 function c2VectorDemo(mode,btn){c2SetActive(btn);const u=document.getElementById("c2-u"),v=document.getElementById("c2-v"),r=document.getElementById("c2-result"),ul=document.getElementById("c2-u-label"),vl=document.getElementById("c2-v-label"),rl=document.getElementById("c2-result-label"),read=document.getElementById("c2-vector-read");if(!u||!v||!r)return;v.removeAttribute("opacity");r.removeAttribute("opacity");u.setAttribute("stroke-width",4);r.setAttribute("stroke-width",4);if(mode==="add"){u.setAttribute("x1",80);u.setAttribute("y1",210);u.setAttribute("x2",210);u.setAttribute("y2",96);v.setAttribute("x1",210);v.setAttribute("y1",96);v.setAttribute("x2",390);v.setAttribute("y2",134);r.setAttribute("x1",80);r.setAttribute("y1",210);r.setAttribute("x2",372);r.setAttribute("y2",138);ul.setAttribute("x",124);ul.setAttribute("y",136);vl.setAttribute("x",292);vl.setAttribute("y",104);rl.setAttribute("x",258);rl.setAttribute("y",176);ul.textContent="u";vl.textContent="v";rl.textContent="u + v";read.innerHTML="Tip to tail: first \\(\\mathbf u\\), then \\(\\mathbf v\\), gives \\(\\mathbf u+\\mathbf v\\)."}if(mode==="sub"){u.setAttribute("x1",80);u.setAttribute("y1",210);u.setAttribute("x2",224);u.setAttribute("y2",82);v.setAttribute("x1",80);v.setAttribute("y1",210);v.setAttribute("x2",396);v.setAttribute("y2",194);r.setAttribute("x1",224);r.setAttribute("y1",82);r.setAttribute("x2",378);r.setAttribute("y2",182);ul.setAttribute("x",132);ul.setAttribute("y",112);vl.setAttribute("x",300);vl.setAttribute("y",214);rl.setAttribute("x",292);rl.setAttribute("y",124);ul.textContent="u";vl.textContent="v";rl.textContent="v - u";read.innerHTML="When vectors share a tail, the arrow from the tip of \\(\\mathbf u\\) to the tip of \\(\\mathbf v\\) is \\(\\mathbf v-\\mathbf u\\)."}if(mode==="scale"){u.setAttribute("x1",82);u.setAttribute("y1",198);u.setAttribute("x2",222);u.setAttribute("y2",128);u.setAttribute("stroke-width",5);v.setAttribute("opacity","0");r.setAttribute("x1",80);r.setAttribute("y1",218);r.setAttribute("x2",360);r.setAttribute("y2",78);r.setAttribute("stroke-width",4);ul.setAttribute("x",132);ul.setAttribute("y",150);vl.setAttribute("x",320);vl.setAttribute("y",68);rl.setAttribute("x",304);rl.setAttribute("y",96);ul.textContent="u";vl.textContent="";rl.textContent="2u";read.innerHTML="Multiplying by \\(2\\) keeps direction and doubles length: \\(2\\mathbf u\\)."}if(window.renderTutorMath)renderTutorMath(read);}
