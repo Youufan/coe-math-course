@@ -67,6 +67,7 @@
   <button class="vbtn" onclick="argandPoint(-1,1.732,'-1+\\sqrt3 i','=2\\,\\mathrm{cis}(2\\pi/3)',this)">\(-1+\sqrt3 i\)</button>
   <button class="vbtn" onclick="argandPoint(-3,-4,'-3-4i','=5\\,\\mathrm{cis}(-2.214\\ldots)',this)">\(-3-4i\)</button>
 </div>
+<div class="argand-wrap">
 <svg viewBox="0 0 360 360">
 <defs><marker id="carr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#3457c5"/></marker></defs>
 <line x1="25" y1="180" x2="335" y2="180" stroke="#c9ccc0"/><line x1="180" y1="25" x2="180" y2="335" stroke="#c9ccc0"/>
@@ -79,6 +80,8 @@
 <line id="arg-ray" x1="180" y1="180" x2="282" y2="282" stroke="#3457c5" stroke-width="3" marker-end="url(#carr)"/>
 <circle id="arg-point" cx="282" cy="282" r="6" fill="#d94f35"/><text id="arg-label" x="292" y="272" font-size="13">3-3i</text>
 </svg>
+<div id="arg-html-label" class="argand-katex-label">\(3-3i\)</div>
+</div>
 <div class="readout" id="arg-readout">\(3-3i=3\sqrt2\,\mathrm{cis}(-\pi/4)\)</div>
 </div>
 <div class="key"><b>Visual read</b>\(z=x+yi\) is the point \((x,y)\). The same point can be viewed as a vector from \((0,0)\) to \((x,y)\).</div>
