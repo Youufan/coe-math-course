@@ -2,7 +2,7 @@
 
 Interactive NTU COE Prep Math companion with chapter based lessons, worked examples, practice questions, and answers based on NTULearn lectures.
 
-This is a personal study companion and is not an official NTU resource.
+This is a personal study companion and is not an official NTU resource!! (For personal use only lol i have to make it public to deploy my page haha)
 
 ## Tech Stack
 
@@ -47,7 +47,7 @@ http://localhost:8000
 
 1. Create a new GitHub repository.
 2. Push this folder to the repository.
-3. In GitHub, open `Settings`.
+3. In GitHub, open `Settings`. (From the repository)
 4. Open `Pages`.
 5. Under `Build and deployment`, choose `Deploy from a branch`.
 6. Choose the `main` branch and the root folder.
