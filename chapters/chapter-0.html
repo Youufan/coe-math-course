@@ -20,7 +20,7 @@
 <main>
 
 <section id="s1">
-<div class="sk">Section 1 of 13</div><h2><span class="swipe">Sets & Intervals</span></h2>
+<div class="sk">Section 1 of 14</div><h2><span class="swipe">Sets & Intervals</span></h2>
 <p class="intro">A set is a collection of distinct objects. Intervals are sets of real numbers drawn on a number line.</p>
 <div class="key"><b>Key point</b>Order does not matter: \(\{1,2,3\}=\{3,1,2\}\). Use \(x\in A\) for "x is in \(A\)", \(x\notin A\) for "x is not in \(A\)", and \(A\subseteq B\) for "\(A\) is a subset of \(B\)".</div>
 <div class="grid2">
@@ -34,7 +34,7 @@
 </section>
 
 <section id="s2">
-<div class="sk">Section 2 of 13</div><h2><span class="swipe">Set Operations</span></h2>
+<div class="sk">Section 2 of 14</div><h2><span class="swipe">Set Operations</span></h2>
 <p class="intro">Union means "or"; intersection means "and"; difference means "in the first but not the second".</p>
 <div class="viz">
 <div class="btnrow"><button class="vbtn on" onclick="venn('union',this)">\(A\cup B\)</button><button class="vbtn" onclick="venn('inter',this)">\(A\cap B\)</button><button class="vbtn" onclick="venn('amb',this)">\(A\setminus B\)</button><button class="vbtn" onclick="venn('bma',this)">\(B\setminus A\)</button><button class="vbtn" onclick="venn('comp',this)">\(A^c\)</button></div>
@@ -48,7 +48,7 @@
 </section>
 
 <section id="s3">
-<div class="sk">Section 3 of 13</div><h2><span class="swipe">Functions, Domain & Range</span></h2>
+<div class="sk">Section 3 of 14</div><h2><span class="swipe">Functions, Domain & Range</span></h2>
 <p class="intro">A function is a machine: each allowed input gives exactly one output.</p>
 <div class="viz"><svg viewBox="0 0 520 120"><defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#1c2437"/></marker></defs><line x1="35" y1="60" x2="150" y2="60" stroke="#1c2437" stroke-width="2" marker-end="url(#arr)"/><text x="90" y="47" font-family="Georgia" font-style="italic">x</text><rect x="165" y="28" width="120" height="64" rx="12" fill="#ffde59" stroke="#1c2437" stroke-width="2"/><text x="225" y="68" text-anchor="middle" font-family="Georgia" font-size="24" font-style="italic">f</text><line x1="300" y1="60" x2="445" y2="60" stroke="#1c2437" stroke-width="2" marker-end="url(#arr)"/><text x="365" y="47" font-family="Georgia" font-style="italic">f(x)</text></svg><div class="cap">One input gives one output.</div></div>
 <div class="key"><b>Three sets</b>Domain = allowed inputs. Codomain = declared target. Range = outputs actually hit.</div>
@@ -58,7 +58,7 @@
 </section>
 
 <section id="s4">
-<div class="sk">Section 4 of 13</div><h2><span class="swipe">Combining Functions</span></h2>
+<div class="sk">Section 4 of 14</div><h2><span class="swipe">Combining Functions</span></h2>
 <p class="intro">Add, multiply, or chain. Composition is the one where domains and ranges matter.</p>
 <div class="key"><b>Composition rule</b>\((g\circ f)(x)=g(f(x))\). It exists when every output of \(f\) is legal input for \(g\): \(R_f\subseteq D_g\).</div>
 <div class="viz"><svg viewBox="0 0 640 115"><defs><marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#1c2437"/></marker></defs><line x1="20" y1="58" x2="100" y2="58" stroke="#1c2437" stroke-width="2" marker-end="url(#arr2)"/><rect x="110" y="28" width="90" height="60" rx="12" fill="#ffde59" stroke="#1c2437"/><text x="155" y="66" font-family="Georgia" font-size="22" font-style="italic" text-anchor="middle">f</text><line x1="205" y1="58" x2="305" y2="58" stroke="#1c2437" stroke-width="2" marker-end="url(#arr2)"/><rect x="315" y="28" width="90" height="60" rx="12" fill="#cfe9dc" stroke="#1f8a5f"/><text x="360" y="66" font-family="Georgia" font-size="22" font-style="italic" text-anchor="middle">g</text><line x1="410" y1="58" x2="560" y2="58" stroke="#1c2437" stroke-width="2" marker-end="url(#arr2)"/><text x="510" y="43" font-family="Georgia" font-style="italic">g(f(x))</text></svg></div>
@@ -67,7 +67,7 @@
 </section>
 
 <section id="s5">
-<div class="sk">Section 5 of 13</div><h2><span class="swipe">Injective, Surjective, Inverse</span></h2>
+<div class="sk">Section 5 of 14</div><h2><span class="swipe">Injective, Surjective, Inverse</span></h2>
 <p class="intro">Injective = no sharing outputs. Surjective = every target gets hit. Bijective = both, so an inverse exists.</p>
 <div class="grid2"><div class="card"><b>Injective</b><br>No two different inputs land on the same output. Test: \(f(x_1)=f(x_2)\) implies \(x_1=x_2\). Graph test: horizontal line hits at most once.</div><div class="card"><b>Surjective</b><br>Range = codomain. Every target value is hit by at least one input.</div></div>
 <div class="ex"><div class="exh"><span class="tag">EX 7</span> Classify</div><div class="exb">Classify: 1) \(f:\mathbb{R}\to\mathbb{R},\ f(x)=x^3\) 2) \(g:\mathbb{R}\to[0,\infty),\ g(x)=x^2\) 3) \(h:[0,2\pi]\to[-1,1],\ h(x)=\sin x\) 4) \(k:[-\pi/2,\pi/2]\to[-1,1],\ k(x)=\sin x\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">1) <span class="ans">Bijective</span>: increasing and hits every real.</span><span class="step">2) <span class="ans">Surjective, not injective</span>: \(g(-2)=g(2)\).</span><span class="step">3) <span class="ans">Surjective, not injective</span>: \(\sin0=\sin\pi\).</span><span class="step">4) <span class="ans">Bijective</span>: sine maps distinct inputs to distinct outputs on this restricted interval and hits \([-1,1]\).</span></div></div></div>
@@ -76,7 +76,7 @@
 </section>
 
 <section id="s6">
-<div class="sk">Section 6 of 13</div><h2><span class="swipe">Even, Odd, Roots, Piecewise</span></h2>
+<div class="sk">Section 6 of 14</div><h2><span class="swipe">Even, Odd, Roots, Piecewise</span></h2>
 <p class="intro">These are graph reading skills: symmetry, x axis crossings, and rule changes.</p>
 <div class="grid2"><div class="viz"><svg viewBox="0 0 220 150"><line x1="20" y1="120" x2="200" y2="120" stroke="#c9ccc0"/><line x1="110" y1="15" x2="110" y2="140" stroke="#c9ccc0"/><path d="M35 35 Q110 190 185 35" fill="none" stroke="#3457c5" stroke-width="3"/><text x="110" y="24" text-anchor="middle" font-size="12" font-weight="800">even: f(-x)=f(x)</text></svg><div class="cap">Mirror in y axis.</div></div><div class="viz"><svg viewBox="0 0 220 150"><line x1="20" y1="75" x2="200" y2="75" stroke="#c9ccc0"/><line x1="110" y1="15" x2="110" y2="140" stroke="#c9ccc0"/><path d="M35 130 C80 125 90 25 110 75 C130 125 140 25 185 20" fill="none" stroke="#1f8a5f" stroke-width="3"/><text x="110" y="24" text-anchor="middle" font-size="12" font-weight="800">odd: f(-x)=-f(x)</text></svg><div class="cap">180° rotation about origin.</div></div></div>
 <div class="ex"><div class="exh"><span class="tag try">TRY</span> Symmetry</div><div class="exb">Even, odd, or neither: \(x^2\), \(x^3\), \(x^2+x^4\), \(x+x^2\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(x^2\): <span class="ans">even</span>. \(x^3\): <span class="ans">odd</span>.</span><span class="step">\(x^2+x^4\): <span class="ans">even</span>. \(x+x^2\): <span class="ans">neither</span>.</span></div></div></div>
@@ -85,7 +85,7 @@
 </section>
 
 <section id="s7">
-<div class="sk">Section 7 of 13</div><h2><span class="swipe">Polynomials & Quadratics</span></h2>
+<div class="sk">Section 7 of 14</div><h2><span class="swipe">Polynomials & Quadratics</span></h2>
 <p class="intro">Polynomials use whole number powers of x. Quadratics are best understood by completing the square.</p>
 <div class="key"><b>Polynomial</b>\(P(x)=a_nx^n+\cdots+a_1x+a_0\). Degree = highest nonzero power. Rational function = polynomial / polynomial.</div>
 <div class="ex"><div class="exh"><span class="tag">EX 14</span> Polynomial or not?</div><div class="exb">Classify: \(x^{33}-x^2+1\), \(x^2+\frac{1}{x^2}+1\), \(x^2+x+\sin x\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step"><span class="ans">Yes, degree 33</span>.</span><span class="step"><span class="ans">No</span>, because \(\frac{1}{x^2}=x^{-2}\).</span><span class="step"><span class="ans">No</span>, because sin x is not a power of x.</span></div></div></div>
@@ -96,7 +96,7 @@
 </section>
 
 <section id="s8">
-<div class="sk">Section 8 of 13</div><h2><span class="swipe">Inequalities & Absolute Value</span></h2>
+<div class="sk">Section 8 of 14</div><h2><span class="swipe">Inequalities & Absolute Value</span></h2>
 <p class="intro">Inequalities behave like equations except one rule: multiply by a negative, flip the sign. Absolute value is distance.</p>
 <div class="key"><b>Inequality rule</b>If \(x\gt y\), then \(x+z\gt y+z\). If \(c\gt 0\), \(cx\gt cy\). If \(c\lt 0\), \(cx\lt cy\).</div>
 <div class="ex"><div class="exh"><span class="tag">EX 21</span> True or false</div><div class="exb">\(1\le2\), \(1\le1\), \(-2\le-3\), \(0.999\ldots\lt 1\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">True, true, <span class="ans">false</span>, <span class="ans">false</span>.</span><span class="step">\(-2\) is greater than \(-3\). Also \(0.999\ldots=1\) exactly.</span></div></div></div>
@@ -107,7 +107,7 @@
 </section>
 
 <section id="s9">
-<div class="sk">Section 9 of 13</div><h2><span class="swipe">Exponents & Logarithms</span></h2>
+<div class="sk">Section 9 of 14</div><h2><span class="swipe">Exponents & Logarithms</span></h2>
 <p class="intro">Powers are repeated multiplication. Logs ask the reverse question: "what power?"</p>
 <div class="key"><b>Index laws</b>\(a^na^m=a^{n+m}\), \((a^n)^m=a^{nm}\), \((ab)^n=a^nb^n\), \(a^{-n}=\frac{1}{a^n}\), \(a^{1/n}=\sqrt[n]{a}\).</div>
 <div class="ex"><div class="exh"><span class="tag">EX 32</span> Solving powers</div><div class="exb">Find all real \(x\): \(x^2=4\), \(x^2=-1\), \(x^3=8\), \(x^3=-8\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step"><span class="ans">\(x=\pm2\)</span>; <span class="ans">no real solution</span>; <span class="ans">\(x=2\)</span>; <span class="ans">\(x=-2\)</span>.</span><span class="step">\(\sqrt4\) means the root \(2\), which is not negative, but \(x^2=4\) has two solutions.</span></div></div></div>
@@ -119,7 +119,7 @@
 </section>
 
 <section id="s10">
-<div class="sk">Section 10 of 13</div><h2><span class="swipe">Sigma Notation & Series</span></h2>
+<div class="sk">Section 10 of 14</div><h2><span class="swipe">Sigma Notation & Series</span></h2>
 <p class="intro">\(\Sigma\) means "add terms from start to stop". Geometric series have a constant multiplier ratio.</p>
 <div class="viz"><svg viewBox="0 0 460 130"><text x="62" y="80" font-size="52" font-family="Georgia">Σ</text><text x="71" y="118" font-family="Georgia" font-style="italic">i=m</text><text x="81" y="28" font-family="Georgia" font-style="italic">n</text><text x="125" y="74" font-family="Georgia" font-size="22" font-style="italic">uᵢ = uₘ + uₘ₊₁ + ... + uₙ</text><text x="60" y="14" font-size="11" fill="#d94f35" font-weight="800">stop</text><text x="125" y="126" font-size="11" fill="#3457c5" font-weight="800">start counter</text></svg></div>
 <div class="ex"><div class="exh"><span class="tag">EX 40</span> Decode</div><div class="exb">Compute \(\sum_{i=1}^{5}i\), \(\sum_{j=1}^{5}j\), \(\sum_{i=2}^{5}i^2\), \(\sum_{i=1}^{5}(\frac12)^i\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step"><span class="ans">\(15\)</span>, <span class="ans">\(15\)</span> (dummy letter), <span class="ans">\(54\)</span>, <span class="ans">\(\frac{31}{32}\)</span>.</span></div></div></div>
@@ -132,7 +132,7 @@
 </section>
 
 <section id="s11">
-<div class="sk">Section 11 of 13</div><h2><span class="swipe">Trigonometry & Inverse Trig</span></h2>
+<div class="sk">Section 11 of 14</div><h2><span class="swipe">Trigonometry & Inverse Trig</span></h2>
 <p class="intro">Use the unit circle for signs and special angles. Inverse trig needs restricted ranges.</p>
 <div class="grid2"><div class="card"><b>Right triangle</b><div class="big">\(\sin\theta=\frac{\text{opp}}{\text{hyp}}\)<br>\(\cos\theta=\frac{\text{adj}}{\text{hyp}}\)<br>\(\tan\theta=\frac{\text{opp}}{\text{adj}}\)</div></div><div class="card"><b>Radians</b><div class="big">\(\pi\text{ rad}=180^\circ\)</div>Degrees to radians: multiply by \(\pi/180\). Radians to degrees: multiply by \(180/\pi\).</div></div>
 <div class="card"><b>Special values</b><table><tr><th>\(\theta\)</th><th>\(0\)</th><th>\(\pi/6\)</th><th>\(\pi/4\)</th><th>\(\pi/3\)</th><th>\(\pi/2\)</th></tr><tr><td>\(\sin\)</td><td>\(0\)</td><td>\(\frac12\)</td><td>\(\frac{\sqrt2}{2}\)</td><td>\(\frac{\sqrt3}{2}\)</td><td>\(1\)</td></tr><tr><td>\(\cos\)</td><td>\(1\)</td><td>\(\frac{\sqrt3}{2}\)</td><td>\(\frac{\sqrt2}{2}\)</td><td>\(\frac12\)</td><td>\(0\)</td></tr><tr><td>\(\tan\)</td><td>\(0\)</td><td>\(\frac{1}{\sqrt3}\)</td><td>\(1\)</td><td>\(\sqrt3\)</td><td>undefined</td></tr></table></div>
@@ -144,7 +144,7 @@
 </section>
 
 <section id="s12">
-<div class="sk">Section 12 of 13</div><h2><span class="swipe">Mathematical Induction</span></h2>
+<div class="sk">Section 12 of 14</div><h2><span class="swipe">Mathematical Induction</span></h2>
 <p class="intro">Induction proves infinitely many statements by proving the first domino falls and every domino knocks down the next.</p>
 <div class="viz"><button class="vbtn" onclick="domino()">Push dominoes</button><svg id="domino" viewBox="0 0 520 120"><g id="doms"><rect x="42" y="30" width="22" height="62" rx="3" fill="#3457c5"/><rect x="112" y="30" width="22" height="62" rx="3" fill="#3457c5"/><rect x="182" y="30" width="22" height="62" rx="3" fill="#3457c5"/><rect x="252" y="30" width="22" height="62" rx="3" fill="#3457c5"/><rect x="322" y="30" width="22" height="62" rx="3" fill="#3457c5"/><rect x="392" y="30" width="22" height="62" rx="3" fill="#3457c5"/></g><text x="260" y="112" text-anchor="middle" fill="#5a6379">Base case + inductive step = all n</text></svg></div>
 <div class="key"><b>PMI recipe</b>1) State \(P(n)\). 2) Prove base case. 3) Assume \(P(k)\). 4) Prove \(P(k+1)\). 5) Conclude for all \(n\) from the starting integer.</div>

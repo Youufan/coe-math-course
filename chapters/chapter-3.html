@@ -20,7 +20,7 @@
 <main>
 
 <section id="c3s1">
-<div class="sk">Section 1 of 12</div><h2><span class="swipe">Matrix Notation</span></h2>
+<div class="sk">Section 1 of 13</div><h2><span class="swipe">Matrix Notation</span></h2>
 <p class="intro">A matrix is a rectangular array. Rows go across. Columns go down. The size is rows by columns.</p>
 <div class="key"><b>Definition</b>An \(m\times n\) matrix has \(m\) rows and \(n\) columns. Its entry in row \(i\), column \(j\), is \(a_{ij}\) or \(A_{ij}\).</div>
 <div class="viz">
@@ -50,7 +50,7 @@
 </section>
 
 <section id="c3s2">
-<div class="sk">Section 2 of 12</div><h2><span class="swipe">Matrix Types</span></h2>
+<div class="sk">Section 2 of 13</div><h2><span class="swipe">Matrix Types</span></h2>
 <p class="intro">Names mostly describe shape or where the zero entries sit.</p>
 <div class="grid2">
   <div class="card"><b>Row matrix</b><div class="big">\(\begin{bmatrix}a_1&a_2&\cdots&a_n\end{bmatrix}\)</div></div>
@@ -67,7 +67,7 @@
 </section>
 
 <section id="c3s3">
-<div class="sk">Section 3 of 12</div><h2><span class="swipe">Equality & Entry Rules</span></h2>
+<div class="sk">Section 3 of 13</div><h2><span class="swipe">Equality & Entry Rules</span></h2>
 <p class="intro">Two matrices are equal only when their sizes match and every corresponding entry matches.</p>
 <div class="key"><b>Equality test</b>If \(A\) and \(B\) are both \(m\times n\), then \(A=B\) means \(A_{ij}=B_{ij}\) for every valid \(i,j\).</div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 1</span> Matrix equation</div><div class="exb">Solve for \(a,b,c,d\):
@@ -81,7 +81,7 @@
 </section>
 
 <section id="c3s4">
-<div class="sk">Section 4 of 12</div><h2><span class="swipe">Addition & Scalar Multiplication</span></h2>
+<div class="sk">Section 4 of 13</div><h2><span class="swipe">Addition & Scalar Multiplication</span></h2>
 <p class="intro">Addition, subtraction, and scalar multiplication are entry by entry operations.</p>
 <div class="key"><b>Rules</b>For same sized matrices, \((A+B)_{ij}=A_{ij}+B_{ij}\) and \((A-B)_{ij}=A_{ij}-B_{ij}\). For a scalar \(\alpha\), \((\alpha A)_{ij}=\alpha A_{ij}\).</div>
 <div class="warn"><b>Warning</b> Matrices of different sizes cannot be added or subtracted.</div>
@@ -97,7 +97,7 @@ Find \(2A-B+\frac13C\).
 </section>
 
 <section id="c3s5">
-<div class="sk">Section 5 of 12</div><h2><span class="swipe">Matrix Multiplication</span></h2>
+<div class="sk">Section 5 of 13</div><h2><span class="swipe">Matrix Multiplication</span></h2>
 <p class="intro">A product is built from row column dot products. The inner sizes must match.</p>
 <div class="key"><b>Product rule</b>If \(A\) is \(m\times r\) and \(B\) is \(r\times n\), then \(AB\) is \(m\times n\), and \((AB)_{ij}=\sum_{k=1}^{r}A_{ik}B_{kj}\).</div>
 <div class="viz">
@@ -132,7 +132,7 @@ Find \(2A-B+\frac13C\).
 </section>
 
 <section id="c3s6">
-<div class="sk">Section 6 of 12</div><h2><span class="swipe">Identity & Transpose</span></h2>
+<div class="sk">Section 6 of 13</div><h2><span class="swipe">Identity & Transpose</span></h2>
 <p class="intro">The identity matrix acts like \(1\). The transpose swaps rows and columns.</p>
 <div class="grid2">
   <div class="card"><b>Identity</b><div class="big">If \(A\) is \(m\times n\), then \(AI_n=A\) and \(I_mA=A\).</div></div>
@@ -144,7 +144,7 @@ Find \(2A-B+\frac13C\).
 </section>
 
 <section id="c3s7">
-<div class="sk">Section 7 of 12</div><h2><span class="swipe">Inverse Matrices</span></h2>
+<div class="sk">Section 7 of 13</div><h2><span class="swipe">Inverse Matrices</span></h2>
 <p class="intro">An inverse undoes multiplication. Only square matrices can be invertible.</p>
 <div class="key"><b>Definition</b>A square matrix \(A\) is invertible if there is a square matrix \(B\) such that \(AB=I\) and \(BA=I\). The inverse is unique and is written \(A^{-1}\).</div>
 <div class="grid2">
@@ -156,7 +156,7 @@ Find \(2A-B+\frac13C\).
 </section>
 
 <section id="c3s8">
-<div class="sk">Section 8 of 12</div><h2><span class="swipe">Diagonal Matrices & Powers</span></h2>
+<div class="sk">Section 8 of 13</div><h2><span class="swipe">Diagonal Matrices & Powers</span></h2>
 <p class="intro">Diagonal and triangular matrices are easier because the diagonal controls many results.</p>
 <div class="grid2">
   <div class="card"><b>Diagonal inverse</b><div class="big">\(\operatorname{diag}(a,b,c,d)^{-1}=\operatorname{diag}\!\left(\frac1a,\frac1b,\frac1c,\frac1d\right)\)</div></div>
@@ -168,7 +168,7 @@ Find \(2A-B+\frac13C\).
 </section>
 
 <section id="c3s9">
-<div class="sk">Section 9 of 12</div><h2><span class="swipe">Determinants & Cofactors</span></h2>
+<div class="sk">Section 9 of 13</div><h2><span class="swipe">Determinants & Cofactors</span></h2>
 <p class="intro">A determinant is a number attached to a square matrix. It detects invertibility and supports solving systems.</p>
 <div class="key"><b>Base cases</b>\(\det([a])=a\), and \(\det\begin{bmatrix}a&b\\c&d\end{bmatrix}=ad-bc\).</div>
 <div class="viz">
@@ -197,7 +197,7 @@ Find \(2A-B+\frac13C\).
 </section>
 
 <section id="c3s10">
-<div class="sk">Section 10 of 12</div><h2><span class="swipe">Cofactor Expansion</span></h2>
+<div class="sk">Section 10 of 13</div><h2><span class="swipe">Cofactor Expansion</span></h2>
 <p class="intro">To compute a determinant, expand along a row or column. Pick one with many zeros when possible.</p>
 <div class="key"><b>Expansion</b>Along row \(i\), \(\det(A)=a_{i1}C_{i1}+a_{i2}C_{i2}+\cdots+a_{in}C_{in}\). Along column \(j\), \(\det(A)=a_{1j}C_{1j}+\cdots+a_{nj}C_{nj}\).</div>
 <div class="grid2">
@@ -217,7 +217,7 @@ Find \(2A-B+\frac13C\).
 </section>
 
 <section id="c3s11">
-<div class="sk">Section 11 of 12</div><h2><span class="swipe">Adjoint & Invertibility</span></h2>
+<div class="sk">Section 11 of 13</div><h2><span class="swipe">Adjoint & Invertibility</span></h2>
 <p class="intro">The adjoint packages cofactors into a formula for the inverse.</p>
 <div class="key"><b>Adjoint</b>The cofactor matrix is \(C=[C_{ij}]\). The adjoint is \(\operatorname{adj}(A)=C^T\).</div>
 <div class="grid2">
