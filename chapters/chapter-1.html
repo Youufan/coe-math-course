@@ -174,50 +174,52 @@
 
 <section id="c1s12">
 <div class="sk">Section 12 of 12</div><h2><span class="swipe">Study Sheet</span></h2>
-<p class="intro">A compact check for complex numbers. Think picture first, then formula.</p>
-<div class="viz">
-<svg viewBox="0 0 520 250" role="img" aria-label="Complex number forms on the Argand plane">
-  <defs><marker id="arrow1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#3457c5"/></marker></defs>
-  <line x1="60" y1="160" x2="460" y2="160" stroke="#c9ccc0"/><line x1="260" y1="220" x2="260" y2="35" stroke="#c9ccc0"/>
-  <path d="M260 160 L380 80" stroke="#3457c5" stroke-width="4" marker-end="url(#arrow1)"/><line x1="260" y1="160" x2="380" y2="160" stroke="#1f8a5f" stroke-width="3" stroke-dasharray="6 6"/><line x1="380" y1="160" x2="380" y2="80" stroke="#1f8a5f" stroke-width="3" stroke-dasharray="6 6"/>
-  <circle cx="380" cy="80" r="6" fill="#d94f35"/><path d="M292 160 A36 36 0 0 0 320 120" fill="none" stroke="#d94f35" stroke-width="3"/>
-  <text x="394" y="82" font-weight="800">z = x + yi</text><text x="318" y="183" fill="#1f8a5f">real part</text><text x="390" y="126" fill="#1f8a5f">imaginary part</text><text x="306" y="137" fill="#d94f35">arg z</text><text x="318" y="92" fill="#3457c5">|z|</text>
-</svg>
-</div>
-<div class="formula-box">
-  <div class="formula-head"><b>Formula bank</b><button class="vbtn" onclick="revealFormula(this)">Reveal formulas</button></div>
-  <div class="formula-body"><div class="formula-grid">
-    <div class="formula-item">\(|x+yi|=\sqrt{x^2+y^2}\)</div>
-    <div class="formula-item">\(\overline{x+yi}=x-yi\)</div>
-    <div class="formula-item">\(z=r(\cos\theta+i\sin\theta)=r\,\mathrm{cis}\,\theta\)</div>
-    <div class="formula-item">\(z_1z_2=r_1r_2\,\mathrm{cis}(\theta_1+\theta_2)\)</div>
-    <div class="formula-item">\(\displaystyle \frac{z_1}{z_2}=\frac{r_1}{r_2}\,\mathrm{cis}(\theta_1-\theta_2)\)</div>
-    <div class="formula-item">\(\left(r\,\mathrm{cis}\,\theta\right)^n=r^n\,\mathrm{cis}(n\theta)\)</div>
-    <div class="formula-item">\(\displaystyle z_k=\sqrt[n]{r}\,\mathrm{cis}\left(\frac{\alpha+2k\pi}{n}\right)\)</div>
-    <div class="formula-item">Roots use \(k=0,1,\ldots,n-1\)</div>
-  </div></div>
-</div>
-<h3>Common mistakes</h3>
-<div class="mistake-grid">
-  <div class="mistake"><b>Argument quadrant</b>\(\tan^{-1}\frac{y}{x}\) gives a reference angle. The quadrant comes from the point.</div>
-  <div class="mistake"><b>All roots</b>An \(n\)th root question usually asks for \(n\) distinct answers.</div>
-  <div class="mistake"><b>Conjugate use</b>To divide rectangular forms, multiply top and bottom by the conjugate of the denominator.</div>
-  <div class="mistake"><b>Power angles</b>De Moivre multiplies the angle. It does not multiply sine and cosine separately.</div>
-</div>
-<h3>Quick recall</h3>
-<div class="recall-grid">
-  <div class="recall-card"><div class="front">What is the picture of \(|z-a|\le r\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">A closed disk centred at \(a\) with radius \(r\).</div></div>
-  <div class="recall-card"><div class="front">How do arguments behave under multiplication?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">They add: \(\arg(z_1z_2)=\arg z_1+\arg z_2\), up to full turns.</div></div>
-  <div class="recall-card"><div class="front">How many cube roots does a nonzero complex number have?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">Three, spaced by \(\frac{2\pi}{3}\) around a circle.</div></div>
-  <div class="recall-card"><div class="front">What is \(\overline{z}\) geometrically?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">Reflection of \(z\) in the real axis.</div></div>
-</div>
-<div class="summary-sheet">
-  <h3>End of chapter sheet</h3>
-  <div class="summary-list">
-    <div>Use rectangular form for addition, subtraction, and conjugates.</div>
-    <div>Use polar form for multiplication, division, powers, and roots.</div>
-    <div>On the Argand plane, modulus is distance from the origin and argument is angle from the positive real axis.</div>
-    <div>For roots, spread answers evenly by adding \(\frac{2\pi}{n}\).</div>
+<p class="intro">A one page revision card for complex numbers.</p>
+<div class="revision-card">
+  <div class="revision-block big-picture">
+    <div class="revision-label">Big picture</div>
+    Complex numbers turn algebra into geometry. Rectangular form shows horizontal and vertical movement; polar form shows distance and rotation.
+  </div>
+  <div class="revision-block">
+    <div class="revision-label">Decision guide</div>
+    <div class="decision-grid">
+      <div class="decision-item"><b>Use rectangular form</b>for addition, subtraction, conjugates, and simple division.</div>
+      <div class="decision-item"><b>Use an Argand diagram</b>for modulus, argument, regions, and geometric meaning.</div>
+      <div class="decision-item"><b>Use polar form</b>for multiplication, division, powers, and roots.</div>
+      <div class="decision-item"><b>Use De Moivre</b>when powers or roots involve \(\cos\theta+i\sin\theta\).</div>
+    </div>
+  </div>
+  <div class="formula-box">
+    <div class="formula-head"><b>Formula bank</b><button class="vbtn" onclick="revealFormula(this)">Reveal formulas</button></div>
+    <div class="formula-body"><div class="formula-grid">
+      <div class="formula-item"><b>Modulus</b>\(|x+yi|=\sqrt{x^2+y^2}\)<span class="formula-use">Use to find distance from the origin.</span></div>
+      <div class="formula-item"><b>Conjugate</b>\(\overline{x+yi}=x-yi\)<span class="formula-use">Use to divide by \(a+bi\).</span></div>
+      <div class="formula-item"><b>Polar form</b>\(z=r(\cos\theta+i\sin\theta)=r\,\mathrm{cis}\,\theta\)<span class="formula-use">Use when angle and length matter.</span></div>
+      <div class="formula-item"><b>Multiply</b>\(z_1z_2=r_1r_2\,\mathrm{cis}(\theta_1+\theta_2)\)<span class="formula-use">Multiply lengths, add angles.</span></div>
+      <div class="formula-item"><b>Divide</b>\(\displaystyle \frac{z_1}{z_2}=\frac{r_1}{r_2}\,\mathrm{cis}(\theta_1-\theta_2)\)<span class="formula-use">Divide lengths, subtract angles.</span></div>
+      <div class="formula-item"><b>Power</b>\((r\,\mathrm{cis}\,\theta)^n=r^n\,\mathrm{cis}(n\theta)\)<span class="formula-use">Use for high powers quickly.</span></div>
+      <div class="formula-item"><b>Roots</b>\(\displaystyle z_k=\sqrt[n]{r}\,\mathrm{cis}\left(\frac{\alpha+2k\pi}{n}\right)\)<span class="formula-use">Use \(k=0,1,\ldots,n-1\).</span></div>
+      <div class="formula-item"><b>Region</b>\(|z-a|\le r\)<span class="formula-use">A closed disk centred at \(a\).</span></div>
+    </div></div>
+  </div>
+  <div class="revision-block">
+    <div class="revision-label">Common mistakes</div>
+    <div class="mistake-grid">
+      <div class="mistake"><span class="mistake-title">Argument quadrant</span><p>\(\tan^{-1}\frac{y}{x}\) gives a reference angle. The quadrant comes from the point.</p></div>
+      <div class="mistake"><span class="mistake-title">All roots</span><p>An \(n\)th root question usually asks for \(n\) distinct answers.</p></div>
+      <div class="mistake"><span class="mistake-title">Conjugate use</span><p>To divide rectangular forms, multiply top and bottom by the conjugate of the denominator.</p></div>
+      <div class="mistake"><span class="mistake-title">Power angles</span><p>De Moivre multiplies the angle. It does not multiply sine and cosine separately.</p></div>
+    </div>
+  </div>
+  <div class="revision-block">
+    <div class="self-check-title">5 minute self check</div>
+    <div class="recall-grid">
+      <div class="recall-card compact"><div class="front">1. What is \(|3-4i|\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(5\).</div></div>
+      <div class="recall-card compact"><div class="front">2. What is \(\overline{2+7i}\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(2-7i\).</div></div>
+      <div class="recall-card compact"><div class="front">3. What happens to arguments when complex numbers multiply?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">The arguments add, up to full turns.</div></div>
+      <div class="recall-card compact"><div class="front">4. How many fifth roots does a nonzero complex number have?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">Five, equally spaced by \(\frac{2\pi}{5}\).</div></div>
+      <div class="recall-card compact"><div class="front">5. What region is \(|z-(1+i)|\le2\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">A closed disk centred at \(1+i\), radius \(2\).</div></div>
+    </div>
   </div>
 </div>
 </section>

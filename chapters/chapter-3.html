@@ -268,52 +268,52 @@ evaluate \(\det(A)\).<button class="btn" onclick="rv(this)">Reveal solution</but
 
 <section id="c3s13">
 <div class="sk">Section 13 of 13</div><h2><span class="swipe">Study Sheet</span></h2>
-<p class="intro">For matrices, start with size. Most mistakes happen before the arithmetic begins.</p>
-<div class="viz">
-<svg viewBox="0 0 650 230" role="img" aria-label="Matrix study flow">
-  <defs><marker id="arrow3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#3457c5"/></marker></defs>
-  <rect x="35" y="76" width="120" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="95" y="106" text-anchor="middle" font-weight="800">size</text><text x="95" y="129" text-anchor="middle" fill="#5a6379">defined?</text>
-  <rect x="205" y="76" width="120" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="265" y="106" text-anchor="middle" font-weight="800">operate</text><text x="265" y="129" text-anchor="middle" fill="#5a6379">row by column</text>
-  <rect x="375" y="76" width="120" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="435" y="106" text-anchor="middle" font-weight="800">determinant</text><text x="435" y="129" text-anchor="middle" fill="#5a6379">square only</text>
-  <rect x="545" y="76" width="80" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="585" y="106" text-anchor="middle" font-weight="800">inverse</text><text x="585" y="129" text-anchor="middle" fill="#5a6379">if nonzero</text>
-  <path d="M157 111 H199" stroke="#3457c5" stroke-width="3" marker-end="url(#arrow3)"/><path d="M327 111 H369" stroke="#3457c5" stroke-width="3" marker-end="url(#arrow3)"/><path d="M497 111 H539" stroke="#3457c5" stroke-width="3" marker-end="url(#arrow3)"/>
-  <text x="325" y="190" text-anchor="middle" fill="#5a6379">A matrix method is valid only when the size and determinant conditions are satisfied.</text>
-</svg>
-</div>
-<div class="formula-box">
-  <div class="formula-head"><b>Formula bank</b><button class="vbtn" onclick="revealFormula(this)">Reveal formulas</button></div>
-  <div class="formula-body"><div class="formula-grid">
-    <div class="formula-item">\((AB)_{ij}=\displaystyle\sum_k a_{ik}b_{kj}\)</div>
-    <div class="formula-item">\((AB)^T=B^TA^T\)</div>
-    <div class="formula-item">\(\det\begin{bmatrix}a&b\\c&d\end{bmatrix}=ad-bc\)</div>
-    <div class="formula-item">\(\displaystyle A^{-1}=\frac1{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}\)</div>
-    <div class="formula-item">\(C_{ij}=(-1)^{i+j}M_{ij}\)</div>
-    <div class="formula-item">\(\operatorname{adj}(A)=C^T\)</div>
-    <div class="formula-item">\(\displaystyle A^{-1}=\frac1{\det(A)}\operatorname{adj}(A)\)</div>
-    <div class="formula-item">\(\displaystyle x_j=\frac{\det(A_j)}{\det(A)}\)</div>
-  </div></div>
-</div>
-<h3>Common mistakes</h3>
-<div class="mistake-grid">
-  <div class="mistake"><b>Size check</b>Matrices of different sizes cannot be added or subtracted.</div>
-  <div class="mistake"><b>Order matters</b>Usually \(AB\ne BA\), even when both products exist.</div>
-  <div class="mistake"><b>Square only</b>Determinants and inverses are defined only for square matrices.</div>
-  <div class="mistake"><b>Adjoint step</b>The adjoint is the transpose of the cofactor matrix, not the cofactor matrix itself.</div>
-</div>
-<h3>Quick recall</h3>
-<div class="recall-grid">
-  <div class="recall-card"><div class="front">When is \(AB\) defined?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">When columns of \(A\) equal rows of \(B\).</div></div>
-  <div class="recall-card"><div class="front">What size is \(AB\) if \(A\) is \(m\times n\) and \(B\) is \(n\times p\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">The product is \(m\times p\).</div></div>
-  <div class="recall-card"><div class="front">When does \(A^{-1}\) exist?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">When \(A\) is square and \(\det(A)\ne0\).</div></div>
-  <div class="recall-card"><div class="front">What condition does Cramer's rule need?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(\det(A)\ne0\), so the system has a unique solution.</div></div>
-</div>
-<div class="summary-sheet">
-  <h3>End of chapter sheet</h3>
-  <div class="summary-list">
-    <div>Always write the matrix sizes before deciding whether an operation is valid.</div>
-    <div>Matrix multiplication means row dot column, one output entry at a time.</div>
-    <div>Use determinants to test invertibility and to solve systems with Cramer's rule.</div>
-    <div>For inverse by adjoint, compute cofactors, transpose them, then divide by the determinant.</div>
+<p class="intro">A one page revision card for matrices.</p>
+<div class="revision-card">
+  <div class="revision-block big-picture">
+    <div class="revision-label">Big picture</div>
+    Matrices organise many numbers into one object. The first question is always size: it decides which operations are legal, whether multiplication works, and whether determinants or inverses can be used.
+  </div>
+  <div class="revision-block">
+    <div class="revision-label">Decision guide</div>
+    <div class="decision-grid">
+      <div class="decision-item"><b>Use size checks</b>before addition, subtraction, and multiplication.</div>
+      <div class="decision-item"><b>Use row by column</b>to calculate each entry of a product.</div>
+      <div class="decision-item"><b>Use determinants</b>to test invertibility and solve systems with Cramer's rule.</div>
+      <div class="decision-item"><b>Use adjoint inverse</b>when a square matrix has \(\det(A)\ne0\).</div>
+    </div>
+  </div>
+  <div class="formula-box">
+    <div class="formula-head"><b>Formula bank</b><button class="vbtn" onclick="revealFormula(this)">Reveal formulas</button></div>
+    <div class="formula-body"><div class="formula-grid">
+      <div class="formula-item"><b>Product entry</b>\((AB)_{ij}=\displaystyle\sum_k a_{ik}b_{kj}\)<span class="formula-use">Use for one entry at a time.</span></div>
+      <div class="formula-item"><b>Transpose product</b>\((AB)^T=B^TA^T\)<span class="formula-use">Use when transposing a product.</span></div>
+      <div class="formula-item"><b>Two by two determinant</b>\(\det\begin{bmatrix}a&b\\c&d\end{bmatrix}=ad-bc\)<span class="formula-use">Use to test a \(2\times2\) inverse.</span></div>
+      <div class="formula-item"><b>Two by two inverse</b>\(\displaystyle A^{-1}=\frac1{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}\)<span class="formula-use">Use only when \(ad-bc\ne0\).</span></div>
+      <div class="formula-item"><b>Cofactor</b>\(C_{ij}=(-1)^{i+j}M_{ij}\)<span class="formula-use">Use for expansion and adjoint.</span></div>
+      <div class="formula-item"><b>Adjoint</b>\(\operatorname{adj}(A)=C^T\)<span class="formula-use">Transpose the cofactor matrix.</span></div>
+      <div class="formula-item"><b>Adjoint inverse</b>\(\displaystyle A^{-1}=\frac1{\det(A)}\operatorname{adj}(A)\)<span class="formula-use">Use for square matrices with nonzero determinant.</span></div>
+      <div class="formula-item"><b>Cramer's rule</b>\(\displaystyle x_j=\frac{\det(A_j)}{\det(A)}\)<span class="formula-use">Use for \(Ax=b\) when \(\det(A)\ne0\).</span></div>
+    </div></div>
+  </div>
+  <div class="revision-block">
+    <div class="revision-label">Common mistakes</div>
+    <div class="mistake-grid">
+      <div class="mistake"><span class="mistake-title">Size check</span><p>Matrices of different sizes cannot be added or subtracted.</p></div>
+      <div class="mistake"><span class="mistake-title">Order matters</span><p>Usually \(AB\ne BA\), even when both products exist.</p></div>
+      <div class="mistake"><span class="mistake-title">Square only</span><p>Determinants and inverses are defined only for square matrices.</p></div>
+      <div class="mistake"><span class="mistake-title">Adjoint step</span><p>The adjoint is the transpose of the cofactor matrix, not the cofactor matrix itself.</p></div>
+    </div>
+  </div>
+  <div class="revision-block">
+    <div class="self-check-title">5 minute self check</div>
+    <div class="recall-grid">
+      <div class="recall-card compact"><div class="front">1. When is \(AB\) defined?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">When columns of \(A\) equal rows of \(B\).</div></div>
+      <div class="recall-card compact"><div class="front">2. What size is \(AB\) if \(A\) is \(m\times n\) and \(B\) is \(n\times p\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">The product is \(m\times p\).</div></div>
+      <div class="recall-card compact"><div class="front">3. When does \(A^{-1}\) exist?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">When \(A\) is square and \(\det(A)\ne0\).</div></div>
+      <div class="recall-card compact"><div class="front">4. What is \(\det\begin{bmatrix}2&5\\1&3\end{bmatrix}\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(2\cdot3-5\cdot1=1\).</div></div>
+      <div class="recall-card compact"><div class="front">5. What condition does Cramer's rule need?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(\det(A)\ne0\), so the system has a unique solution.</div></div>
+    </div>
   </div>
 </div>
 </section>

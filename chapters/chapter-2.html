@@ -202,51 +202,52 @@
 
 <section id="c2s12">
 <div class="sk">Section 12 of 12</div><h2><span class="swipe">Study Sheet</span></h2>
-<p class="intro">A quick vector checklist. Decide whether the answer should be a scalar, a vector, a line, or a plane.</p>
-<div class="viz">
-<svg viewBox="0 0 620 230" role="img" aria-label="Vector operation map">
-  <defs><marker id="arrow2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#3457c5"/></marker></defs>
-  <line x1="88" y1="178" x2="258" y2="78" stroke="#3457c5" stroke-width="5" marker-end="url(#arrow2)"/><line x1="88" y1="178" x2="338" y2="154" stroke="#1f8a5f" stroke-width="5" marker-end="url(#arrow2)"/>
-  <line x1="258" y1="78" x2="338" y2="154" stroke="#d94f35" stroke-width="4" marker-end="url(#arrow2)"/><line x1="88" y1="178" x2="338" y2="154" stroke="#1c2437" stroke-width="2" stroke-dasharray="7 6"/>
-  <text x="160" y="108" fill="#3457c5" font-weight="800">u</text><text x="230" y="184" fill="#1f8a5f" font-weight="800">v</text><text x="310" y="102" fill="#d94f35" font-weight="800">v minus u</text>
-  <rect x="410" y="48" width="160" height="50" rx="10" fill="#fff" stroke="#dedfd6"/><text x="490" y="78" text-anchor="middle" font-weight="800">dot gives angle</text>
-  <rect x="410" y="124" width="160" height="50" rx="10" fill="#fff" stroke="#dedfd6"/><text x="490" y="154" text-anchor="middle" font-weight="800">cross gives normal</text>
-</svg>
-</div>
-<div class="formula-box">
-  <div class="formula-head"><b>Formula bank</b><button class="vbtn" onclick="revealFormula(this)">Reveal formulas</button></div>
-  <div class="formula-body"><div class="formula-grid">
-    <div class="formula-item">\(\|\mathbf u\|=\sqrt{u_1^2+u_2^2+u_3^2}\)</div>
-    <div class="formula-item">\(\mathbf u\cdot\mathbf v=\|\mathbf u\|\|\mathbf v\|\cos\theta\)</div>
-    <div class="formula-item">\(\displaystyle \operatorname{proj}_{\mathbf v}\mathbf u=\frac{\mathbf u\cdot\mathbf v}{\mathbf v\cdot\mathbf v}\mathbf v\)</div>
-    <div class="formula-item">\(\|\mathbf u\times\mathbf v\|=\|\mathbf u\|\|\mathbf v\|\sin\theta\)</div>
-    <div class="formula-item">Line: \(\mathbf r=\mathbf r_0+t\mathbf v\)</div>
-    <div class="formula-item">Plane: \(\mathbf n\cdot(\mathbf r-\mathbf r_0)=0\)</div>
-    <div class="formula-item">\(\displaystyle d_{\text{point to line}}=\frac{\|\overrightarrow{PS}\times\mathbf v\|}{\|\mathbf v\|}\)</div>
-    <div class="formula-item">\(\displaystyle d_{\text{point to plane}}=\frac{|\overrightarrow{PS}\cdot\mathbf n|}{\|\mathbf n\|}\)</div>
-  </div></div>
-</div>
-<h3>Common mistakes</h3>
-<div class="mistake-grid">
-  <div class="mistake"><b>Dot or cross</b>Dot product gives a scalar. Cross product gives a vector.</div>
-  <div class="mistake"><b>Order matters</b>\(\mathbf u\times\mathbf v=-(\mathbf v\times\mathbf u)\).</div>
-  <div class="mistake"><b>Line versus plane</b>A line needs a direction vector. A plane needs a normal vector.</div>
-  <div class="mistake"><b>Distance formulas</b>Keep the absolute value for point to plane distance.</div>
-</div>
-<h3>Quick recall</h3>
-<div class="recall-grid">
-  <div class="recall-card"><div class="front">When are two vectors perpendicular?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">When \(\mathbf u\cdot\mathbf v=0\), provided both vectors are nonzero.</div></div>
-  <div class="recall-card"><div class="front">What does \(\mathbf u\times\mathbf v\) point along?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">A direction perpendicular to both \(\mathbf u\) and \(\mathbf v\), following the right hand rule.</div></div>
-  <div class="recall-card"><div class="front">What is the area of the parallelogram from \(\mathbf u,\mathbf v\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(\|\mathbf u\times\mathbf v\|\).</div></div>
-  <div class="recall-card"><div class="front">How do you get a plane through three points?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">Use two direction vectors from the points, then cross them to get a normal.</div></div>
-</div>
-<div class="summary-sheet">
-  <h3>End of chapter sheet</h3>
-  <div class="summary-list">
-    <div>Use components to calculate; use diagrams to decide direction.</div>
-    <div>Use dot product for angle, projection, and perpendicular checks.</div>
-    <div>Use cross product for area, normals, and perpendicular vectors in three dimensions.</div>
-    <div>For lines and planes, identify point, direction, and normal before writing equations.</div>
+<p class="intro">A one page revision card for vectors.</p>
+<div class="revision-card">
+  <div class="revision-block big-picture">
+    <div class="revision-label">Big picture</div>
+    Vectors describe direction and size. Dot product measures alignment, cross product creates a perpendicular direction, and lines or planes are built from points plus directions or normals.
+  </div>
+  <div class="revision-block">
+    <div class="revision-label">Decision guide</div>
+    <div class="decision-grid">
+      <div class="decision-item"><b>Use components</b>when calculating lengths, sums, and scalar multiples.</div>
+      <div class="decision-item"><b>Use dot product</b>for angles, projections, and perpendicular checks.</div>
+      <div class="decision-item"><b>Use cross product</b>for area, normals, and vectors perpendicular to two given vectors.</div>
+      <div class="decision-item"><b>Use line or plane equations</b>after identifying the point, direction, and normal.</div>
+    </div>
+  </div>
+  <div class="formula-box">
+    <div class="formula-head"><b>Formula bank</b><button class="vbtn" onclick="revealFormula(this)">Reveal formulas</button></div>
+    <div class="formula-body"><div class="formula-grid">
+      <div class="formula-item"><b>Length</b>\(\|\mathbf u\|=\sqrt{u_1^2+u_2^2+u_3^2}\)<span class="formula-use">Use to normalise a vector.</span></div>
+      <div class="formula-item"><b>Angle</b>\(\mathbf u\cdot\mathbf v=\|\mathbf u\|\|\mathbf v\|\cos\theta\)<span class="formula-use">Use to find \(\theta\) or test perpendicular vectors.</span></div>
+      <div class="formula-item"><b>Projection</b>\(\displaystyle \operatorname{proj}_{\mathbf v}\mathbf u=\frac{\mathbf u\cdot\mathbf v}{\mathbf v\cdot\mathbf v}\mathbf v\)<span class="formula-use">Use for the shadow of \(\mathbf u\) on \(\mathbf v\).</span></div>
+      <div class="formula-item"><b>Cross product size</b>\(\|\mathbf u\times\mathbf v\|=\|\mathbf u\|\|\mathbf v\|\sin\theta\)<span class="formula-use">Use for parallelogram area.</span></div>
+      <div class="formula-item"><b>Line</b>\(\mathbf r=\mathbf r_0+t\mathbf v\)<span class="formula-use">Use a point and a direction vector.</span></div>
+      <div class="formula-item"><b>Plane</b>\(\mathbf n\cdot(\mathbf r-\mathbf r_0)=0\)<span class="formula-use">Use a point and a normal vector.</span></div>
+      <div class="formula-item"><b>Point to line</b>\(\displaystyle d=\frac{\|\overrightarrow{PS}\times\mathbf v\|}{\|\mathbf v\|}\)<span class="formula-use">Use when the object is a line.</span></div>
+      <div class="formula-item"><b>Point to plane</b>\(\displaystyle d=\frac{|\overrightarrow{PS}\cdot\mathbf n|}{\|\mathbf n\|}\)<span class="formula-use">Use when the object is a plane.</span></div>
+    </div></div>
+  </div>
+  <div class="revision-block">
+    <div class="revision-label">Common mistakes</div>
+    <div class="mistake-grid">
+      <div class="mistake"><span class="mistake-title">Dot or cross</span><p>Dot product gives a scalar. Cross product gives a vector.</p></div>
+      <div class="mistake"><span class="mistake-title">Order matters</span><p>\(\mathbf u\times\mathbf v=-(\mathbf v\times\mathbf u)\).</p></div>
+      <div class="mistake"><span class="mistake-title">Line versus plane</span><p>A line needs a direction vector. A plane needs a normal vector.</p></div>
+      <div class="mistake"><span class="mistake-title">Distance formulas</span><p>Keep the absolute value for point to plane distance.</p></div>
+    </div>
+  </div>
+  <div class="revision-block">
+    <div class="self-check-title">5 minute self check</div>
+    <div class="recall-grid">
+      <div class="recall-card compact"><div class="front">1. When are two nonzero vectors perpendicular?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">When \(\mathbf u\cdot\mathbf v=0\).</div></div>
+      <div class="recall-card compact"><div class="front">2. What is the area of the parallelogram from \(\mathbf u,\mathbf v\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(\|\mathbf u\times\mathbf v\|\).</div></div>
+      <div class="recall-card compact"><div class="front">3. What vector does a plane equation need?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">A normal vector.</div></div>
+      <div class="recall-card compact"><div class="front">4. What does \(\operatorname{proj}_{\mathbf v}\mathbf u\) represent?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">The vector shadow of \(\mathbf u\) in the direction of \(\mathbf v\).</div></div>
+      <div class="recall-card compact"><div class="front">5. How do you find a plane through three points?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">Build two direction vectors, cross them for a normal, then use one point.</div></div>
+    </div>
   </div>
 </div>
 </section>

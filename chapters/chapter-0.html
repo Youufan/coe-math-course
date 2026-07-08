@@ -171,50 +171,50 @@
 
 <section id="s14">
 <div class="sk">Section 14 of 14</div><h2><span class="swipe">Study Sheet</span></h2>
-<p class="intro">Use this page for fast recall before moving on. Reveal only what you need.</p>
-<div class="viz">
-<svg viewBox="0 0 680 170" role="img" aria-label="Chapter 0 learning map">
-  <defs><marker id="arrow0" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#3457c5"/></marker></defs>
-  <rect x="22" y="38" width="118" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="81" y="68" text-anchor="middle" font-weight="800">sets</text><text x="81" y="91" text-anchor="middle" fill="#5a6379">domains</text>
-  <rect x="190" y="38" width="118" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="249" y="68" text-anchor="middle" font-weight="800">functions</text><text x="249" y="91" text-anchor="middle" fill="#5a6379">maps</text>
-  <rect x="358" y="38" width="118" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="417" y="68" text-anchor="middle" font-weight="800">algebra</text><text x="417" y="91" text-anchor="middle" fill="#5a6379">solve</text>
-  <rect x="526" y="38" width="118" height="70" rx="10" fill="#fff" stroke="#dedfd6"/><text x="585" y="68" text-anchor="middle" font-weight="800">proofs</text><text x="585" y="91" text-anchor="middle" fill="#5a6379">induction</text>
-  <path d="M142 73 H184" stroke="#3457c5" stroke-width="3" marker-end="url(#arrow0)"/><path d="M310 73 H352" stroke="#3457c5" stroke-width="3" marker-end="url(#arrow0)"/><path d="M478 73 H520" stroke="#3457c5" stroke-width="3" marker-end="url(#arrow0)"/>
-  <text x="340" y="140" text-anchor="middle" fill="#5a6379">Most errors come from missing restrictions before calculating.</text>
-</svg>
-</div>
-<div class="formula-box">
-  <div class="formula-head"><b>Formula bank</b><button class="vbtn" onclick="revealFormula(this)">Reveal formulas</button></div>
-  <div class="formula-body"><div class="formula-grid">
-    <div class="formula-item">\(\sqrt{f(x)}\) needs \(f(x)\ge0\)</div>
-    <div class="formula-item">\(\ln f(x)\) needs \(f(x)\gt0\)</div>
-    <div class="formula-item">\(\displaystyle \sum_{k=0}^{n}ar^k=\frac{a(1-r^{n+1})}{1-r}\)</div>
-    <div class="formula-item">\(\displaystyle \sum_{k=0}^{\infty}ar^k=\frac{a}{1-r},\ |r|\lt1\)</div>
-    <div class="formula-item">\(\sin^2x+\cos^2x=1\)</div>
-    <div class="formula-item">Induction: base case, assume \(P(k)\), prove \(P(k+1)\)</div>
-  </div></div>
-</div>
-<h3>Common mistakes</h3>
-<div class="mistake-grid">
-  <div class="mistake"><b>Domain first</b>Do not simplify away restrictions such as denominator \(=0\).</div>
-  <div class="mistake"><b>Inverse check</b>A function needs a one to one restriction before an inverse is a function.</div>
-  <div class="mistake"><b>Log input</b>\(\ln 0\) and \(\ln(\text{negative})\) are not real numbers.</div>
-  <div class="mistake"><b>Induction gap</b>The assumption is only \(P(k)\). You still have to prove \(P(k+1)\).</div>
-</div>
-<h3>Quick recall</h3>
-<div class="recall-grid">
-  <div class="recall-card"><div class="front">What does \([a,b)\) mean?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">All \(x\) with \(a\le x\lt b\). Include \(a\), exclude \(b\).</div></div>
-  <div class="recall-card"><div class="front">When does \(\ln f(x)\) exist in real algebra?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">Only when \(f(x)\gt0\).</div></div>
-  <div class="recall-card"><div class="front">What are the two trig values to memorise first?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(\sin\theta\) is the \(y\) coordinate. \(\cos\theta\) is the \(x\) coordinate on the unit circle.</div></div>
-  <div class="recall-card"><div class="front">What makes an infinite geometric series converge?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">The common ratio must satisfy \(|r|\lt1\).</div></div>
-</div>
-<div class="summary-sheet">
-  <h3>End of chapter sheet</h3>
-  <div class="summary-list">
-    <div>Translate sets into number lines before combining them.</div>
-    <div>For functions, check domain, range, and whether inputs repeat outputs.</div>
-    <div>For equations with roots, logs, fractions, and absolute values, list restrictions first.</div>
-    <div>For induction, write the statement \(P(n)\) clearly before starting.</div>
+<p class="intro">A one page revision card for the whole fundamentals chapter.</p>
+<div class="revision-card">
+  <div class="revision-block big-picture">
+    <div class="revision-label">Big picture</div>
+    Chapter 0 is about translating mathematical language into restrictions, shapes, and steps. Most problems start by asking: what values are allowed, what rule is being applied, and what must be proved?
+  </div>
+  <div class="revision-block">
+    <div class="revision-label">Decision guide</div>
+    <div class="decision-grid">
+      <div class="decision-item"><b>Use intervals</b>when a set is a continuous stretch of numbers.</div>
+      <div class="decision-item"><b>Use domain checks</b>before simplifying fractions, roots, or logarithms.</div>
+      <div class="decision-item"><b>Use composition</b>when one function feeds into another: \(f(g(x))\).</div>
+      <div class="decision-item"><b>Use induction</b>when the statement must hold for every integer from a starting value.</div>
+    </div>
+  </div>
+  <div class="formula-box">
+    <div class="formula-head"><b>Formula bank</b><button class="vbtn" onclick="revealFormula(this)">Reveal formulas</button></div>
+    <div class="formula-body"><div class="formula-grid">
+      <div class="formula-item"><b>Roots</b>\(\sqrt{f(x)}\) needs \(f(x)\ge0\)<span class="formula-use">Use for domains such as \(\sqrt{x-3}\Rightarrow x\ge3\).</span></div>
+      <div class="formula-item"><b>Logs</b>\(\ln f(x)\) needs \(f(x)\gt0\)<span class="formula-use">Use before solving \(\ln(x-2)\).</span></div>
+      <div class="formula-item"><b>Finite geometric sum</b>\(\displaystyle \sum_{k=0}^{n}ar^k=\frac{a(1-r^{n+1})}{1-r}\)<span class="formula-use">Use when there is a fixed last term.</span></div>
+      <div class="formula-item"><b>Infinite geometric sum</b>\(\displaystyle \sum_{k=0}^{\infty}ar^k=\frac{a}{1-r}\), \(|r|\lt1\)<span class="formula-use">Use only when the ratio has size less than \(1\).</span></div>
+      <div class="formula-item"><b>Unit circle</b>\(\sin^2x+\cos^2x=1\)<span class="formula-use">Use to swap between sine and cosine.</span></div>
+      <div class="formula-item"><b>Induction</b>base case, assume \(P(k)\), prove \(P(k+1)\)<span class="formula-use">Use for sums and inequalities indexed by \(n\).</span></div>
+    </div></div>
+  </div>
+  <div class="revision-block">
+    <div class="revision-label">Common mistakes</div>
+    <div class="mistake-grid">
+      <div class="mistake"><span class="mistake-title">Domain first</span><p>Do not simplify away restrictions such as denominator \(=0\).</p></div>
+      <div class="mistake"><span class="mistake-title">Inverse check</span><p>A function needs a one to one restriction before an inverse is a function.</p></div>
+      <div class="mistake"><span class="mistake-title">Log input</span><p>\(\ln 0\) and \(\ln(\text{negative})\) are not real numbers.</p></div>
+      <div class="mistake"><span class="mistake-title">Induction gap</span><p>The assumption is only \(P(k)\). You still have to prove \(P(k+1)\).</p></div>
+    </div>
+  </div>
+  <div class="revision-block">
+    <div class="self-check-title">5 minute self check</div>
+    <div class="recall-grid">
+      <div class="recall-card compact"><div class="front">1. What does \([a,b)\) mean?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">All \(x\) with \(a\le x\lt b\). Include \(a\), exclude \(b\).</div></div>
+      <div class="recall-card compact"><div class="front">2. What is the domain of \(\sqrt{x-5}\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(x\ge5\), so \([5,\infty)\).</div></div>
+      <div class="recall-card compact"><div class="front">3. When does \(\ln f(x)\) exist?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">When \(f(x)\gt0\).</div></div>
+      <div class="recall-card compact"><div class="front">4. What condition makes \(\sum ar^k\) converge?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(|r|\lt1\).</div></div>
+      <div class="recall-card compact"><div class="front">5. What are the two checks in induction?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">Prove the base case, then prove \(P(k)\Rightarrow P(k+1)\).</div></div>
+    </div>
   </div>
 </div>
 </section>
