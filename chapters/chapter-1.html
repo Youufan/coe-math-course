@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 1: Complex Numbers | NTU COE Math Prep</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="topbar" id="topbar"></div>
+<div class="app">
+<aside>
+  <div class="brand"><div class="kicker">NTU COE Math Prep</div><h1>Chapter 1<br>Complex Numbers</h1><a class="home-link" href="../index.html">Home</a></div>
+  <div class="progress"><div class="bar"><div class="fill" id="fill"></div></div><div class="plabel" id="plabel">0 / 11 sections done</div></div>
+  <div id="nav"></div>
+</aside>
+<main>
+
+<section id="c1s1">
+<div class="sk">Section 1 of 11</div><h2><span class="swipe">Why Complex Numbers?</span></h2>
+<p class="intro">Chapter 1 extends the number line into a plane so equations like \(x^2+1=0\) finally have roots.</p>
+<div class="key"><b>Number ladder</b>\(\mathbb N\subseteq\mathbb Z\subseteq\mathbb Q\subseteq\mathbb R\subseteq\mathbb C\). Real numbers fill the number line. Complex numbers fill a plane.</div>
+<div class="grid2">
+  <div class="card"><b>The problem</b><div class="big">\(x^2+1=0\Rightarrow x^2=-1\)</div>There is no real \(x\) with \(x^2=-1\), because \(x^2\ge0\) for all real \(x\).</div>
+  <div class="card"><b>The new symbol</b><div class="big">\(i^2=-1\)</div>So \(x^2+1=0\) has roots \(x=i\) and \(x=-i\).</div>
+</div>
+<h3>Powers of \(i\)</h3>
+<div class="viz">
+<svg viewBox="0 0 560 150">
+<line x1="55" y1="80" x2="505" y2="80" stroke="#c9ccc0"/>
+<circle cx="95" cy="80" r="28" fill="#e8edfb" stroke="#3457c5"/><text x="95" y="85" text-anchor="middle" font-size="18">i</text>
+<circle cx="215" cy="80" r="28" fill="#fceae5" stroke="#d94f35"/><text x="215" y="85" text-anchor="middle" font-size="18">-1</text>
+<circle cx="335" cy="80" r="28" fill="#e8edfb" stroke="#3457c5"/><text x="335" y="85" text-anchor="middle" font-size="18">-i</text>
+<circle cx="455" cy="80" r="28" fill="#e4f4ec" stroke="#1f8a5f"/><text x="455" y="85" text-anchor="middle" font-size="18">1</text>
+<text x="275" y="130" text-anchor="middle" fill="#5a6379" font-size="13">cycle repeats every 4 powers</text>
+</svg>
+</div>
+<div class="key"><b>Remainder trick</b>\(i^{4k}=1,\quad i^{4k+1}=i,\quad i^{4k+2}=-1,\quad i^{4k+3}=-i\). Use the remainder after dividing the exponent by \(4\).</div>
+<div class="ex"><div class="exh"><span class="tag try">TRY</span> Powers of \(i\)</div><div class="exb">Evaluate \(i^{179}+i^{2017}\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Find remainders mod \(4\): \(179=4(44)+3\), so \(i^{179}=i^3=-i\).</span><span class="step">\(2017=4(504)+1\), so \(i^{2017}=i\).</span><span class="step"><span class="ans">\(-i+i=0\)</span>.</span></div></div></div>
+</section>
+
+<section id="c1s2">
+<div class="sk">Section 2 of 11</div><h2><span class="swipe">Rectangular Form & Equality</span></h2>
+<p class="intro">A complex number is two real numbers packaged together: horizontal part plus vertical part.</p>
+<div class="key"><b>Definition</b>A complex number has the form \(z=x+yi\), where \(x,y\in\mathbb R\). Real part: \(\operatorname{Re}(z)=x\). Imaginary part: \(\operatorname{Im}(z)=y\). The set of all complex numbers is \(\mathbb C\).</div>
+<table><tr><th>Number</th><th>Real part</th><th>Imaginary part</th></tr><tr><td>\(3+5i\)</td><td>\(3\)</td><td>\(5\)</td></tr><tr><td>\(3.5-i\)</td><td>\(3.5\)</td><td>\(-1\)</td></tr><tr><td>\(-\sqrt3+i\)</td><td>\(-\sqrt3\)</td><td>\(1\)</td></tr><tr><td>\(\pi+9i\)</td><td>\(\pi\)</td><td>\(9\)</td></tr></table>
+<div class="grid2">
+  <div class="card"><b>Real numbers inside \(\mathbb C\)</b><br>Every real number \(x\) is also \(x+0i\). So \(\mathbb R\subseteq\mathbb C\).</div>
+  <div class="card"><b>Purely imaginary</b><br>\(z=x+yi\) is purely imaginary when \(x=0\), e.g. \(-\sqrt7\,i\).</div>
+</div>
+<h3>Equality: match both parts</h3>
+<div class="key"><b>Rule</b>\(x+yi=x'+y'i\) iff \(x=x'\) and \(y=y'\).</div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 5</span> Match real and imaginary parts</div><div class="exb">Suppose \(x,y\in\mathbb R\) and \((2x-3)+5i=(x+7)-(y+1)i\). Find \(x\) and \(y\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><div class="steps"><div>Real parts: \(2x-3=x+7\Rightarrow x=10\).</div><div>Imaginary parts: \(5=-(y+1)\Rightarrow y+1=-5\Rightarrow y=-6\).</div></div><span class="step"><span class="ans">\(x=10,\ y=-6\)</span>.</span></div></div></div>
+<div class="ex"><div class="exh"><span class="tag try">TRY</span> Quick equality</div><div class="exb">If \((a+2)+bi=7+(3a-1)i\), find \(a,b\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Real parts: \(a+2=7\Rightarrow a=5\).</span><span class="step">Imaginary parts: \(b=3a-1=15-1=14\).</span><span class="step"><span class="ans">\(a=5,\ b=14\)</span>.</span></div></div></div>
+</section>
+
+<section id="c1s3">
+<div class="sk">Section 3 of 11</div><h2><span class="swipe">Argand Diagram</span></h2>
+<p class="intro">The real part is horizontal. The imaginary part is vertical. A complex number becomes a point or vector.</p>
+<div class="viz">
+<div class="btnrow">
+  <button class="vbtn on" onclick="argandPoint(3,-3,'3-3i','=3\\sqrt2\\,\\mathrm{cis}(-\\pi/4)',this)">\(3-3i\)</button>
+  <button class="vbtn" onclick="argandPoint(1,1.732,'1+\\sqrt3 i','=2\\,\\mathrm{cis}(\\pi/3)',this)">\(1+\sqrt3 i\)</button>
+  <button class="vbtn" onclick="argandPoint(-1,1.732,'-1+\\sqrt3 i','=2\\,\\mathrm{cis}(2\\pi/3)',this)">\(-1+\sqrt3 i\)</button>
+  <button class="vbtn" onclick="argandPoint(-3,-4,'-3-4i','=5\\,\\mathrm{cis}(-2.214\\ldots)',this)">\(-3-4i\)</button>
+</div>
+<svg viewBox="0 0 360 360">
+<defs><marker id="carr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#3457c5"/></marker></defs>
+<line x1="25" y1="180" x2="335" y2="180" stroke="#c9ccc0"/><line x1="180" y1="25" x2="180" y2="335" stroke="#c9ccc0"/>
+<text x="320" y="168" fill="#5a6379">Re</text><text x="190" y="42" fill="#5a6379">Im</text>
+<g stroke="#e3e4dc" stroke-width="1">
+<line x1="44" y1="44" x2="44" y2="316"/><line x1="78" y1="44" x2="78" y2="316"/><line x1="112" y1="44" x2="112" y2="316"/><line x1="146" y1="44" x2="146" y2="316"/><line x1="214" y1="44" x2="214" y2="316"/><line x1="248" y1="44" x2="248" y2="316"/><line x1="282" y1="44" x2="282" y2="316"/><line x1="316" y1="44" x2="316" y2="316"/>
+<line x1="44" y1="44" x2="316" y2="44"/><line x1="44" y1="78" x2="316" y2="78"/><line x1="44" y1="112" x2="316" y2="112"/><line x1="44" y1="146" x2="316" y2="146"/><line x1="44" y1="214" x2="316" y2="214"/><line x1="44" y1="248" x2="316" y2="248"/><line x1="44" y1="282" x2="316" y2="282"/><line x1="44" y1="316" x2="316" y2="316"/>
+</g>
+<line id="arg-h" x1="180" y1="282" x2="282" y2="282" stroke="#d94f35" stroke-dasharray="5 4"/><line id="arg-v" x1="282" y1="180" x2="282" y2="282" stroke="#d94f35" stroke-dasharray="5 4"/>
+<line id="arg-ray" x1="180" y1="180" x2="282" y2="282" stroke="#3457c5" stroke-width="3" marker-end="url(#carr)"/>
+<circle id="arg-point" cx="282" cy="282" r="6" fill="#d94f35"/><text id="arg-label" x="292" y="272" font-size="13">3-3i</text>
+</svg>
+<div class="readout" id="arg-readout">\(3-3i=3\sqrt2\,\mathrm{cis}(-\pi/4)\)</div>
+</div>
+<div class="key"><b>Visual read</b>\(z=x+yi\) is the point \((x,y)\). The same point can be viewed as a vector from \((0,0)\) to \((x,y)\).</div>
+</section>
+
+<section id="c1s4">
+<div class="sk">Section 4 of 11</div><h2><span class="swipe">Modulus, Argument & Polar Form</span></h2>
+<p class="intro">Rectangular form says where the point is. Polar form says how far and at what angle.</p>
+<div class="key"><b>Core formulas</b>For \(z=x+yi\): \(|z|=\sqrt{x^2+y^2}\), and an argument \(\theta\) satisfies \(x=|z|\cos\theta,\ y=|z|\sin\theta\). Principal argument: \(-\pi\lt\theta\le\pi\).</div>
+<div class="card"><b>Polar and exponential forms</b><div class="big">\(z=r(\cos\theta+i\sin\theta)=r\,\mathrm{cis}\,\theta=re^{i\theta}\)</div></div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 7</span> From rectangular to polar</div><div class="exb">Let \(z=3-3i\). Find \(|z|\), the principal argument, polar form, and exponential form.<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><div class="steps"><div>\(|z|=\sqrt{3^2+(-3)^2}=\sqrt{18}=3\sqrt2\).</div><div>The point \((3,-3)\) is in quadrant IV, with reference angle \(\pi/4\).</div><div>Principal argument: \(\theta=-\pi/4\).</div></div><span class="step">Polar: <span class="ans">\(z=3\sqrt2\left(\cos(-\pi/4)+i\sin(-\pi/4)\right)\)</span>.</span><span class="step">Exponential: <span class="ans">\(z=3\sqrt2\,e^{-i\pi/4}\)</span>.</span></div></div></div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 8</span> From exponential to rectangular</div><div class="exb">Express \(z=5e^{-\frac{5\pi}{3}i}\) in rectangular form.<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Use \(e^{i\theta}=\cos\theta+i\sin\theta\).</span><span class="step">\(-\frac{5\pi}{3}\) is coterminal with \(\frac{\pi}{3}\).</span><span class="step">\(z=5\left(\cos\frac{\pi}{3}+i\sin\frac{\pi}{3}\right)=5\left(\frac12+i\frac{\sqrt3}{2}\right)\).</span><span class="step"><span class="ans">\(z=\frac52+\frac{5\sqrt3}{2}i\)</span>.</span></div></div></div>
+<div class="ex"><div class="exh"><span class="tag try">TRY</span> Four quadrants</div><div class="exb">Find \(|z|\) and principal \(\arg z\) for \(z=-1-\sqrt3\,i\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(|z|=\sqrt{(-1)^2+(-\sqrt3)^2}=2\).</span><span class="step">The point is in quadrant III. Reference angle is \(\pi/3\).</span><span class="step">Principal argument must be in \((-\pi,\pi]\), so <span class="ans">\(\arg z=-\frac{2\pi}{3}\)</span>.</span><span class="step">Polar form: <span class="ans">\(2\,\mathrm{cis}\left(-\frac{2\pi}{3}\right)\)</span>.</span></div></div></div>
+</section>
+
+<section id="c1s5">
+<div class="sk">Section 5 of 11</div><h2><span class="swipe">Conjugates</span></h2>
+<p class="intro">Conjugation reflects a complex number in the real axis. It flips the sign of the imaginary part.</p>
+<div class="key"><b>Definition</b>If \(z=x+yi\), then \(\bar z=x-yi\). In exponential form, if \(z=re^{i\theta}\), then \(\bar z=re^{-i\theta}\).</div>
+<div class="viz"><svg viewBox="0 0 420 220"><line x1="35" y1="110" x2="385" y2="110" stroke="#c9ccc0"/><line x1="210" y1="25" x2="210" y2="195" stroke="#c9ccc0"/><line x1="210" y1="110" x2="300" y2="55" stroke="#3457c5" stroke-width="3"/><line x1="210" y1="110" x2="300" y2="165" stroke="#d94f35" stroke-width="3"/><circle cx="300" cy="55" r="6" fill="#3457c5"/><circle cx="300" cy="165" r="6" fill="#d94f35"/><text x="310" y="52">z = x + yi</text><text x="310" y="170">conjugate = x - yi</text><text x="360" y="100" fill="#5a6379">Re</text><text x="220" y="38" fill="#5a6379">Im</text></svg></div>
+<table><tr><th>\(z\)</th><th>\(\bar z\)</th></tr><tr><td>\(3+5i\)</td><td>\(3-5i\)</td></tr><tr><td>\(3.5-i\)</td><td>\(3.5+i\)</td></tr><tr><td>\(-\sqrt3+i\)</td><td>\(-\sqrt3-i\)</td></tr><tr><td>\(\pi+9i\)</td><td>\(\pi-9i\)</td></tr><tr><td>\(-\sqrt7\,i\)</td><td>\(\sqrt7\,i\)</td></tr></table>
+<div class="key"><b>Useful facts</b>\(\bar{\bar z}=z\). \(z\) is real iff \(z=\bar z\). \(z\) is purely imaginary iff \(z=-\bar z\). Also \(z\bar z=|z|^2\).</div>
+<div class="ex"><div class="exh"><span class="tag try">TRY</span> Conjugate in polar form</div><div class="exb">If \(z=2\left(\cos\frac{\pi}{3}+i\sin\frac{\pi}{3}\right)\), write \(\bar z\) in polar and rectangular form.<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Polar conjugate: <span class="ans">\(\bar z=2\left(\cos(-\frac{\pi}{3})+i\sin(-\frac{\pi}{3})\right)\)</span>.</span><span class="step">Rectangular: \(z=1+\sqrt3 i\), so <span class="ans">\(\bar z=1-\sqrt3 i\)</span>.</span></div></div></div>
+</section>
+
+<section id="c1s6">
+<div class="sk">Section 6 of 11</div><h2><span class="swipe">Addition, Subtraction & Multiplication</span></h2>
+<p class="intro">Addition and subtraction work by matching components. Multiplication expands normally, then replaces \(i^2\) with \(-1\).</p>
+<div class="key"><b>Add/subtract</b>If \(z_1=x_1+y_1i\), \(z_2=x_2+y_2i\), then \(z_1\pm z_2=(x_1\pm x_2)+(y_1\pm y_2)i\).</div>
+<div class="grid2">
+  <div class="card"><b>Example 13(a)</b><div class="big">\((3+5i)+(3.5-i)=6.5+4i\)</div></div>
+  <div class="card"><b>Example 13(b)</b><div class="big">\((-\sqrt3+i)-(\pi+9i)=(-\sqrt3-\pi)-8i\)</div></div>
+</div>
+<h3>Multiplication</h3>
+<div class="card"><div class="big">\((x_1+y_1i)(x_2+y_2i)=(x_1x_2-y_1y_2)+(x_1y_2+x_2y_1)i\)</div></div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 15</span> Multiply</div><div class="exb">Evaluate \((3+5i)(2-i)\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><div class="steps"><div>Expand: \((3+5i)(2-i)=6-3i+10i-5i^2\).</div><div>Since \(i^2=-1\), \(-5i^2=5\).</div><div>Collect: \(6+5+7i\).</div></div><span class="step"><span class="ans">\((3+5i)(2-i)=11+7i\)</span>.</span></div></div></div>
+<div class="key"><b>Polar meaning</b>If \(z_1=r_1\mathrm{cis}\,\theta_1\), \(z_2=r_2\mathrm{cis}\,\theta_2\), then \(z_1z_2=r_1r_2\,\mathrm{cis}(\theta_1+\theta_2)\). Multiply lengths, add angles.</div>
+<div class="ex"><div class="exh"><span class="tag try">TRY</span> Multiplication as rotation</div><div class="exb">Let \(z=2\,\mathrm{cis}\frac{\pi}{6}\). What does multiplying by \(\mathrm{cis}\frac{\pi}{2}\) do to \(z\)?<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">The modulus stays \(2\), because \(|\mathrm{cis}\frac{\pi}{2}|=1\).</span><span class="step">The argument increases by \(\frac{\pi}{2}\): \(\frac{\pi}{6}+\frac{\pi}{2}=\frac{2\pi}{3}\).</span><span class="step"><span class="ans">Result: \(2\,\mathrm{cis}\frac{2\pi}{3}\)</span>. Geometrically: rotate \(z\) anticlockwise by \(90^\circ\).</span></div></div></div>
+</section>
+
+<section id="c1s7">
+<div class="sk">Section 7 of 11</div><h2><span class="swipe">Division</span></h2>
+<p class="intro">Division uses the conjugate to make the denominator real. In polar form, division subtracts angles.</p>
+<div class="key"><b>Conjugate trick</b>For nonzero \(z_2\), \(\displaystyle \frac{z_1}{z_2}=\frac{z_1\bar z_2}{z_2\bar z_2}=\frac{z_1\bar z_2}{|z_2|^2}\).</div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 18</span> Divide by a complex number</div><div class="exb">Evaluate \(\displaystyle \frac{3+5i}{2-i}\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><div class="steps"><div>Multiply top and bottom by the conjugate \(2+i\).</div><div>\(\displaystyle \frac{3+5i}{2-i}\cdot\frac{2+i}{2+i}=\frac{(3+5i)(2+i)}{(2-i)(2+i)}\).</div><div>Top: \(6+3i+10i+5i^2=1+13i\).</div><div>Bottom: \(4-i^2=5\).</div></div><span class="step"><span class="ans">\(\displaystyle \frac{3+5i}{2-i}=\frac15+\frac{13}{5}i\)</span>.</span></div></div></div>
+<div class="key"><b>Polar division</b>If \(z_1=r_1\mathrm{cis}\theta_1\), \(z_2=r_2\mathrm{cis}\theta_2\), then \(\displaystyle \frac{z_1}{z_2}=\frac{r_1}{r_2}\mathrm{cis}(\theta_1-\theta_2)\).</div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 19</span> Reciprocal of a unit complex number</div><div class="exb">Let \(z=\cos\theta+i\sin\theta\). Find \(|z|\) and show \(\frac1z=\bar z\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(|z|=\sqrt{\cos^2\theta+\sin^2\theta}=1\).</span><span class="step">\(\displaystyle \frac1z=\frac{\bar z}{z\bar z}=\frac{\cos\theta-i\sin\theta}{1}\).</span><span class="step"><span class="ans">\(\displaystyle \frac1z=\cos\theta-i\sin\theta=\bar z\)</span>.</span></div></div></div>
+</section>
+
+<section id="c1s8">
+<div class="sk">Section 8 of 11</div><h2><span class="swipe">Quadratics & Conjugate Roots</span></h2>
+<p class="intro">Over \(\mathbb C\), every polynomial has enough roots. Polynomials with real coefficients pair complex roots with their conjugates.</p>
+<div class="key"><b>Quadratic formula in \(\mathbb C\)</b>For \(ax^2+bx+c=0\), \(D=b^2-4ac\). If \(D\lt0\), then \(\displaystyle x=\frac{-b\pm i\sqrt{-D}}{2a}\).</div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 21</span> Irreducible quadratic</div><div class="exb">Solve \(2x^2-3x+5=0\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><div class="steps"><div>\(D=(-3)^2-4(2)(5)=9-40=-31\).</div><div>\(\displaystyle x=\frac{-(-3)\pm i\sqrt{31}}{2(2)}\).</div></div><span class="step"><span class="ans">\(\displaystyle x=\frac{3\pm i\sqrt{31}}{4}\)</span>.</span></div></div></div>
+<div class="key"><b>Fundamental theorem of algebra</b>A degree \(n\) polynomial with complex coefficients has exactly \(n\) complex roots, counting multiplicity.</div>
+<div class="key"><b>Real coefficients</b>If \(p(x)\) has real coefficients and \(z\) is a root, then \(\bar z\) is also a root. So complex roots with nonzero imaginary part arrive in conjugate pairs.</div>
+<div class="ex"><div class="exh"><span class="tag try">TRY</span> Use the conjugate root</div><div class="exb">Given \(1+i\) is a root of \(x^3-x^2+2=0\), find all roots.<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Since coefficients are real, \(1-i\) is also a root.</span><span class="step">Quadratic factor: \((x-(1+i))(x-(1-i))=((x-1)-i)((x-1)+i)=(x-1)^2+1=x^2-2x+2\).</span><span class="step">Divide \(x^3-x^2+2\) by \(x^2-2x+2\), giving \(x+1\).</span><span class="step"><span class="ans">Roots: \(1+i,\ 1-i,\ -1\)</span>.</span></div></div></div>
+</section>
+
+<section id="c1s9">
+<div class="sk">Section 9 of 11</div><h2><span class="swipe">De Moivre's Theorem</span></h2>
+<p class="intro">De Moivre turns powers of complex numbers into angle multiplication.</p>
+<div class="key"><b>Theorem</b>For every integer \(n\), \((\cos\theta+i\sin\theta)^n=\cos(n\theta)+i\sin(n\theta)\).</div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 25</span> Read the power</div><div class="exb">Express in the form \(\cos(n\theta)+i\sin(n\theta)\): (a) \((\cos\theta+i\sin\theta)^9\), (b) \((\cos\theta+i\sin\theta)^{-4}\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">(a) <span class="ans">\(\cos9\theta+i\sin9\theta\)</span>.</span><span class="step">(b) <span class="ans">\(\cos(-4\theta)+i\sin(-4\theta)\)</span>, also \(\cos4\theta-i\sin4\theta\).</span></div></div></div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 26</span> Simplify powers</div><div class="exb">Simplify: (a) \(\left(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}\right)^{-2}\), (b) \(\left(\cos\frac{\pi}{3}+i\sin\frac{\pi}{3}\right)^9\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">(a) Angle becomes \(-2\cdot\frac{\pi}{4}=-\frac{\pi}{2}\). Result: \(\cos(-\frac{\pi}{2})+i\sin(-\frac{\pi}{2})=\)<span class="ans">\(-i\)</span>.</span><span class="step">(b) Angle becomes \(9\cdot\frac{\pi}{3}=3\pi\). Result: \(\cos3\pi+i\sin3\pi=\)<span class="ans">\(-1\)</span>.</span></div></div></div>
+<div class="ex"><div class="exh"><span class="tag try">TRY</span> Reverse De Moivre</div><div class="exb">Write \(\cos5\theta-i\sin5\theta\) in the form \((\cos\theta+i\sin\theta)^n\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(\cos5\theta-i\sin5\theta=\cos(-5\theta)+i\sin(-5\theta)\).</span><span class="step">By De Moivre, this equals <span class="ans">\((\cos\theta+i\sin\theta)^{-5}\)</span>.</span></div></div></div>
+</section>
+
+<section id="c1s10">
+<div class="sk">Section 10 of 11</div><h2><span class="swipe">Nth Roots & Roots of Unity</span></h2>
+<p class="intro">Roots split evenly around a circle. The angles differ by \(\frac{2\pi}{n}\).</p>
+<div class="key"><b>Distinct nth roots</b>If \(z=r(\cos\alpha+i\sin\alpha)\), \(r\gt0\), then its \(n\) roots are \(\displaystyle z_k=\sqrt[n]{r}\left(\cos\frac{\alpha+2k\pi}{n}+i\sin\frac{\alpha+2k\pi}{n}\right)\), \(k=0,\ldots,n-1\).</div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 28</span> Cube roots</div><div class="exb">Find all distinct cube roots of \(\cos\frac{\pi}{3}+i\sin\frac{\pi}{3}\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Here \(r=1\), \(\alpha=\frac{\pi}{3}\), \(n=3\).</span><span class="step">\(\displaystyle \theta_k=\frac{\alpha+2k\pi}{3}=\frac{\pi/3+2k\pi}{3}\), for \(k=0,1,2\).</span><span class="step"><span class="ans">\(\mathrm{cis}\frac{\pi}{9},\quad \mathrm{cis}\frac{7\pi}{9},\quad \mathrm{cis}\frac{13\pi}{9}\)</span>.</span></div></div></div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 31</span> Fifth roots</div><div class="exb">Find all fifth roots of \(\sqrt3+i\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(\sqrt3+i=2\left(\cos\frac{\pi}{6}+i\sin\frac{\pi}{6}\right)\).</span><span class="step">\(\sqrt[5]{r}=\sqrt[5]{2}\).</span><span class="step">\(\displaystyle \theta_k=\frac{\pi/6+2k\pi}{5}=\frac{\pi}{30}+\frac{2k\pi}{5}\), \(k=0,1,2,3,4\).</span><span class="step"><span class="ans">\(\displaystyle z_k=\sqrt[5]{2}\,\mathrm{cis}\left(\frac{\pi}{30}+\frac{2k\pi}{5}\right)\)</span>.</span></div></div></div>
+<h3>Roots of unity</h3>
+<div class="key"><b>Formula</b>The \(n\) roots of \(1\) are \(\displaystyle z_k=\cos\frac{2k\pi}{n}+i\sin\frac{2k\pi}{n}\), \(k=0,\ldots,n-1\).</div>
+<div class="viz"><div class="btnrow"><button class="vbtn" onclick="rootsUnity(3,this)">3 roots</button><button class="vbtn" onclick="rootsUnity(4,this)">4 roots</button><button class="vbtn on" onclick="rootsUnity(5,this)">5 roots</button><button class="vbtn" onclick="rootsUnity(8,this)">8 roots</button></div><div id="roots-unity"></div></div>
+<div class="ex"><div class="exh"><span class="tag try">TRY</span> Fourth roots of \(-16i\)</div><div class="exb">Find all four distinct fourth roots of \(-16i\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(-16i=16\,\mathrm{cis}\left(-\frac{\pi}{2}\right)\).</span><span class="step">Fourth root modulus: \(\sqrt[4]{16}=2\).</span><span class="step">\(\displaystyle \theta_k=\frac{-\pi/2+2k\pi}{4}=-\frac{\pi}{8}+\frac{k\pi}{2}\), \(k=0,1,2,3\).</span><span class="step"><span class="ans">\(\displaystyle z_k=2\,\mathrm{cis}\left(-\frac{\pi}{8}+\frac{k\pi}{2}\right)\)</span>.</span></div></div></div>
+</section>
+
+<section id="c1s11">
+<div class="sk">Section 11 of 11</div><h2><span class="swipe">De Moivre for Trig Identities & Practice</span></h2>
+<p class="intro">Complex numbers are also a useful tool for trigonometric identities.</p>
+<div class="key"><b>Tool 1</b>\(\cos n\theta=\operatorname{Re}(\cos\theta+i\sin\theta)^n\), and \(\sin n\theta=\operatorname{Im}(\cos\theta+i\sin\theta)^n\).</div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 35</span> Derive \(\sin3\theta\)</div><div class="exb">Express \(\sin3\theta\) in terms of powers of \(\sin\theta\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><div class="steps"><div>Let \(c=\cos\theta\), \(s=\sin\theta\). By De Moivre, \(\cos3\theta+i\sin3\theta=(c+is)^3\).</div><div>Expand: \((c+is)^3=c^3+3c^2is+3ci^2s^2+i^3s^3\).</div><div>\(=c^3-3cs^2+i(3c^2s-s^3)\).</div><div>Imaginary part: \(\sin3\theta=3c^2s-s^3\).</div><div>Use \(c^2=1-s^2\): \(\sin3\theta=3(1-s^2)s-s^3\).</div></div><span class="step"><span class="ans">\(\sin3\theta=3\sin\theta-4\sin^3\theta\)</span>.</span></div></div></div>
+<div class="key"><b>Tool 2</b>If \(z=\cos\theta+i\sin\theta\), then \(\displaystyle \cos\theta=\frac12\left(z+\frac1z\right)\) and \(\displaystyle \sin\theta=\frac{1}{2i}\left(z-\frac1z\right)\).</div>
+<div class="ex"><div class="exh"><span class="tag">EXAMPLE 36</span> Express \(\cos^3\theta\)</div><div class="exb">Prove \(\displaystyle \cos^3\theta=\frac14(\cos3\theta+3\cos\theta)\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><div class="steps"><div>Let \(z=\cos\theta+i\sin\theta\), so \(\cos\theta=\frac12(z+\frac1z)\).</div><div>\(\displaystyle \cos^3\theta=\left[\frac12\left(z+\frac1z\right)\right]^3\).</div><div>\(\displaystyle =\frac18\left(z^3+3z+\frac{3}{z}+\frac{1}{z^3}\right)\).</div><div>Group pairs: \(z^3+\frac1{z^3}=2\cos3\theta\), and \(z+\frac1z=2\cos\theta\).</div></div><span class="step"><span class="ans">\(\displaystyle \cos^3\theta=\frac14(\cos3\theta+3\cos\theta)\)</span>.</span></div></div></div>
+<h3>Mixed practice</h3>
+<div class="ex"><div class="exh"><span class="tag try">PRACTICE 1</span> Regions in the complex plane</div><div class="exb">Describe the region \(|z-(1+i)|\le2\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Let \(z=x+yi\). Then \(z-(1+i)=(x-1)+(y-1)i\).</span><span class="step">\(|z-(1+i)|\le2\) means distance from \((x,y)\) to \((1,1)\) is at most \(2\).</span><span class="step"><span class="ans">Closed disk centred at \(1+i\), radius \(2\)</span>.</span></div></div></div>
+<div class="ex"><div class="exh"><span class="tag try">PRACTICE 2</span> Solve a polynomial</div><div class="exb">Solve \(z^4+1=0\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(z^4=-1=\mathrm{cis}\,\pi\).</span><span class="step">\(\displaystyle z_k=\mathrm{cis}\left(\frac{\pi+2k\pi}{4}\right)\), \(k=0,1,2,3\).</span><span class="step"><span class="ans">\(\mathrm{cis}\frac{\pi}{4},\ \mathrm{cis}\frac{3\pi}{4},\ \mathrm{cis}\frac{5\pi}{4},\ \mathrm{cis}\frac{7\pi}{4}\)</span>.</span></div></div></div>
+<div class="ex"><div class="exh"><span class="tag try">PRACTICE 3</span> Real expression</div><div class="exb">Show \((\sqrt3+i)^n+(\sqrt3-i)^n\) is real. Find its value when \(n=12\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(\sqrt3+i=2\,\mathrm{cis}\frac{\pi}{6}\), and \(\sqrt3-i=2\,\mathrm{cis}\left(-\frac{\pi}{6}\right)\).</span><span class="step">Sum: \(2^n\left[\mathrm{cis}\frac{n\pi}{6}+\mathrm{cis}\left(-\frac{n\pi}{6}\right)\right]\).</span><span class="step">The imaginary parts cancel, so the expression is real.</span><span class="step">For \(n=12\): \(2^{12}[\mathrm{cis}(2\pi)+\mathrm{cis}(-2\pi)]=4096(1+1)\).</span><span class="step"><span class="ans">Value \(=8192\)</span>.</span></div></div></div>
+</section>
+
+<div class="secnav"><button class="prev" id="prev">Previous</button><button class="next" id="next">Next section</button></div>
+</main>
+</div>
+<script>
+window.tutorSections=[
+["c1s1","Why Complex Numbers?"],["c1s2","Rectangular Form"],["c1s3","Argand Diagram"],["c1s4","Polar Form"],["c1s5","Conjugates"],["c1s6","Operations"],["c1s7","Division"],["c1s8","Quadratics"],["c1s9","De Moivre"],["c1s10","Nth Roots"],["c1s11","Practice"]
+];
+</script>
+<script defer src="../assets/tutor.js"></script>
+</body>
+</html>
