@@ -21,8 +21,8 @@
 
 <section id="c3s1">
 <div class="sk">Section 1 of 13</div><h2><span class="swipe">Matrix Notation</span></h2>
-<p class="intro">A matrix is a rectangular array. Rows go across. Columns go down. The size is rows by columns.</p>
-<div class="key"><b>Definition</b>An \(m\times n\) matrix has \(m\) rows and \(n\) columns. Its entry in row \(i\), column \(j\), is \(a_{ij}\) or \(A_{ij}\).</div>
+<p class="intro">An \(m\times n\) matrix is a rectangular array with \(m\) rows and \(n\) columns. It is written \(A=(a_{ij})\), where \(a_{ij}\) denotes the entry in row \(i\), column \(j\).</p>
+<div class="key"><b>Definition</b>The dimensions \(m\times n\) determine which matrix operations are defined. Rows are indexed by \(i\), columns by \(j\), and entries are written \(a_{ij}\) or \(A_{ij}\).</div>
 <div class="viz">
 <svg viewBox="0 0 620 250">
 <rect x="130" y="38" width="360" height="170" rx="12" fill="#fff" stroke="#dedfd6"/>
@@ -51,7 +51,7 @@
 
 <section id="c3s2">
 <div class="sk">Section 2 of 13</div><h2><span class="swipe">Matrix Types</span></h2>
-<p class="intro">Names mostly describe shape or where the zero entries sit.</p>
+<p class="intro">Matrix types are classified by dimensions and by restrictions on their entries, such as zero entries outside a diagonal.</p>
 <div class="grid2">
   <div class="card"><b>Row matrix</b><div class="big">\(\begin{bmatrix}a_1&a_2&\cdots&a_n\end{bmatrix}\)</div></div>
   <div class="card"><b>Column matrix</b><div class="big">\(\begin{bmatrix}b_1\\b_2\\\vdots\\b_m\end{bmatrix}\)</div></div>
@@ -68,7 +68,7 @@
 
 <section id="c3s3">
 <div class="sk">Section 3 of 13</div><h2><span class="swipe">Equality & Entry Rules</span></h2>
-<p class="intro">Two matrices are equal only when their sizes match and every corresponding entry matches.</p>
+<p class="intro">Two matrices are equal exactly when they have the same dimensions and all corresponding entries are equal.</p>
 <div class="key"><b>Equality test</b>If \(A\) and \(B\) are both \(m\times n\), then \(A=B\) means \(A_{ij}=B_{ij}\) for every valid \(i,j\).</div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 1</span> Matrix equation</div><div class="exb">Solve for \(a,b,c,d\):
 \[
@@ -82,7 +82,7 @@
 
 <section id="c3s4">
 <div class="sk">Section 4 of 13</div><h2><span class="swipe">Addition & Scalar Multiplication</span></h2>
-<p class="intro">Addition, subtraction, and scalar multiplication are entry by entry operations.</p>
+<p class="intro">Matrix addition and subtraction are defined only for matrices of the same size and are computed entrywise. Scalar multiplication is defined for every matrix.</p>
 <div class="key"><b>Rules</b>For same sized matrices, \((A+B)_{ij}=A_{ij}+B_{ij}\) and \((A-B)_{ij}=A_{ij}-B_{ij}\). For a scalar \(\alpha\), \((\alpha A)_{ij}=\alpha A_{ij}\).</div>
 <div class="warn"><b>Warning</b> Matrices of different sizes cannot be added or subtracted.</div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 2</span> Entry arithmetic</div><div class="exb">Let
@@ -98,7 +98,7 @@ Find \(2A-B+\frac13C\).
 
 <section id="c3s5">
 <div class="sk">Section 5 of 13</div><h2><span class="swipe">Matrix Multiplication</span></h2>
-<p class="intro">A product is built from row column dot products. The inner sizes must match.</p>
+<p class="intro">If \(A\) is \(m\times r\) and \(B\) is \(r\times n\), then \(AB\) is defined and has size \(m\times n\). Each entry is computed from one row of \(A\) and one column of \(B\).</p>
 <div class="key"><b>Product rule</b>If \(A\) is \(m\times r\) and \(B\) is \(r\times n\), then \(AB\) is \(m\times n\), and \((AB)_{ij}=\sum_{k=1}^{r}A_{ik}B_{kj}\).</div>
 <div class="viz">
 <div class="btnrow">
@@ -133,7 +133,7 @@ Find \(2A-B+\frac13C\).
 
 <section id="c3s6">
 <div class="sk">Section 6 of 13</div><h2><span class="swipe">Identity & Transpose</span></h2>
-<p class="intro">The identity matrix acts like \(1\). The transpose swaps rows and columns.</p>
+<p class="intro">The identity matrix \(I_n\) is the \(n\times n\) matrix with ones on the main diagonal and zeros elsewhere. The transpose \(A^T\) swaps rows and columns.</p>
 <div class="grid2">
   <div class="card"><b>Identity</b><div class="big">If \(A\) is \(m\times n\), then \(AI_n=A\) and \(I_mA=A\).</div></div>
   <div class="card"><b>Transpose</b><div class="big">\((A^T)_{ij}=A_{ji}\)</div></div>
@@ -145,7 +145,7 @@ Find \(2A-B+\frac13C\).
 
 <section id="c3s7">
 <div class="sk">Section 7 of 13</div><h2><span class="swipe">Inverse Matrices</span></h2>
-<p class="intro">An inverse undoes multiplication. Only square matrices can be invertible.</p>
+<p class="intro">A square matrix \(A\) is invertible if a matrix \(A^{-1}\) exists such that \(AA^{-1}=I\) and \(A^{-1}A=I\). Non square matrices do not have two sided inverses of this type.</p>
 <div class="key"><b>Definition</b>A square matrix \(A\) is invertible if there is a square matrix \(B\) such that \(AB=I\) and \(BA=I\). The inverse is unique and is written \(A^{-1}\).</div>
 <div class="grid2">
   <div class="card"><b>Singular clues</b><ul class="clean"><li>A row of zeros</li><li>A column of zeros</li><li>One row is a multiple of another</li><li>A row is a linear combination of other rows</li></ul></div>
@@ -157,7 +157,7 @@ Find \(2A-B+\frac13C\).
 
 <section id="c3s8">
 <div class="sk">Section 8 of 13</div><h2><span class="swipe">Diagonal Matrices & Powers</span></h2>
-<p class="intro">Diagonal and triangular matrices are easier because the diagonal controls many results.</p>
+<p class="intro">A diagonal matrix has possible nonzero entries only on the main diagonal. A triangular matrix has all entries zero on one side of the main diagonal.</p>
 <div class="grid2">
   <div class="card"><b>Diagonal inverse</b><div class="big">\(\operatorname{diag}(a,b,c,d)^{-1}=\operatorname{diag}\!\left(\frac1a,\frac1b,\frac1c,\frac1d\right)\)</div></div>
   <div class="card"><b>Power notation</b><div class="big">\(A^0=I,\quad A^n=AA\cdots A,\quad A^{-n}=(A^{-1})^n\)</div></div>
@@ -169,7 +169,7 @@ Find \(2A-B+\frac13C\).
 
 <section id="c3s9">
 <div class="sk">Section 9 of 13</div><h2><span class="swipe">Determinants & Cofactors</span></h2>
-<p class="intro">A determinant is a number attached to a square matrix. It detects invertibility and supports solving systems.</p>
+<p class="intro">The determinant is a scalar defined only for square matrices. It tests invertibility and appears in area, volume, inverse, and system solving formulas.</p>
 <div class="key"><b>Base cases</b>\(\det([a])=a\), and \(\det\begin{bmatrix}a&b\\c&d\end{bmatrix}=ad-bc\).</div>
 <div class="viz">
 <div class="btnrow">
@@ -198,7 +198,7 @@ Find \(2A-B+\frac13C\).
 
 <section id="c3s10">
 <div class="sk">Section 10 of 13</div><h2><span class="swipe">Cofactor Expansion</span></h2>
-<p class="intro">To compute a determinant, expand along a row or column. Pick one with many zeros when possible.</p>
+<p class="intro">Cofactor expansion computes the determinant of a square matrix by expanding along a chosen row or column. Choosing a row or column with zeros reduces the arithmetic.</p>
 <div class="key"><b>Expansion</b>Along row \(i\), \(\det(A)=a_{i1}C_{i1}+a_{i2}C_{i2}+\cdots+a_{in}C_{in}\). Along column \(j\), \(\det(A)=a_{1j}C_{1j}+\cdots+a_{nj}C_{nj}\).</div>
 <div class="grid2">
   <div class="card"><b>Checkerboard signs</b><div class="big">\(\begin{bmatrix}+&-&+\\-&+&-\\+&-&+\end{bmatrix}\)</div></div>
@@ -218,7 +218,7 @@ Find \(2A-B+\frac13C\).
 
 <section id="c3s11">
 <div class="sk">Section 11 of 13</div><h2><span class="swipe">Adjoint & Invertibility</span></h2>
-<p class="intro">The adjoint packages cofactors into a formula for the inverse.</p>
+<p class="intro">The adjoint of \(A\) is the transpose of the cofactor matrix. If \(\det(A)\ne0\), it gives the inverse formula \(A^{-1}=\frac1{\det(A)}\operatorname{adj}(A)\).</p>
 <div class="key"><b>Adjoint</b>The cofactor matrix is \(C=[C_{ij}]\). The adjoint is \(\operatorname{adj}(A)=C^T\).</div>
 <div class="grid2">
   <div class="card"><b>Main identity</b><div class="big">\(A\operatorname{adj}(A)=\det(A)I\)</div></div>
@@ -235,7 +235,7 @@ Find \(A^{-1}\).<button class="btn" onclick="rv(this)">Reveal solution</button><
 
 <section id="c3s12">
 <div class="sk">Section 12 of 13</div><h2><span class="swipe">Cramer's Rule & Practice</span></h2>
-<p class="intro">Cramer's rule solves \(Ax=b\) using determinants, when \(\det(A)\ne0\).</p>
+<p class="intro">Cramer's rule applies to a square system \(Ax=b\) when \(\det(A)\ne0\). It expresses each unknown as a ratio of determinants.</p>
 <div class="key"><b>Cramer's rule</b>If \(A\) is \(n\times n\) and \(\det(A)\ne0\), then the unique solution of \(Ax=b\) is \(x_j=\dfrac{\det(A_j)}{\det(A)}\), where \(A_j\) replaces column \(j\) of \(A\) by \(b\).</div>
 <div class="viz">
 <div class="btnrow">
@@ -268,34 +268,34 @@ evaluate \(\det(A)\).<button class="btn" onclick="rv(this)">Reveal solution</but
 
 <section id="c3s13">
 <div class="sk">Section 13 of 13</div><h2><span class="swipe">Study Sheet</span></h2>
-<p class="intro">A one page revision card for matrices.</p>
+<p class="intro">This revision card lists the matrix operations, dimension checks, determinant tests, and inverse conditions used in the chapter.</p>
 <div class="revision-card">
   <div class="revision-block strategy-map">
     <div class="revision-label">Chapter strategy map</div>
     <div class="strategy-grid">
-      <div class="strategy-card"><b>Add or subtract?</b><span>Only if matrices have the same size.</span></div>
-      <div class="strategy-card"><b>Multiply A then B?</b><span>Columns of the first matrix must equal rows of the second.</span></div>
-      <div class="strategy-card"><b>Find determinant?</b><span>Matrix must be square.</span></div>
-      <div class="strategy-card"><b>Find inverse?</b><span>Need a square matrix with nonzero determinant.</span></div>
-      <div class="strategy-card"><b>Solve a matrix system?</b><span>Use inverse or Cramer only when the determinant is nonzero.</span></div>
-      <div class="strategy-card"><b>Use adjoint?</b><span>Find cofactors, transpose them, divide by determinant.</span></div>
+      <div class="strategy-card"><b>Add or subtract?</b><span>Check that the matrices have the same dimensions.</span></div>
+      <div class="strategy-card"><b>Multiply A then B?</b><span>Check that columns of A equal rows of B.</span></div>
+      <div class="strategy-card"><b>Find determinant?</b><span>Use only for a square matrix.</span></div>
+      <div class="strategy-card"><b>Find inverse?</b><span>Require a square matrix with nonzero determinant.</span></div>
+      <div class="strategy-card"><b>Solve Ax = b?</b><span>Use inverse or Cramer's rule only when the determinant is nonzero.</span></div>
+      <div class="strategy-card"><b>Use adjoint?</b><span>Build cofactors, transpose, then divide by the determinant.</span></div>
     </div>
   </div>
   <div class="revision-block">
     <div class="revision-label">Decision guide</div>
     <div class="decision-grid">
-      <div class="decision-item"><b>Use size checks</b>before addition, subtraction, and multiplication.</div>
-      <div class="decision-item"><b>Use row by column</b>to calculate each entry of a product.</div>
-      <div class="decision-item"><b>Use determinants</b>to test invertibility and solve systems with Cramer's rule.</div>
-      <div class="decision-item"><b>Use adjoint inverse</b>when a square matrix has \(\det(A)\ne0\).</div>
+      <div class="decision-item"><b>Use size checks</b>before addition, subtraction, multiplication, determinants, and inverses.</div>
+      <div class="decision-item"><b>Use row by column products</b>to calculate each entry of \(AB\).</div>
+      <div class="decision-item"><b>Use determinants</b>only for square matrices, especially to test invertibility.</div>
+      <div class="decision-item"><b>Use adjoint inverse</b>for a square matrix with \(\det(A)\ne0\).</div>
     </div>
   </div>
   <div class="formula-box">
     <div class="formula-head"><b>Formula bank</b><button class="vbtn" onclick="revealFormula(this)">Reveal formulas</button></div>
     <div class="formula-body"><div class="formula-grid">
-      <div class="formula-item"><b>Product entry</b>\((AB)_{ij}=\displaystyle\sum_k a_{ik}b_{kj}\)<span class="formula-use">Use for one entry at a time.</span></div>
+      <div class="formula-item"><b>Product entry</b>\((AB)_{ij}=\displaystyle\sum_k a_{ik}b_{kj}\)<span class="formula-use">Use when the inner dimensions match.</span></div>
       <div class="formula-item"><b>Transpose product</b>\((AB)^T=B^TA^T\)<span class="formula-use">Use when transposing a product.</span></div>
-      <div class="formula-item"><b>Two by two determinant</b>\(\det\begin{bmatrix}a&b\\c&d\end{bmatrix}=ad-bc\)<span class="formula-use">Use to test a \(2\times2\) inverse.</span></div>
+      <div class="formula-item"><b>Two by two determinant</b>\(\det\begin{bmatrix}a&b\\c&d\end{bmatrix}=ad-bc\)<span class="formula-use">Use for square \(2\times2\) matrices.</span></div>
       <div class="formula-item"><b>Two by two inverse</b>\(\displaystyle A^{-1}=\frac1{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}\)<span class="formula-use">Use only when \(ad-bc\ne0\).</span></div>
       <div class="formula-item"><b>Cofactor</b>\(C_{ij}=(-1)^{i+j}M_{ij}\)<span class="formula-use">Use for expansion and adjoint.</span></div>
       <div class="formula-item"><b>Adjoint</b>\(\operatorname{adj}(A)=C^T\)<span class="formula-use">Transpose the cofactor matrix.</span></div>

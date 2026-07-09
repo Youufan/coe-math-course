@@ -21,7 +21,7 @@
 
 <section id="c2s1">
 <div class="sk">Section 1 of 12</div><h2><span class="swipe">Vectors as Directed Segments</span></h2>
-<p class="intro">A vector has magnitude and direction. Its starting position can move; its direction and length are what matter.</p>
+<p class="intro">A vector is a quantity with magnitude and direction. Equal free vectors have the same magnitude and direction, regardless of where they are drawn.</p>
 <div class="key"><b>Core idea</b>The directed segment from \(A\) to \(B\) is \(\overrightarrow{AB}\). Its length \(|AB|\) is the magnitude. Lowercase bold letters such as \(\mathbf u,\mathbf v,\mathbf w\) can also denote vectors.</div>
 <div class="grid2">
   <div class="card"><b>Equal vectors</b><br>Same magnitude and same direction, even if drawn in different places.</div>
@@ -46,7 +46,7 @@
 
 <section id="c2s2">
 <div class="sk">Section 2 of 12</div><h2><span class="swipe">Addition & Scalar Multiplication</span></h2>
-<p class="intro">Add vectors tip to tail. Scale a vector by stretching it and, if the scalar is negative, reversing it.</p>
+<p class="intro">Vector addition combines directed displacements. Scalar multiplication changes the magnitude by the absolute value of the scalar and reverses direction when the scalar is negative.</p>
 <div class="viz">
 <div class="btnrow">
   <button class="vbtn on" onclick="c2VectorDemo('add',this)">\(\mathbf u+\mathbf v\)</button>
@@ -71,7 +71,7 @@
 
 <section id="c2s3">
 <div class="sk">Section 3 of 12</div><h2><span class="swipe">Coordinate Vectors</span></h2>
-<p class="intro">Coordinates turn arrows into component lists. Add and scale by working component by component.</p>
+<p class="intro">A coordinate vector lists its components relative to the coordinate axes. Addition and scalar multiplication are performed component by component.</p>
 <div class="grid2">
   <div class="card"><b>2 space</b><div class="big">\(\mathbf v=(v_1,v_2)=v_1\mathbf i+v_2\mathbf j\)</div></div>
   <div class="card"><b>3 space</b><div class="big">\(\mathbf v=(v_1,v_2,v_3)=v_1\mathbf i+v_2\mathbf j+v_3\mathbf k\)</div></div>
@@ -92,7 +92,7 @@
 
 <section id="c2s4">
 <div class="sk">Section 4 of 12</div><h2><span class="swipe">Length, Distance & Unit Vectors</span></h2>
-<p class="intro">The norm is the vector length. A unit vector keeps only direction.</p>
+<p class="intro">The norm \(\|\mathbf u\|\) is the length of \(\mathbf u\). A unit vector has norm \(1\) and is obtained by dividing a nonzero vector by its norm.</p>
 <div class="key"><b>Norms</b>For \(\mathbf u=(u_1,u_2)\), \(\|\mathbf u\|=\sqrt{u_1^2+u_2^2}\). For \(\mathbf u=(u_1,u_2,u_3)\), \(\|\mathbf u\|=\sqrt{u_1^2+u_2^2+u_3^2}\).</div>
 <div class="card"><b>Unit vector along \(\mathbf u\)</b><div class="big">\(\hat{\mathbf u}=\dfrac{1}{\|\mathbf u\|}\mathbf u,\qquad \mathbf u\ne\mathbf0\)</div></div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 1</span> Norms from the notes</div><div class="exb">Evaluate the norms of \(\mathbf u=(2,-5)\), \(\mathbf v=(-1,2,2)\), and \(\mathbf w=\left(-\frac1{\sqrt2},0,\frac1{\sqrt2}\right)\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(\|\mathbf u\|=\sqrt{2^2+(-5)^2}=\sqrt{29}\).</span><span class="step">\(\|\mathbf v\|=\sqrt{(-1)^2+2^2+2^2}=3\).</span><span class="step">\(\|\mathbf w\|=\sqrt{\frac12+0+\frac12}=1\).</span><span class="step"><span class="ans">\(\sqrt{29},\ 3,\ 1\)</span>.</span></div></div></div>
@@ -101,8 +101,8 @@
 
 <section id="c2s5">
 <div class="sk">Section 5 of 12</div><h2><span class="swipe">Dot Product & Angles</span></h2>
-<p class="intro">The dot product measures how much two vectors point in the same direction.</p>
-<div class="key"><b>Two meanings</b>\(\mathbf u\cdot\mathbf v=\|\mathbf u\|\,\|\mathbf v\|\cos\theta\), and in coordinates \(\mathbf u\cdot\mathbf v=u_1v_1+u_2v_2+u_3v_3\).</div>
+<p class="intro">For \(\mathbf u,\mathbf v\in\mathbb R^n\), the dot product \(\mathbf u\cdot\mathbf v=\sum_{i=1}^{n}u_iv_i\) is a scalar. For nonzero vectors it also equals \(\|\mathbf u\|\|\mathbf v\|\cos\theta\), which determines the angle \(\theta\) between them.</p>
+<div class="key"><b>Two forms</b>In coordinates, multiply corresponding components and add. In angle form, \(\mathbf u\cdot\mathbf v=\|\mathbf u\|\,\|\mathbf v\|\cos\theta\), valid for nonzero vectors when \(\theta\) is the angle between them.</div>
 <div class="grid3">
   <div class="card"><b>Positive</b><br>Acute angle.</div>
   <div class="card"><b>Zero</b><br>Perpendicular vectors.</div>
@@ -115,7 +115,7 @@
 
 <section id="c2s6">
 <div class="sk">Section 6 of 12</div><h2><span class="swipe">Work Done & Projections</span></h2>
-<p class="intro">Projection is the shadow of one vector along another. Work is force projected along displacement.</p>
+<p class="intro">The projection of \(\mathbf u\) onto nonzero \(\mathbf v\) is the component of \(\mathbf u\) parallel to \(\mathbf v\). Work is the scalar \(W=\mathbf F\cdot\mathbf D\), where \(\mathbf F\) is force and \(\mathbf D\) is displacement.</p>
 <div class="viz">
 <div class="btnrow"><button class="vbtn on" onclick="c2ProjectionDemo(30,this)">30 degrees</button><button class="vbtn" onclick="c2ProjectionDemo(60,this)">60 degrees</button><button class="vbtn" onclick="c2ProjectionDemo(120,this)">120 degrees</button></div>
 <svg viewBox="0 0 520 240">
@@ -136,8 +136,8 @@
 
 <section id="c2s7">
 <div class="sk">Section 7 of 12</div><h2><span class="swipe">Cross Product</span></h2>
-<p class="intro">The cross product produces a vector perpendicular to both input vectors.</p>
-<div class="key"><b>Definition</b>\(\mathbf u\times\mathbf v=(\|\mathbf u\|\,\|\mathbf v\|\sin\theta)\hat{\mathbf n}\), where \(\hat{\mathbf n}\) follows the right hand rule.</div>
+<p class="intro">For \(\mathbf u,\mathbf v\in\mathbb R^3\), the cross product \(\mathbf u\times\mathbf v\) is a vector perpendicular to both inputs.</p>
+<div class="key"><b>Definition</b>\(\mathbf u\times\mathbf v=(\|\mathbf u\|\,\|\mathbf v\|\sin\theta)\hat{\mathbf n}\), where \(\hat{\mathbf n}\) is the unit normal chosen by the right hand rule. Its magnitude is the area of the parallelogram formed by the two vectors.</div>
 <div class="card"><b>Coordinate formula</b><div class="big">\(\mathbf u\times\mathbf v=(u_2v_3-u_3v_2,\ u_3v_1-u_1v_3,\ u_1v_2-u_2v_1)\)</div></div>
 <div class="viz">
 <svg viewBox="0 0 420 230">
@@ -154,7 +154,7 @@
 
 <section id="c2s8">
 <div class="sk">Section 8 of 12</div><h2><span class="swipe">Areas & Scalar Triple Product</span></h2>
-<p class="intro">Cross products give area. Scalar triple products give volume.</p>
+<p class="intro">The magnitude of a cross product gives parallelogram area in \(\mathbb R^3\). The scalar triple product gives the signed volume of the parallelepiped formed by three vectors.</p>
 <div class="grid2">
   <div class="card"><b>Area</b><div class="big">\(\text{Area parallelogram}=\|\mathbf u\times\mathbf v\|\)<br>\(\text{Area triangle}=\frac12\|\mathbf u\times\mathbf v\|\)</div></div>
   <div class="card"><b>Volume</b><div class="big">\(V=|\mathbf u\cdot(\mathbf v\times\mathbf w)|\)</div></div>
@@ -165,7 +165,7 @@
 
 <section id="c2s9">
 <div class="sk">Section 9 of 12</div><h2><span class="swipe">Lines in 3 Space</span></h2>
-<p class="intro">A line is determined by one point and one direction vector.</p>
+<p class="intro">A line in three dimensional space is determined by a point with position vector \(\mathbf r_0\) and a nonzero direction vector \(\mathbf v\).</p>
 <div class="key"><b>Vector equation</b>If a line passes through position vector \(\mathbf r_0\) and is parallel to \(\mathbf v\), then \(\mathbf r(t)=\mathbf r_0+t\mathbf v,\ t\in\mathbb R\).</div>
 <div class="grid2">
   <div class="card"><b>Parametric form</b><div class="big">\(x=x_0+tv_1,\ y=y_0+tv_2,\ z=z_0+tv_3\)</div></div>
@@ -178,7 +178,7 @@
 
 <section id="c2s10">
 <div class="sk">Section 10 of 12</div><h2><span class="swipe">Planes, Distances & Angles</span></h2>
-<p class="intro">A plane is determined by a point and a normal vector.</p>
+<p class="intro">A plane in three dimensional space is determined by a point and a nonzero normal vector \(\mathbf n\). Points on the plane satisfy \(\mathbf n\cdot(\mathbf r-\mathbf r_0)=0\).</p>
 <div class="key"><b>Plane equation</b>For normal \(\mathbf n=(a,b,c)\) through \(P_0=(x_0,y_0,z_0)\): \(a(x-x_0)+b(y-y_0)+c(z-z_0)=0\). Equivalently, \(ax+by+cz=d\).</div>
 <div class="grid2">
   <div class="card"><b>Point to line</b><div class="big">\(\displaystyle d=\frac{\|\overrightarrow{PS}\times\mathbf v\|}{\|\mathbf v\|}\)</div></div>
@@ -193,7 +193,7 @@
 
 <section id="c2s11">
 <div class="sk">Section 11 of 12</div><h2><span class="swipe">Chapter Practice</span></h2>
-<p class="intro">Mixed practice from the chapter. Try first, then reveal the route.</p>
+<p class="intro">This mixed practice checks vector operations, products, projections, lines, planes, and distance formulas.</p>
 <div class="ex"><div class="exh"><span class="tag try">PRACTICE 1</span> Dot, cross, projection</div><div class="exb">Let \(\mathbf u=\mathbf i+\mathbf j-5\mathbf k\) and \(\mathbf v=2\mathbf i+\mathbf j-\mathbf k\). Find \(\|\mathbf u\|\), \(\|\mathbf v\|\), \(\mathbf u\cdot\mathbf v\), \(\mathbf u\times\mathbf v\), \(\mathbf v\times\mathbf u\), and \(\operatorname{proj}_{\mathbf v}\mathbf u\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(\|\mathbf u\|=\sqrt{27}=3\sqrt3\), \(\|\mathbf v\|=\sqrt6\).</span><span class="step">\(\mathbf u\cdot\mathbf v=1(2)+1(1)+(-5)(-1)=8\).</span><span class="step">\(\mathbf u\times\mathbf v=(4,-9,-1)\), so \(\mathbf v\times\mathbf u=(-4,9,1)\).</span><span class="step">\(\operatorname{proj}_{\mathbf v}\mathbf u=\frac{8}{6}(2,1,-1)=\)<span class="ans">\(\left(\frac83,\frac43,-\frac43\right)\)</span>.</span></div></div></div>
 <div class="ex"><div class="exh"><span class="tag try">PRACTICE 2</span> Parallelogram</div><div class="exb">For parallelogram \(ABPC\), let \(A=(1,0,0)\), \(B=(0,1,0)\), \(C=(0,0,1)\). Find its area, vertex \(P\), and angle between the diagonals.<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(\overrightarrow{AB}=(-1,1,0)\), \(\overrightarrow{AC}=(-1,0,1)\).</span><span class="step">Area \(=\|\overrightarrow{AB}\times\overrightarrow{AC}\|=\sqrt3\).</span><span class="step">For parallelogram \(ABPC\), \(P=B+C-A=(-1,1,1)\).</span><span class="step">Diagonals: \(\overrightarrow{AP}=(-2,1,1)\), \(\overrightarrow{BC}=(0,-1,1)\). Dot \(=0\), so angle is <span class="ans">\(\frac{\pi}{2}\)</span>.</span></div></div></div>
 <div class="ex"><div class="exh"><span class="tag try">PRACTICE 3</span> Lines</div><div class="exb">Find the parametric equation of the line through \(R=(2,4,5)\) and perpendicular to the plane \(3x+7y-5z=21\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">A line perpendicular to a plane is parallel to the plane normal.</span><span class="step">Normal vector is \((3,7,-5)\).</span><span class="step"><span class="ans">\(x=2+3t,\ y=4+7t,\ z=5-5t\)</span>, \(t\in\mathbb R\).</span></div></div></div>
@@ -203,26 +203,26 @@
 
 <section id="c2s12">
 <div class="sk">Section 12 of 12</div><h2><span class="swipe">Study Sheet</span></h2>
-<p class="intro">A one page revision card for vectors.</p>
+<p class="intro">This revision card lists the vector objects, products, equations, and validity checks used in the chapter.</p>
 <div class="revision-card">
   <div class="revision-block strategy-map">
     <div class="revision-label">Chapter strategy map</div>
     <div class="strategy-grid">
-      <div class="strategy-card"><b>Need an angle?</b><span>Use dot product.</span></div>
-      <div class="strategy-card"><b>Need projection?</b><span>Use dot product with the target direction.</span></div>
-      <div class="strategy-card"><b>Need area or normal?</b><span>Use cross product.</span></div>
-      <div class="strategy-card"><b>Need a line?</b><span>Use point plus direction.</span></div>
-      <div class="strategy-card"><b>Need a plane?</b><span>Use point plus normal.</span></div>
-      <div class="strategy-card"><b>Need distance?</b><span>Choose point to line or point to plane formula.</span></div>
+      <div class="strategy-card"><b>Find an angle?</b><span>Use the dot product with nonzero vectors.</span></div>
+      <div class="strategy-card"><b>Find a projection?</b><span>Project onto a nonzero target vector using a dot product.</span></div>
+      <div class="strategy-card"><b>Find area or normal?</b><span>Use the cross product in three dimensions.</span></div>
+      <div class="strategy-card"><b>Find a line?</b><span>Use one point and one nonzero direction vector.</span></div>
+      <div class="strategy-card"><b>Find a plane?</b><span>Use one point and one nonzero normal vector.</span></div>
+      <div class="strategy-card"><b>Find distance?</b><span>Select the point to line or point to plane formula.</span></div>
     </div>
   </div>
   <div class="revision-block">
     <div class="revision-label">Decision guide</div>
     <div class="decision-grid">
-      <div class="decision-item"><b>Use components</b>when calculating lengths, sums, and scalar multiples.</div>
-      <div class="decision-item"><b>Use dot product</b>for angles, projections, and perpendicular checks.</div>
-      <div class="decision-item"><b>Use cross product</b>for area, normals, and vectors perpendicular to two given vectors.</div>
-      <div class="decision-item"><b>Use line or plane equations</b>after identifying the point, direction, and normal.</div>
+      <div class="decision-item"><b>Use components</b>for lengths, sums, scalar multiples, and coordinate calculations.</div>
+      <div class="decision-item"><b>Use dot product</b>for angles, projections, work, and perpendicular checks.</div>
+      <div class="decision-item"><b>Use cross product</b>for area, normal vectors, and vectors perpendicular to two vectors in \(\mathbb R^3\).</div>
+      <div class="decision-item"><b>Use line or plane equations</b>after identifying the required point, direction vector, or normal vector.</div>
     </div>
   </div>
   <div class="formula-box">
@@ -230,10 +230,10 @@
     <div class="formula-body"><div class="formula-grid">
       <div class="formula-item"><b>Length</b>\(\|\mathbf u\|=\sqrt{u_1^2+u_2^2+u_3^2}\)<span class="formula-use">Use to normalise a vector.</span></div>
       <div class="formula-item"><b>Angle</b>\(\mathbf u\cdot\mathbf v=\|\mathbf u\|\|\mathbf v\|\cos\theta\)<span class="formula-use">Use to find \(\theta\) or test perpendicular vectors.</span></div>
-      <div class="formula-item"><b>Projection</b>\(\displaystyle \operatorname{proj}_{\mathbf v}\mathbf u=\frac{\mathbf u\cdot\mathbf v}{\mathbf v\cdot\mathbf v}\mathbf v\)<span class="formula-use">Use for the shadow of \(\mathbf u\) on \(\mathbf v\).</span></div>
-      <div class="formula-item"><b>Cross product size</b>\(\|\mathbf u\times\mathbf v\|=\|\mathbf u\|\|\mathbf v\|\sin\theta\)<span class="formula-use">Use for parallelogram area.</span></div>
-      <div class="formula-item"><b>Line</b>\(\mathbf r=\mathbf r_0+t\mathbf v\)<span class="formula-use">Use a point and a direction vector.</span></div>
-      <div class="formula-item"><b>Plane</b>\(\mathbf n\cdot(\mathbf r-\mathbf r_0)=0\)<span class="formula-use">Use a point and a normal vector.</span></div>
+      <div class="formula-item"><b>Projection</b>\(\displaystyle \operatorname{proj}_{\mathbf v}\mathbf u=\frac{\mathbf u\cdot\mathbf v}{\mathbf v\cdot\mathbf v}\mathbf v\)<span class="formula-use">Use only when \(\mathbf v\ne\mathbf0\).</span></div>
+      <div class="formula-item"><b>Cross product size</b>\(\|\mathbf u\times\mathbf v\|=\|\mathbf u\|\|\mathbf v\|\sin\theta\)<span class="formula-use">Use for parallelogram area in \(\mathbb R^3\).</span></div>
+      <div class="formula-item"><b>Line</b>\(\mathbf r=\mathbf r_0+t\mathbf v\)<span class="formula-use">Use with \(\mathbf v\ne\mathbf0\).</span></div>
+      <div class="formula-item"><b>Plane</b>\(\mathbf n\cdot(\mathbf r-\mathbf r_0)=0\)<span class="formula-use">Use with \(\mathbf n\ne\mathbf0\).</span></div>
       <div class="formula-item"><b>Point to line</b>\(\displaystyle d=\frac{\|\overrightarrow{PS}\times\mathbf v\|}{\|\mathbf v\|}\)<span class="formula-use">Use when the object is a line.</span></div>
       <div class="formula-item"><b>Point to plane</b>\(\displaystyle d=\frac{|\overrightarrow{PS}\cdot\mathbf n|}{\|\mathbf n\|}\)<span class="formula-use">Use when the object is a plane.</span></div>
     </div></div>
@@ -253,7 +253,7 @@
       <div class="recall-card compact"><div class="front">1. When are two nonzero vectors perpendicular?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">When \(\mathbf u\cdot\mathbf v=0\).</div></div>
       <div class="recall-card compact"><div class="front">2. What is the area of the parallelogram from \(\mathbf u,\mathbf v\)?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">\(\|\mathbf u\times\mathbf v\|\).</div></div>
       <div class="recall-card compact"><div class="front">3. What vector does a plane equation need?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">A normal vector.</div></div>
-      <div class="recall-card compact"><div class="front">4. What does \(\operatorname{proj}_{\mathbf v}\mathbf u\) represent?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">The vector shadow of \(\mathbf u\) in the direction of \(\mathbf v\).</div></div>
+      <div class="recall-card compact"><div class="front">4. What does \(\operatorname{proj}_{\mathbf v}\mathbf u\) represent?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">The component of \(\mathbf u\) parallel to \(\mathbf v\), for \(\mathbf v\ne\mathbf0\).</div></div>
       <div class="recall-card compact"><div class="front">5. How do you find a plane through three points?</div><button class="btn" onclick="recall(this)">Reveal answer</button><div class="back">Build two direction vectors, cross them for a normal, then use one point.</div></div>
     </div>
   </div>
