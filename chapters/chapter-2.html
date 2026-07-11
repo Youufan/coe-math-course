@@ -23,6 +23,7 @@
 <div class="sk">Section 1 of 12</div><h2><span class="swipe">Vectors as Directed Segments</span></h2>
 <p class="intro">A vector is a quantity with magnitude and direction. Equal free vectors have the same magnitude and direction, regardless of where they are drawn.</p>
 <div class="key"><b>Core idea</b>The directed segment from \(A\) to \(B\) is \(\overrightarrow{AB}\). Its length \(|AB|\) is the magnitude. Lowercase bold letters such as \(\mathbf u,\mathbf v,\mathbf w\) can also denote vectors.</div>
+<div class="key"><b>Important link</b><div>\(\overrightarrow{AB}\) means end point minus start point.</div><div>The zero vector has magnitude \(0\) and no single direction.</div></div>
 <div class="grid2">
   <div class="card"><b>Equal vectors</b><br>Same magnitude and same direction, even if drawn in different places.</div>
   <div class="card"><b>Negative vector</b><br>\(-\mathbf v\) has the same magnitude as \(\mathbf v\), but points in the opposite direction.</div>
@@ -66,6 +67,7 @@
 <div class="readout" id="c2-vector-read">Tip to tail: first \(\mathbf u\), then \(\mathbf v\), gives \(\mathbf u+\mathbf v\).</div>
 </div>
 <div class="key"><b>Rules</b>\(\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}\). If \(\lambda\gt0\), then \(\lambda\mathbf v\) points in the same direction as \(\mathbf v\) and has magnitude \(\lambda|\mathbf v|\).</div>
+<div class="key"><b>Important link</b><div>If \(\lambda=0\), then \(\lambda\mathbf v=\mathbf0\). If \(\lambda\lt0\), the vector direction is reversed.</div><div>Subtraction means add the negative vector: \(\mathbf v-\mathbf u=\mathbf v+(-\mathbf u)\).</div></div>
 <div class="ex"><div class="exh"><span class="tag try">TRY</span> Quick vector algebra</div><div class="exb">If \(\overrightarrow{OA}=\mathbf u\) and \(\overrightarrow{OB}=\mathbf v\), express \(\overrightarrow{AB}\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Move from \(A\) back to \(O\), then from \(O\) to \(B\).</span><span class="step">\(\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}\).</span><span class="step"><span class="ans">\(\overrightarrow{AB}=\mathbf v-\mathbf u\)</span>.</span></div></div></div>
 </section>
 
@@ -94,6 +96,7 @@
 <div class="sk">Section 4 of 12</div><h2><span class="swipe">Length, Distance & Unit Vectors</span></h2>
 <p class="intro">The norm \(\|\mathbf u\|\) is the length of \(\mathbf u\). A unit vector has norm \(1\) and is obtained by dividing a nonzero vector by its norm.</p>
 <div class="key"><b>Norms</b>For \(\mathbf u=(u_1,u_2)\), \(\|\mathbf u\|=\sqrt{u_1^2+u_2^2}\). For \(\mathbf u=(u_1,u_2,u_3)\), \(\|\mathbf u\|=\sqrt{u_1^2+u_2^2+u_3^2}\).</div>
+<div class="key"><b>Important link</b><div>Distance between points is the norm of the displacement vector between them.</div><div>You cannot form a unit vector from \(\mathbf0\), because division by \(\|\mathbf0\|=0\) is undefined.</div></div>
 <div class="card"><b>Unit vector along \(\mathbf u\)</b><div class="big">\(\hat{\mathbf u}=\dfrac{1}{\|\mathbf u\|}\mathbf u,\qquad \mathbf u\ne\mathbf0\)</div></div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 1</span> Norms from the notes</div><div class="exb">Evaluate the norms of \(\mathbf u=(2,-5)\), \(\mathbf v=(-1,2,2)\), and \(\mathbf w=\left(-\frac1{\sqrt2},0,\frac1{\sqrt2}\right)\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(\|\mathbf u\|=\sqrt{2^2+(-5)^2}=\sqrt{29}\).</span><span class="step">\(\|\mathbf v\|=\sqrt{(-1)^2+2^2+2^2}=3\).</span><span class="step">\(\|\mathbf w\|=\sqrt{\frac12+0+\frac12}=1\).</span><span class="step"><span class="ans">\(\sqrt{29},\ 3,\ 1\)</span>.</span></div></div></div>
 <div class="ex"><div class="exh"><span class="tag try">TRY</span> Unit vector</div><div class="exb">Find the unit vector in the direction of \(\mathbf a=(2,-1,2)\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(\|\mathbf a\|=\sqrt{2^2+(-1)^2+2^2}=3\).</span><span class="step"><span class="ans">\(\hat{\mathbf a}=\left(\frac23,-\frac13,\frac23\right)\)</span>.</span></div></div></div>
@@ -103,6 +106,7 @@
 <div class="sk">Section 5 of 12</div><h2><span class="swipe">Dot Product & Angles</span></h2>
 <p class="intro">For \(\mathbf u,\mathbf v\in\mathbb R^n\), the dot product \(\mathbf u\cdot\mathbf v=\sum_{i=1}^{n}u_iv_i\) is a scalar. For nonzero vectors it also equals \(\|\mathbf u\|\|\mathbf v\|\cos\theta\), which determines the angle \(\theta\) between them.</p>
 <div class="key"><b>Two forms</b>In coordinates, multiply corresponding components and add. In angle form, \(\mathbf u\cdot\mathbf v=\|\mathbf u\|\,\|\mathbf v\|\cos\theta\), valid for nonzero vectors when \(\theta\) is the angle between them.</div>
+<div class="key"><b>Important link</b><div>The dot product is a number, not a vector.</div><div>If \(\mathbf u\cdot\mathbf v=0\) and both vectors are nonzero, then the vectors are perpendicular.</div></div>
 <div class="grid3">
   <div class="card"><b>Positive</b><br>Acute angle.</div>
   <div class="card"><b>Zero</b><br>Perpendicular vectors.</div>
@@ -130,6 +134,7 @@
 <div class="readout" id="c2-proj-read">Projection length scales by \(\cos30^\circ\), so it is positive and long.</div>
 </div>
 <div class="key"><b>Projection formula</b>\(\operatorname{proj}_{\mathbf v}\mathbf u=\dfrac{\mathbf u\cdot\mathbf v}{\|\mathbf v\|^2}\mathbf v\). Work done: \(W=\mathbf F\cdot\mathbf D=\|\mathbf F\|\,\|\mathbf D\|\cos\theta\).</div>
+<div class="key"><b>Important link</b><div>The vector being projected onto must be nonzero.</div><div>A negative scalar projection means the component points opposite to the chosen direction vector.</div></div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 7</span> Work done</div><div class="exb">If \(\|\mathbf F\|=50\text{ N}\), \(\|\mathbf D\|=30\text{ m}\), and \(\theta=45^\circ\), find the work done.<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(W=\|\mathbf F\|\,\|\mathbf D\|\cos\theta\).</span><span class="step">\(W=50(30)\cos45^\circ=1500\cdot\frac1{\sqrt2}\).</span><span class="step"><span class="ans">\(W=750\sqrt2\text{ J}\)</span>.</span></div></div></div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 8</span> Vector projection</div><div class="exb">Find \(\operatorname{proj}_{\mathbf v}\mathbf u\) for \(\mathbf u=\mathbf i-2\mathbf j+2\mathbf k\), \(\mathbf v=2\mathbf i+3\mathbf j-6\mathbf k\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(\mathbf u\cdot\mathbf v=2-6-12=-16\), and \(\|\mathbf v\|^2=49\).</span><span class="step"><span class="ans">\(\operatorname{proj}_{\mathbf v}\mathbf u=-\frac{16}{49}(2\mathbf i+3\mathbf j-6\mathbf k)\)</span>.</span></div></div></div>
 </section>
@@ -138,6 +143,7 @@
 <div class="sk">Section 7 of 12</div><h2><span class="swipe">Cross Product</span></h2>
 <p class="intro">For \(\mathbf u,\mathbf v\in\mathbb R^3\), the cross product \(\mathbf u\times\mathbf v\) is a vector perpendicular to both inputs.</p>
 <div class="key"><b>Definition</b>\(\mathbf u\times\mathbf v=(\|\mathbf u\|\,\|\mathbf v\|\sin\theta)\hat{\mathbf n}\), where \(\hat{\mathbf n}\) is the unit normal chosen by the right hand rule. Its magnitude is the area of the parallelogram formed by the two vectors.</div>
+<div class="key"><b>Important link</b><div>The cross product is defined here only for vectors in \(\mathbb R^3\).</div><div>Order matters: \(\mathbf u\times\mathbf v=-(\mathbf v\times\mathbf u)\).</div></div>
 <div class="card"><b>Coordinate formula</b><div class="big">\(\mathbf u\times\mathbf v=(u_2v_3-u_3v_2,\ u_3v_1-u_1v_3,\ u_1v_2-u_2v_1)\)</div></div>
 <div class="viz">
 <svg viewBox="0 0 420 230">
@@ -167,6 +173,7 @@
 <div class="sk">Section 9 of 12</div><h2><span class="swipe">Lines in 3 Space</span></h2>
 <p class="intro">A line in three dimensional space is determined by a point with position vector \(\mathbf r_0\) and a nonzero direction vector \(\mathbf v\).</p>
 <div class="key"><b>Vector equation</b>If a line passes through position vector \(\mathbf r_0\) and is parallel to \(\mathbf v\), then \(\mathbf r(t)=\mathbf r_0+t\mathbf v,\ t\in\mathbb R\).</div>
+<div class="key"><b>Important link</b><div>The parameter \(t\) can be any real number, so it moves along the whole line.</div><div>Cartesian form divides by direction components, so if a component is \(0\), write the matching coordinate as a constant instead.</div></div>
 <div class="grid2">
   <div class="card"><b>Parametric form</b><div class="big">\(x=x_0+tv_1,\ y=y_0+tv_2,\ z=z_0+tv_3\)</div></div>
   <div class="card"><b>Cartesian form</b><div class="big">\(\dfrac{x-x_0}{v_1}=\dfrac{y-y_0}{v_2}=\dfrac{z-z_0}{v_3}\)</div></div>
@@ -180,6 +187,7 @@
 <div class="sk">Section 10 of 12</div><h2><span class="swipe">Planes, Distances & Angles</span></h2>
 <p class="intro">A plane in three dimensional space is determined by a point and a nonzero normal vector \(\mathbf n\). Points on the plane satisfy \(\mathbf n\cdot(\mathbf r-\mathbf r_0)=0\).</p>
 <div class="key"><b>Plane equation</b>For normal \(\mathbf n=(a,b,c)\) through \(P_0=(x_0,y_0,z_0)\): \(a(x-x_0)+b(y-y_0)+c(z-z_0)=0\). Equivalently, \(ax+by+cz=d\).</div>
+<div class="key"><b>Important link</b><div>A normal vector is perpendicular to every direction vector lying in the plane.</div><div>Distance formulas require a point on the line or plane and the correct direction or normal vector.</div></div>
 <div class="grid2">
   <div class="card"><b>Point to line</b><div class="big">\(\displaystyle d=\frac{\|\overrightarrow{PS}\times\mathbf v\|}{\|\mathbf v\|}\)</div></div>
   <div class="card"><b>Point to plane</b><div class="big">\(\displaystyle d=\frac{|\overrightarrow{PS}\cdot\mathbf n|}{\|\mathbf n\|}\)</div></div>

@@ -23,6 +23,7 @@
 <div class="sk">Section 1 of 13</div><h2><span class="swipe">Matrix Notation</span></h2>
 <p class="intro">An \(m\times n\) matrix is a rectangular array with \(m\) rows and \(n\) columns. It is written \(A=(a_{ij})\), where \(a_{ij}\) denotes the entry in row \(i\), column \(j\).</p>
 <div class="key"><b>Definition</b>The dimensions \(m\times n\) determine which matrix operations are defined. Rows are indexed by \(i\), columns by \(j\), and entries are written \(a_{ij}\) or \(A_{ij}\).</div>
+<div class="key"><b>Important link</b><div>The first subscript is always the row number. The second subscript is always the column number.</div><div>For \(A_{ij}\), read \(i\) first, then \(j\).</div></div>
 <div class="viz">
 <svg viewBox="0 0 620 250">
 <rect x="130" y="38" width="360" height="170" rx="12" fill="#fff" stroke="#dedfd6"/>
@@ -84,6 +85,7 @@
 <div class="sk">Section 4 of 13</div><h2><span class="swipe">Addition & Scalar Multiplication</span></h2>
 <p class="intro">Matrix addition and subtraction are defined only for matrices of the same size and are computed entrywise. Scalar multiplication is defined for every matrix.</p>
 <div class="key"><b>Rules</b>For same sized matrices, \((A+B)_{ij}=A_{ij}+B_{ij}\) and \((A-B)_{ij}=A_{ij}-B_{ij}\). For a scalar \(\alpha\), \((\alpha A)_{ij}=\alpha A_{ij}\).</div>
+<div class="key"><b>Important link</b><div>Same size means the same number of rows and the same number of columns.</div><div>Scalar multiplication never changes the size of the matrix.</div></div>
 <div class="warn"><b>Warning</b> Matrices of different sizes cannot be added or subtracted.</div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 2</span> Entry arithmetic</div><div class="exb">Let
 \[
@@ -100,6 +102,7 @@ Find \(2A-B+\frac13C\).
 <div class="sk">Section 5 of 13</div><h2><span class="swipe">Matrix Multiplication</span></h2>
 <p class="intro">If \(A\) is \(m\times r\) and \(B\) is \(r\times n\), then \(AB\) is defined and has size \(m\times n\). Each entry is computed from one row of \(A\) and one column of \(B\).</p>
 <div class="key"><b>Product rule</b>If \(A\) is \(m\times r\) and \(B\) is \(r\times n\), then \(AB\) is \(m\times n\), and \((AB)_{ij}=\sum_{k=1}^{r}A_{ik}B_{kj}\).</div>
+<div class="key"><b>Important link</b><div>The inner dimensions decide whether multiplication is defined. The outer dimensions give the size of the answer.</div><div>Matrix multiplication is not usually commutative, so \(AB\) and \(BA\) can be different or one may not exist.</div></div>
 <div class="viz">
 <div class="btnrow">
   <button class="vbtn on" onclick="c3ProductDemo('11',this)">Entry \(11\)</button>
@@ -139,6 +142,7 @@ Find \(2A-B+\frac13C\).
   <div class="card"><b>Transpose</b><div class="big">\((A^T)_{ij}=A_{ji}\)</div></div>
 </div>
 <div class="key"><b>Transpose laws</b>\((A^T)^T=A\), \((A+B)^T=A^T+B^T\), \((\alpha A)^T=\alpha A^T\), and \((AB)^T=B^TA^T\).</div>
+<div class="key"><b>Important link</b><div>The identity matrix size must match the multiplication side: \(AI_n=A\) and \(I_mA=A\) for an \(m\times n\) matrix \(A\).</div><div>The transpose of a product reverses the order: \((AB)^T=B^TA^T\).</div></div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 4</span> Transpose</div><div class="exb">Find \(A^T\) for \(A=\begin{bmatrix}4&3&2\\1&3&1\end{bmatrix}\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Rows of \(A\) become columns of \(A^T\).</span><span class="step"><span class="ans">\(A^T=\begin{bmatrix}4&1\\3&3\\2&1\end{bmatrix}\)</span>.</span></div></div></div>
 <div class="ex"><div class="exh"><span class="tag try">TRY</span> Product transpose</div><div class="exb">If \(A\) is \(2\times3\) and \(B\) is \(3\times4\), what is the size of \((AB)^T\)?<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(AB\) is \(2\times4\).</span><span class="step">Taking transpose swaps the size.</span><span class="step"><span class="ans">\((AB)^T\) is \(4\times2\)</span>.</span></div></div></div>
 </section>
@@ -147,6 +151,7 @@ Find \(2A-B+\frac13C\).
 <div class="sk">Section 7 of 13</div><h2><span class="swipe">Inverse Matrices</span></h2>
 <p class="intro">A square matrix \(A\) is invertible if a matrix \(A^{-1}\) exists such that \(AA^{-1}=I\) and \(A^{-1}A=I\). Non square matrices do not have two sided inverses of this type.</p>
 <div class="key"><b>Definition</b>A square matrix \(A\) is invertible if there is a square matrix \(B\) such that \(AB=I\) and \(BA=I\). The inverse is unique and is written \(A^{-1}\).</div>
+<div class="key"><b>Important link</b><div>\(A^{-1}\) is the inverse matrix, not the reciprocal of every entry.</div><div>A matrix with determinant \(0\) is singular, so its inverse does not exist.</div></div>
 <div class="grid2">
   <div class="card"><b>Singular clues</b><ul class="clean"><li>A row of zeros</li><li>A column of zeros</li><li>One row is a multiple of another</li><li>A row is a linear combination of other rows</li></ul></div>
   <div class="card"><b>2 by 2 formula</b><div class="big">For \(A=\begin{bmatrix}a&b\\c&d\end{bmatrix}\), if \(ad-bc\ne0\), then \(A^{-1}=\dfrac1{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}\).</div></div>
@@ -163,6 +168,7 @@ Find \(2A-B+\frac13C\).
   <div class="card"><b>Power notation</b><div class="big">\(A^0=I,\quad A^n=AA\cdots A,\quad A^{-n}=(A^{-1})^n\)</div></div>
 </div>
 <div class="key"><b>Triangular fact</b>A triangular matrix is invertible exactly when every diagonal entry is non zero. Its determinant is the product of its diagonal entries.</div>
+<div class="key"><b>Important link</b><div>Matrix powers such as \(A^2\) and \(A^{-1}\) require \(A\) to be square.</div><div>For a diagonal matrix, powers and inverses act entry by entry on the diagonal, when the needed entries are nonzero.</div></div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 6</span> Matrix powers</div><div class="exb">Let \(A=\begin{bmatrix}1&1\\0&1\end{bmatrix}\). Find \(A^2,A^3,A^{-2}\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Multiplying shows \(A^n=\begin{bmatrix}1&n\\0&1\end{bmatrix}\) for positive integers \(n\).</span><span class="step">Also \(A^{-1}=\begin{bmatrix}1&-1\\0&1\end{bmatrix}\).</span><span class="step"><span class="ans">\(A^2=\begin{bmatrix}1&2\\0&1\end{bmatrix},\quad A^3=\begin{bmatrix}1&3\\0&1\end{bmatrix},\quad A^{-2}=\begin{bmatrix}1&-2\\0&1\end{bmatrix}\)</span>.</span></div></div></div>
 <div class="ex"><div class="exh"><span class="tag try">TRY</span> Diagonal inverse</div><div class="exb">Find the inverse of \(\begin{bmatrix}2&0&0\\0&-5&0\\0&0&\frac13\end{bmatrix}\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">Invert each diagonal entry.</span><span class="step"><span class="ans">\(\begin{bmatrix}\frac12&0&0\\0&-\frac15&0\\0&0&3\end{bmatrix}\)</span>.</span></div></div></div>
 </section>
@@ -171,6 +177,7 @@ Find \(2A-B+\frac13C\).
 <div class="sk">Section 9 of 13</div><h2><span class="swipe">Determinants & Cofactors</span></h2>
 <p class="intro">The determinant is a scalar defined only for square matrices. It tests invertibility and appears in area, volume, inverse, and system solving formulas.</p>
 <div class="key"><b>Base cases</b>\(\det([a])=a\), and \(\det\begin{bmatrix}a&b\\c&d\end{bmatrix}=ad-bc\).</div>
+<div class="key"><b>Important link</b><div>Only square matrices have determinants.</div><div>A zero determinant means the matrix is not invertible. A nonzero determinant means the matrix is invertible.</div></div>
 <div class="viz">
 <div class="btnrow">
   <button class="vbtn on" onclick="c3CofactorDemo('11',this)">\(C_{11}\)</button>
@@ -200,6 +207,7 @@ Find \(2A-B+\frac13C\).
 <div class="sk">Section 10 of 13</div><h2><span class="swipe">Cofactor Expansion</span></h2>
 <p class="intro">Cofactor expansion computes the determinant of a square matrix by expanding along a chosen row or column. Choosing a row or column with zeros reduces the arithmetic.</p>
 <div class="key"><b>Expansion</b>Along row \(i\), \(\det(A)=a_{i1}C_{i1}+a_{i2}C_{i2}+\cdots+a_{in}C_{in}\). Along column \(j\), \(\det(A)=a_{1j}C_{1j}+\cdots+a_{nj}C_{nj}\).</div>
+<div class="key"><b>Important link</b><div>A minor deletes one row and one column. A cofactor is a signed minor.</div><div>The sign pattern alternates, starting with plus in the top left entry.</div></div>
 <div class="grid2">
   <div class="card"><b>Checkerboard signs</b><div class="big">\(\begin{bmatrix}+&-&+\\-&+&-\\+&-&+\end{bmatrix}\)</div></div>
   <div class="card"><b>Special determinant facts</b><ul class="clean"><li>A zero row gives determinant \(0\)</li><li>Multiple rows give determinant \(0\)</li><li>Triangular determinant is diagonal product</li><li>\(\det(AB)=\det(A)\det(B)\)</li></ul></div>
@@ -237,6 +245,7 @@ Find \(A^{-1}\).<button class="btn" onclick="rv(this)">Reveal solution</button><
 <div class="sk">Section 12 of 13</div><h2><span class="swipe">Cramer's Rule & Practice</span></h2>
 <p class="intro">Cramer's rule applies to a square system \(Ax=b\) when \(\det(A)\ne0\). It expresses each unknown as a ratio of determinants.</p>
 <div class="key"><b>Cramer's rule</b>If \(A\) is \(n\times n\) and \(\det(A)\ne0\), then the unique solution of \(Ax=b\) is \(x_j=\dfrac{\det(A_j)}{\det(A)}\), where \(A_j\) replaces column \(j\) of \(A\) by \(b\).</div>
+<div class="key"><b>Important link</b><div>Cramer's rule needs a square coefficient matrix and a nonzero determinant.</div><div>\(A_j\) means replace only column \(j\) of \(A\) by the constants column \(b\).</div></div>
 <div class="viz">
 <div class="btnrow">
   <button class="vbtn on" onclick="c3CramerDemo('x',this)">Solve \(x\)</button>
