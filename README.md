@@ -1,22 +1,25 @@
-# NTU COE Prep Math Companion
+# Alice's Mathematics
 
-Interactive NTU COE Prep Math companion with chapter based lessons, worked examples, practice questions, and answers based on NTULearn lectures.
+Alice's Mathematics is an independent personal mathematics workspace built as a static HTML, CSS, and JavaScript website. It contains chapter based lessons, preserved worked examples, practice questions, revealable solutions, handwriting attempts, local notes, bookmarks, formula search, and review tools.
 
-This is a personal study companion and is not an official NTU resource.
+This is a personal study tool and is not affiliated with any institution.
 
 ## Tech Stack
 
 - HTML
 - CSS
-- JavaScript
+- Plain JavaScript
 - KaTeX for math rendering
 - SVG for diagrams and interactive visuals
+- Local storage for progress, notes, bookmarks, confidence, and review status
+- IndexedDB for structured handwriting strokes
 
 ## Folder Structure
 
 ```text
 .
 ├── index.html
+├── content-inventory.json
 ├── assets
 │   ├── style.css
 │   └── tutor.js
@@ -45,7 +48,7 @@ http://localhost:8000
 
 ## GitHub Pages Deployment
 
-1. Create a new GitHub repository.
+1. Create a GitHub repository.
 2. Push this folder to the repository.
 3. In GitHub, open `Settings`.
 4. Open `Pages`.
@@ -55,8 +58,6 @@ http://localhost:8000
 
 GitHub Pages will publish the site from `index.html`.
 
-## Notes
+## Content Preservation
 
-- All links are relative so the site works on GitHub Pages and when opened locally.
-- Chapter pages link back to the homepage.
-- Chapters 0, 1, 2, and 3 contain interactive lessons.
+`content-inventory.json` records chapter sections, examples, questions, solutions, and hashes from the preserved lesson pages. Use it to check that future interface changes do not delete academic content.

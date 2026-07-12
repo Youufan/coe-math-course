@@ -1,0 +1,1546 @@
+{
+  "generated_at": "2026-07-12T21:57:59",
+  "purpose": "Academic content inventory before Alice workspace rework. Section counts, example counts, question hashes, and solution hashes are used for preservation checks.",
+  "chapters": [
+    {
+      "file": "chapters/chapter-0.html",
+      "section_count": 14,
+      "sections": [
+        {
+          "id": "s1",
+          "heading": "Sets & Intervals",
+          "intro_hash": "1b8bb8e88e6e177a",
+          "key_hashes": [
+            "9a0dc2d1345107ee",
+            "7ad3858f0df46c93",
+            "25e9e7a2340aae66"
+          ],
+          "example_count": 1,
+          "examples": [
+            {
+              "label": "Interval notationTRY",
+              "question_hash": "e7ff13ef06b91ee3",
+              "solution_hash": "53b07a162703b358",
+              "question_text": "Write these as intervals: 1) \\(\\{x\\in\\mathbb{R}:2\\lt x\\le5\\}\\) 2) \\(\\{x\\in\\mathbb{R}:x\\lt 0\\}\\) 3) \\(\\{x\\in\\mathbb{R}:-1\\le x\\le1\\}\\)Reveal solution1) \\((2,5]\\)2) \\((-\\infty,0)\\)3) \\([-1,1]\\)",
+              "solution_text": "1) \\((2,5]\\)2) \\((-\\infty,0)\\)3) \\([-1,1]\\)"
+            }
+          ],
+          "visual_count": 2
+        },
+        {
+          "id": "s2",
+          "heading": "Set Operations",
+          "intro_hash": "e895192dbc914959",
+          "key_hashes": [
+            "cfbbf276d8635026",
+            "6b9cfe3d17931a3e"
+          ],
+          "example_count": 4,
+          "examples": [
+            {
+              "label": "Union and intersectionEX 1",
+              "question_hash": "26d0888b58402d56",
+              "solution_hash": "76c7b9bb8cc963c9",
+              "question_text": "\\(A=\\{x\\in\\mathbb{N}:x\\lt 10\\}\\), \\(B=\\{x\\in\\mathbb{R}:2\\lt x\\le5\\}\\). Find \\(A\\cup B\\) and \\(A\\cap B\\).Reveal solution\\(A=\\{0,1,2,\\ldots,9\\}\\); \\(B=(2,5]\\)..\\(A\\cap B=\\{3,4,5\\}\\).\\(A\\cup B=\\{0,1,2\\}\\cup(2,5]\\cup\\{6,7,8,9\\}\\)",
+              "solution_text": "\\(A=\\{0,1,2,\\ldots,9\\}\\); \\(B=(2,5]\\)..\\(A\\cap B=\\{3,4,5\\}\\).\\(A\\cup B=\\{0,1,2\\}\\cup(2,5]\\cup\\{6,7,8,9\\}\\)"
+            },
+            {
+              "label": "ComplementsEX 2",
+              "question_hash": "c37f8b58e8349972",
+              "solution_hash": "724ea86ce6881f1c",
+              "question_text": "For \\(A=\\{x\\in\\mathbb{N}:x\\lt 10\\}\\), find \\(A^c\\) in \\(\\mathbb{N}\\) and in \\(\\mathbb{R}\\).Reveal solutionUniverse \\(\\mathbb{N}\\): .\\(\\{10,11,12,\\ldots\\}\\)Universe \\(\\mathbb{R}\\): . Complements depend on the universe.\\(\\mathbb{R}\\setminus\\{0,1,2,\\ldots,9\\}\\)",
+              "solution_text": "Universe \\(\\mathbb{N}\\): .\\(\\{10,11,12,\\ldots\\}\\)Universe \\(\\mathbb{R}\\): . Complements depend on the universe.\\(\\mathbb{R}\\setminus\\{0,1,2,\\ldots,9\\}\\)"
+            },
+            {
+              "label": "Cartesian productsEX 3",
+              "question_hash": "74e60698363b0946",
+              "solution_hash": "3820501d7582d4a2",
+              "question_text": "Describe these sets: 1) \\(\\mathbb R^2\\) 2) \\(\\mathbb R^3\\) 3) \\(\\mathbb R\\times\\mathbb Z\\).Reveal solution1) . This is the coordinate plane.\\(\\mathbb R^2=\\mathbb R\\times\\mathbb R=\\{(x,y):x,y\\in\\mathbb R\\}\\)2) . This is three dimensional coordinate space.\\(\\mathbb R^3=\\{(x,y,z):x,y,z\\in\\mathbb R\\}\\)3) . In the plane, this is all horizontal lines with integer \\(y\\) values.\\(\\mathbb R\\times\\mathbb Z=\\{(x,n):x\\in\\mathbb R,\\ n\\in\\mathbb Z\\}\\)",
+              "solution_text": "1) . This is the coordinate plane.\\(\\mathbb R^2=\\mathbb R\\times\\mathbb R=\\{(x,y):x,y\\in\\mathbb R\\}\\)2) . This is three dimensional coordinate space.\\(\\mathbb R^3=\\{(x,y,z):x,y,z\\in\\mathbb R\\}\\)3) . In the plane, this is all horizontal lines with integer \\(y\\) values.\\(\\mathbb R\\times\\mathbb Z=\\{(x,n):x\\in\\mathbb R,\\ n\\in\\mathbb Z\\}\\)"
+            },
+            {
+              "label": "Difference and productTRY",
+              "question_hash": "d5ef97cd5365e2e6",
+              "solution_hash": "3a663dff48d4f5c9",
+              "question_text": "\\(A=\\{1,2,3,4\\}\\), \\(B=\\{1,2,3,5\\}\\). Find \\(A\\setminus B\\), \\(B\\setminus A\\), and how many ordered pairs \\(A\\times B\\) has.Reveal solution, .\\(A\\setminus B=\\{4\\}\\)\\(B\\setminus A=\\{5\\}\\)\\(A\\times B\\) has ordered pairs.\\(4\\times4=16\\)",
+              "solution_text": ", .\\(A\\setminus B=\\{4\\}\\)\\(B\\setminus A=\\{5\\}\\)\\(A\\times B\\) has ordered pairs.\\(4\\times4=16\\)"
+            }
+          ],
+          "visual_count": 2
+        },
+        {
+          "id": "s3",
+          "heading": "Functions, Domain & Range",
+          "intro_hash": "a5cf5d4285dd6140",
+          "key_hashes": [
+            "1e565edd24f55b9e",
+            "97a8e7dce14e240d",
+            "bd40d7f633c1b28f",
+            "599c7ad823a274c0"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Domain, codomain, rangeEX 4",
+              "question_hash": "668b628f5090bf11",
+              "solution_hash": "50178c9537b75202",
+              "question_text": "\\(f:\\mathbb{R}\\to\\mathbb{R}\\), \\(f(x)=x^2\\). Fill in domain, codomain, range.Reveal solutionDomain = . Codomain = .\\(\\mathbb{R}\\)\\(\\mathbb{R}\\)Range = , because squares are never negative.\\([0,\\infty)\\)",
+              "solution_text": "Domain = . Codomain = .\\(\\mathbb{R}\\)\\(\\mathbb{R}\\)Range = , because squares are never negative.\\([0,\\infty)\\)"
+            },
+            {
+              "label": "Four domainsEX 5",
+              "question_hash": "e045809f608cfa74",
+              "solution_hash": "56bc2edde772455d",
+              "question_text": "Find domain and range: 1) \\(\\frac{1}{\\sqrt{x}}\\) 2) \\(\\sqrt[4]{x+1}\\) 3) \\(x^2+1\\) 4) \\(\\frac{1}{\\sqrt{x^2+3x+2}}\\).Reveal solution1) Need \\(x\\gt 0\\). Domain , range .\\((0,\\infty)\\)\\((0,\\infty)\\)2) Need \\(x+1\\ge0\\). Domain , range .\\([-1,\\infty)\\)\\([0,\\infty)\\)3) Domain , range .\\(\\mathbb{R}\\)\\([1,\\infty)\\)4) Need \\((x+1)(x+2)\\gt 0\\). Domain , range .\\((-\\infty,-2)\\cup(-1,\\infty)\\)\\((0,\\infty)\\)",
+              "solution_text": "1) Need \\(x\\gt 0\\). Domain , range .\\((0,\\infty)\\)\\((0,\\infty)\\)2) Need \\(x+1\\ge0\\). Domain , range .\\([-1,\\infty)\\)\\([0,\\infty)\\)3) Domain , range .\\(\\mathbb{R}\\)\\([1,\\infty)\\)4) Need \\((x+1)(x+2)\\gt 0\\). Domain , range .\\((-\\infty,-2)\\cup(-1,\\infty)\\)\\((0,\\infty)\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "s4",
+          "heading": "Combining Functions",
+          "intro_hash": "0d8c4b56815a9565",
+          "key_hashes": [
+            "c37112567773f6b7",
+            "b2b1450053a4a290"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Which compositions exist?EX 6",
+              "question_hash": "d98d47f891093318",
+              "solution_hash": "4d5a307727c36746",
+              "question_text": "\\(f(x)=\\frac{1}{x+1}\\), \\(g(x)=\\sqrt{x}\\), \\(h(x)=x+1\\). Test \\(f\\circ g\\), \\(g\\circ f\\), \\(g\\circ h\\).Reveal solution\\(f\\circ g\\) exists: \\(R_g=[0,\\infty)\\subseteq D_f=\\mathbb{R}\\setminus\\{-1\\}\\). .\\((f\\circ g)(x)=\\frac{1}{\\sqrt{x}+1}\\)\\(g\\circ f\\) does not exist: \\(f\\) can output negatives, but \\(g\\) needs input \\(\\ge0\\).\\(g\\circ h\\) does not exist on all \\(\\mathbb{R}\\): \\(h\\) can output negatives.",
+              "solution_text": "\\(f\\circ g\\) exists: \\(R_g=[0,\\infty)\\subseteq D_f=\\mathbb{R}\\setminus\\{-1\\}\\). .\\((f\\circ g)(x)=\\frac{1}{\\sqrt{x}+1}\\)\\(g\\circ f\\) does not exist: \\(f\\) can output negatives, but \\(g\\) needs input \\(\\ge0\\).\\(g\\circ h\\) does not exist on all \\(\\mathbb{R}\\): \\(h\\) can output negatives."
+            },
+            {
+              "label": "ComposeTRY",
+              "question_hash": "255253437692ae5a",
+              "solution_hash": "95aecf39c2c4be5d",
+              "question_text": "If \\(f(x)=\\sqrt{x-1}\\) and \\(g(x)=x^2+1\\), find \\(f\\circ g\\).Reveal solution\\(f(g(x))=\\sqrt{(x^2+1)-1}=\\sqrt{x^2}=\\).\\(|x|\\)It exists for all real \\(x\\) because \\(g(x)\\ge1\\).",
+              "solution_text": "\\(f(g(x))=\\sqrt{(x^2+1)-1}=\\sqrt{x^2}=\\).\\(|x|\\)It exists for all real \\(x\\) because \\(g(x)\\ge1\\)."
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "s5",
+          "heading": "Injective, Surjective, Inverse",
+          "intro_hash": "4065c399afe95e58",
+          "key_hashes": [
+            "a83792925abe27c6",
+            "6f72237de7276cf1",
+            "0ea9478146d07966",
+            "03ad5f5e1bbdcb33"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "ClassifyEX 7",
+              "question_hash": "c85aa49161ad9fa6",
+              "solution_hash": "b06822ed36592225",
+              "question_text": "Classify: 1) \\(f:\\mathbb{R}\\to\\mathbb{R},\\ f(x)=x^3\\) 2) \\(g:\\mathbb{R}\\to[0,\\infty),\\ g(x)=x^2\\) 3) \\(h:[0,2\\pi]\\to[-1,1],\\ h(x)=\\sin x\\) 4) \\(k:[-\\pi/2,\\pi/2]\\to[-1,1],\\ k(x)=\\sin x\\).Reveal solution1) : increasing and hits every real.Bijective2) : \\(g(-2)=g(2)\\).Surjective, not injective3) : \\(\\sin0=\\sin\\pi\\).Surjective, not injective4) : sine maps distinct inputs to distinct outputs on this restricted interval and hits \\([-1,1]\\).Bijective",
+              "solution_text": "1) : increasing and hits every real.Bijective2) : \\(g(-2)=g(2)\\).Surjective, not injective3) : \\(\\sin0=\\sin\\pi\\).Surjective, not injective4) : sine maps distinct inputs to distinct outputs on this restricted interval and hits \\([-1,1]\\).Bijective"
+            },
+            {
+              "label": "InversesEX 8 to 10",
+              "question_hash": "f99299bc0ac57f60",
+              "solution_hash": "d7780e6b029660a5",
+              "question_text": "Find inverses: 1) \\(f(x)=2x+1\\) 2) \\(f(x)=\\frac{x-1}{x+1}\\) 3) \\(f:[2,\\infty)\\to\\mathbb{R},\\ f(x)=x^2-4x+2\\).Reveal solution1) \\(y=2x+1\\Rightarrow x=\\frac{y-1}{2}\\), so .\\(f^{-1}(x)=\\frac{x-1}{2}\\)2) \\(y(x+1)=x-1\\Rightarrow x(y-1)=-(1+y)\\), so , \\(x\\ne1\\).\\(f^{-1}(x)=\\frac{1+x}{1-x}\\)3) \\(f(x)=(x-2)^2-2\\). Range . Since \\(x\\ge2\\), take positive root: .\\([-2,\\infty)\\)\\(f^{-1}(x)=2+\\sqrt{x+2}\\)",
+              "solution_text": "1) \\(y=2x+1\\Rightarrow x=\\frac{y-1}{2}\\), so .\\(f^{-1}(x)=\\frac{x-1}{2}\\)2) \\(y(x+1)=x-1\\Rightarrow x(y-1)=-(1+y)\\), so , \\(x\\ne1\\).\\(f^{-1}(x)=\\frac{1+x}{1-x}\\)3) \\(f(x)=(x-2)^2-2\\). Range . Since \\(x\\ge2\\), take positive root: .\\([-2,\\infty)\\)\\(f^{-1}(x)=2+\\sqrt{x+2}\\)"
+            }
+          ],
+          "visual_count": 2
+        },
+        {
+          "id": "s6",
+          "heading": "Even, Odd, Roots, Piecewise",
+          "intro_hash": "be9607653605c3e6",
+          "key_hashes": [
+            "82776e999ff2d875"
+          ],
+          "example_count": 3,
+          "examples": [
+            {
+              "label": "SymmetryTRY",
+              "question_hash": "7625368e688df225",
+              "solution_hash": "5de8ac7ab7c08428",
+              "question_text": "Even, odd, or neither: \\(x^2\\), \\(x^3\\), \\(x^2+x^4\\), \\(x+x^2\\).Reveal solution\\(x^2\\): . \\(x^3\\): .evenodd\\(x^2+x^4\\): . \\(x+x^2\\): .evenneither",
+              "solution_text": "\\(x^2\\): . \\(x^3\\): .evenodd\\(x^2+x^4\\): . \\(x+x^2\\): .evenneither"
+            },
+            {
+              "label": "RootsEX 12",
+              "question_hash": "b606ac8600882a33",
+              "solution_hash": "1a7ec4701cef3bd5",
+              "question_text": "Find real roots of \\(x^2-3\\), \\(e^x-1\\), and \\(x+\\frac{1}{x}\\).Reveal solution\\(x^2-3=0\\Rightarrow\\).\\(x=\\pm\\sqrt{3}\\)\\(e^x-1=0\\Rightarrow\\).\\(x=0\\)\\(x+\\frac{1}{x}=0\\Rightarrow x^2=-1\\Rightarrow\\).no real roots",
+              "solution_text": "\\(x^2-3=0\\Rightarrow\\).\\(x=\\pm\\sqrt{3}\\)\\(e^x-1=0\\Rightarrow\\).\\(x=0\\)\\(x+\\frac{1}{x}=0\\Rightarrow x^2=-1\\Rightarrow\\).no real roots"
+            },
+            {
+              "label": "Piecewise sketchEX 13",
+              "question_hash": "94c0688fa4130327",
+              "solution_hash": "bbd372c7771497dd",
+              "question_text": "Sketch \\(f(x)=-x\\) for \\(x\\lt -1\\), \\(x^2\\) for \\(|x|\\le1\\), and \\(2\\) for \\(x\\gt 1\\).Reveal solutionOpen dot at \\((1,2)\\); filled dots at \\((-1,1)\\) and \\((1,1)\\).",
+              "solution_text": "Open dot at \\((1,2)\\); filled dots at \\((-1,1)\\) and \\((1,1)\\)."
+            }
+          ],
+          "visual_count": 3
+        },
+        {
+          "id": "s7",
+          "heading": "Polynomials & Quadratics",
+          "intro_hash": "91f5bdb5865105c0",
+          "key_hashes": [
+            "a5956f0c6bad291f",
+            "85442b78e0b9be50",
+            "694c4f1f081db2f1"
+          ],
+          "example_count": 4,
+          "examples": [
+            {
+              "label": "Polynomial or not?EX 14",
+              "question_hash": "d7924980daeea3e7",
+              "solution_hash": "9655399abd0bea1a",
+              "question_text": "Classify: \\(x^{33}-x^2+1\\), \\(x^2+\\frac{1}{x^2}+1\\), \\(x^2+x+\\sin x\\).Reveal solution.Yes, degree 33, because \\(\\frac{1}{x^2}=x^{-2}\\).No, because sin x is not a power of x.No",
+              "solution_text": ".Yes, degree 33, because \\(\\frac{1}{x^2}=x^{-2}\\).No, because sin x is not a power of x.No"
+            },
+            {
+              "label": "Complete the squareEX 15",
+              "question_hash": "103f0fec6d548c35",
+              "solution_hash": "8e5a2d9564841d73",
+              "question_text": "Write \\(2x^2-x+3\\) as \\(k(x-a)^2+b\\) and find the minimum.Reveal solution\\(2x^2-x+3=2(x^2-\\frac12x)+3\\).Half of \\(\\frac12\\) is \\(\\frac14\\): \\(2[(x-\\frac14)^2-\\frac{1}{16}]+3\\)..\\(2(x-\\frac14)^2+\\frac{23}{8}\\)Minimum is at .\\(\\frac{23}{8}\\)\\(x=\\frac14\\)",
+              "solution_text": "\\(2x^2-x+3=2(x^2-\\frac12x)+3\\).Half of \\(\\frac12\\) is \\(\\frac14\\): \\(2[(x-\\frac14)^2-\\frac{1}{16}]+3\\)..\\(2(x-\\frac14)^2+\\frac{23}{8}\\)Minimum is at .\\(\\frac{23}{8}\\)\\(x=\\frac14\\)"
+            },
+            {
+              "label": "Remainder and factor theoremEX 19 and 20",
+              "question_hash": "7bce1af2f754da0d",
+              "solution_hash": "ec45fc7a55391c2f",
+              "question_text": "1) Remainder when \\(x^3+x^2+x+1\\) is divided by \\(x-1\\). 2) Find \\(k\\) so \\(x-k\\) is a factor of \\(3x^3-x^2-x-k\\).Reveal solution1) \\(P(1)=1+1+1+1=\\).\\(4\\)2) Need \\(P(k)=0\\): \\(3k^3-k^2-2k=k(3k+2)(k-1)=0\\)..\\(k=0,-\\frac23,1\\)",
+              "solution_text": "1) \\(P(1)=1+1+1+1=\\).\\(4\\)2) Need \\(P(k)=0\\): \\(3k^3-k^2-2k=k(3k+2)(k-1)=0\\)..\\(k=0,-\\frac23,1\\)"
+            },
+            {
+              "label": "Rational functionsTRY",
+              "question_hash": "159a2f5cfa749bce",
+              "solution_hash": "c276b8a765ad25be",
+              "question_text": "Which are rational: \\(\\frac{x^2+2x+1}{x^2+1}\\), \\(\\frac{1}{x^2+1}\\), \\(\\frac{x^{3/2}+x-1}{4x^5-x^2+13}\\)?Reveal solutionFirst two are . Third is , because \\(x^{3/2}\\) is not a polynomial power.rationalnot",
+              "solution_text": "First two are . Third is , because \\(x^{3/2}\\) is not a polynomial power.rationalnot"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "s8",
+          "heading": "Inequalities & Absolute Value",
+          "intro_hash": "20d34e44bc194d0c",
+          "key_hashes": [
+            "f8b049b1ff02b6e5",
+            "d57b5cc94ea4d544",
+            "23ae9b620c651fea",
+            "e3022be822478fae"
+          ],
+          "example_count": 4,
+          "examples": [
+            {
+              "label": "True or falseEX 21",
+              "question_hash": "3f8126c2a2683398",
+              "solution_hash": "9e89467e4314f729",
+              "question_text": "\\(1\\le2\\), \\(1\\le1\\), \\(-2\\le-3\\), \\(0.999\\ldots\\lt 1\\).Reveal solutionTrue, true, , .falsefalse\\(-2\\) is greater than \\(-3\\). Also \\(0.999\\ldots=1\\) exactly.",
+              "solution_text": "True, true, , .falsefalse\\(-2\\) is greater than \\(-3\\). Also \\(0.999\\ldots=1\\) exactly."
+            },
+            {
+              "label": "Compound inequalityEX 22",
+              "question_hash": "187397c7441da74f",
+              "solution_hash": "a34c24db280c2c1a",
+              "question_text": "Solve \\(x+2\\lt 4x+3\\lt 2x+20\\).Reveal solutionLeft: \\(x+2\\lt 4x+3\\Rightarrow x\\gt -\\frac13\\).Right: \\(4x+3\\lt 2x+20\\Rightarrow x\\lt \\frac{17}{2}\\)..\\(-\\frac13\\lt x\\lt \\frac{17}{2}\\)",
+              "solution_text": "Left: \\(x+2\\lt 4x+3\\Rightarrow x\\gt -\\frac13\\).Right: \\(4x+3\\lt 2x+20\\Rightarrow x\\lt \\frac{17}{2}\\)..\\(-\\frac13\\lt x\\lt \\frac{17}{2}\\)"
+            },
+            {
+              "label": "Quick absolute valueEX 28",
+              "question_hash": "5b188d2dcef00660",
+              "solution_hash": "dc914c201b854696",
+              "question_text": "Solve: \\(|x|\\lt 1\\), \\(|x|\\le1\\), \\(|x|\\gt 2\\), \\(|x+2|\\lt 3\\), \\(|2x-5|\\gt 4\\).Reveal solution, , .\\((-1,1)\\)\\([-1,1]\\)\\(x\\lt -2\\text{ or }x\\gt 2\\)\\(|x+2|\\lt 3\\Rightarrow\\).\\(-5\\lt x\\lt 1\\)\\(|2x-5|\\gt 4\\Rightarrow2x-5\\gt 4\\) or \\(2x-5\\lt -4\\Rightarrow\\).\\(x\\gt \\frac92\\text{ or }x\\lt \\frac12\\)",
+              "solution_text": ", , .\\((-1,1)\\)\\([-1,1]\\)\\(x\\lt -2\\text{ or }x\\gt 2\\)\\(|x+2|\\lt 3\\Rightarrow\\).\\(-5\\lt x\\lt 1\\)\\(|2x-5|\\gt 4\\Rightarrow2x-5\\gt 4\\) or \\(2x-5\\lt -4\\Rightarrow\\).\\(x\\gt \\frac92\\text{ or }x\\lt \\frac12\\)"
+            },
+            {
+              "label": "Case workEX 29 and 30",
+              "question_hash": "11040f69553b65c9",
+              "solution_hash": "a9ea4ee2889bdc81",
+              "question_text": "1) \\(|x+7|\\lt 2x+10\\). 2) \\(|x-3|\\ge |x+1|-1\\).Reveal solution1) \\(-2x-10\\lt x+7\\lt 2x+10\\) gives \\(x\\gt -\\frac{17}{3}\\) and \\(x\\gt -3\\). So .\\(x\\gt -3\\)2) Equivalent to \\(|x-3|-|x+1|\\ge-1\\). Split at \\(-1\\) and \\(3\\).\\(x\\lt -1\\): value \\(=4\\), works. \\(-1\\le x\\le3\\): \\(2-2x\\ge-1\\Rightarrow x\\le\\frac32\\). \\(x\\gt 3\\): value \\(=-4\\), fails..\\(x\\le\\frac32\\)",
+              "solution_text": "1) \\(-2x-10\\lt x+7\\lt 2x+10\\) gives \\(x\\gt -\\frac{17}{3}\\) and \\(x\\gt -3\\). So .\\(x\\gt -3\\)2) Equivalent to \\(|x-3|-|x+1|\\ge-1\\). Split at \\(-1\\) and \\(3\\).\\(x\\lt -1\\): value \\(=4\\), works. \\(-1\\le x\\le3\\): \\(2-2x\\ge-1\\Rightarrow x\\le\\frac32\\). \\(x\\gt 3\\): value \\(=-4\\), fails..\\(x\\le\\frac32\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "s9",
+          "heading": "Exponents & Logarithms",
+          "intro_hash": "78c214ff25d63e11",
+          "key_hashes": [
+            "6118dcb107260fb7",
+            "003964e283d2c5ca",
+            "6b4f7fd81b9ef52b",
+            "2429b2a4f14bfcd2"
+          ],
+          "example_count": 4,
+          "examples": [
+            {
+              "label": "Solving powersEX 32",
+              "question_hash": "76fd21beca799d0e",
+              "solution_hash": "622a6f62455ee68f",
+              "question_text": "Find all real \\(x\\): \\(x^2=4\\), \\(x^2=-1\\), \\(x^3=8\\), \\(x^3=-8\\).Reveal solution; ; ; .\\(x=\\pm2\\)no real solution\\(x=2\\)\\(x=-2\\)\\(\\sqrt4\\) means the root \\(2\\), which is not negative, but \\(x^2=4\\) has two solutions.",
+              "solution_text": "; ; ; .\\(x=\\pm2\\)no real solution\\(x=2\\)\\(x=-2\\)\\(\\sqrt4\\) means the root \\(2\\), which is not negative, but \\(x^2=4\\) has two solutions."
+            },
+            {
+              "label": "Same base thinkingEX 33 and 34",
+              "question_hash": "226e4ab8848364f8",
+              "solution_hash": "305e66fab42fd5b7",
+              "question_text": "1) If \\(x\\gt 0\\) and \\(x^2=8\\), write \\(x\\) as \\(2^k\\). 2) Solve \\(\\frac{9^x}{3^{x+1}}=27\\).Reveal solution1) \\(x=\\sqrt8=(2^3)^{1/2}=\\).\\(2^{3/2}\\)2) \\(9^x=3^{2x}\\) and \\(27=3^3\\). So \\(3^{2x-(x+1)}=3^3\\Rightarrow x-1=3\\Rightarrow\\).\\(x=4\\)",
+              "solution_text": "1) \\(x=\\sqrt8=(2^3)^{1/2}=\\).\\(2^{3/2}\\)2) \\(9^x=3^{2x}\\) and \\(27=3^3\\). So \\(3^{2x-(x+1)}=3^3\\Rightarrow x-1=3\\Rightarrow\\).\\(x=4\\)"
+            },
+            {
+              "label": "Read logs as questionsEX 36",
+              "question_hash": "373c59b63fedd9e7",
+              "solution_hash": "0f3c350449d02594",
+              "question_text": "Compute \\(\\log_2 8\\), \\(\\log_3 81\\), \\(\\log_{1/2}2\\).Reveal solution\\(2\\) to what power is \\(8\\)? .\\(3\\)\\(3\\) to what power is \\(81\\)? .\\(4\\)\\(\\frac12\\) to what power is \\(2\\)? .\\(-1\\)",
+              "solution_text": "\\(2\\) to what power is \\(8\\)? .\\(3\\)\\(3\\) to what power is \\(81\\)? .\\(4\\)\\(\\frac12\\) to what power is \\(2\\)? .\\(-1\\)"
+            },
+            {
+              "label": "Change of baseEX 39",
+              "question_hash": "530072d6cd25cb7b",
+              "solution_hash": "af4e52c0c58199be",
+              "question_text": "Show \\((\\log_3 a)(\\log_a9)=2\\).Reveal solution\\(\\log_a9=\\frac{\\log_3 9}{\\log_3 a}\\).\\((\\log_3a)\\frac{\\log_39}{\\log_3a}=\\log_39=\\log_3(3^2)=\\).\\(2\\)",
+              "solution_text": "\\(\\log_a9=\\frac{\\log_3 9}{\\log_3 a}\\).\\((\\log_3a)\\frac{\\log_39}{\\log_3a}=\\log_39=\\log_3(3^2)=\\).\\(2\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "s10",
+          "heading": "Sigma Notation & Series",
+          "intro_hash": "bea2dbed1284d22c",
+          "key_hashes": [
+            "9d510759ab233558",
+            "1ab458f2f4b7114f",
+            "f6885938957eabf1"
+          ],
+          "example_count": 3,
+          "examples": [
+            {
+              "label": "DecodeEX 40",
+              "question_hash": "fe612e6594904c8d",
+              "solution_hash": "cb938f1e21961013",
+              "question_text": "Compute \\(\\sum_{i=1}^{5}i\\), \\(\\sum_{j=1}^{5}j\\), \\(\\sum_{i=2}^{5}i^2\\), \\(\\sum_{i=1}^{5}(\\frac12)^i\\).Reveal solution, (dummy letter), , .\\(15\\)\\(15\\)\\(54\\)\\(\\frac{31}{32}\\)",
+              "solution_text": ", (dummy letter), , .\\(15\\)\\(15\\)\\(54\\)\\(\\frac{31}{32}\\)"
+            },
+            {
+              "label": "TelescopingEX 41",
+              "question_hash": "1b0d31289689b064",
+              "solution_hash": "205c6f274994789c",
+              "question_text": "\\(S(n)=\\sum_{i=1}^{n}\\frac{1}{i^2+i}\\). Find \\(S(1),\\ldots,S(5)\\), then guess \\(S(n)\\).Reveal solution\\(\\frac{1}{i^2+i}=\\frac{1}{i(i+1)}=\\frac{1}{i}-\\frac{1}{i+1}\\).Terms cancel: \\(S(n)=1-\\frac{1}{n+1}=\\).\\(\\frac{n}{n+1}\\)\\(S(1),\\ldots,S(5)=\\).\\(\\frac12,\\frac23,\\frac34,\\frac45,\\frac56\\)",
+              "solution_text": "\\(\\frac{1}{i^2+i}=\\frac{1}{i(i+1)}=\\frac{1}{i}-\\frac{1}{i+1}\\).Terms cancel: \\(S(n)=1-\\frac{1}{n+1}=\\).\\(\\frac{n}{n+1}\\)\\(S(1),\\ldots,S(5)=\\).\\(\\frac12,\\frac23,\\frac34,\\frac45,\\frac56\\)"
+            },
+            {
+              "label": "SeriesEX 43 to 46",
+              "question_hash": "72f573e53a288af3",
+              "solution_hash": "020445f213c245d9",
+              "question_text": "Evaluate: 1) \\(\\sum_{k=1}^{10}2^k\\) 2) \\(\\sum_{k=0}^{100}(\\frac12)^k\\) 3) \\(\\sum_{k=1}^{\\infty}\\frac{1}{2^k}\\) 4) \\(0.333\\ldots\\) and \\(0.123123\\ldots\\) as fractions.Reveal solution1) . 2) .2046\\(2-(\\frac12)^{100}\\)3) First term \\(\\frac12\\), ratio \\(\\frac12\\Rightarrow\\).\\(1\\)4) and .\\(\\frac13\\)\\(\\frac{123}{999}=\\frac{41}{333}\\)",
+              "solution_text": "1) . 2) .2046\\(2-(\\frac12)^{100}\\)3) First term \\(\\frac12\\), ratio \\(\\frac12\\Rightarrow\\).\\(1\\)4) and .\\(\\frac13\\)\\(\\frac{123}{999}=\\frac{41}{333}\\)"
+            }
+          ],
+          "visual_count": 2
+        },
+        {
+          "id": "s11",
+          "heading": "Trigonometry & Inverse Trig",
+          "intro_hash": "37324e99705dbfb6",
+          "key_hashes": [
+            "1506aea68a290bd1",
+            "516ed095cab8a759",
+            "259c9de533160bca"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "General anglesEX 47",
+              "question_hash": "3ccd23318b913873",
+              "solution_hash": "e7990cd22cfacfaf",
+              "question_text": "Find \\(\\sin120^\\circ\\), \\(\\cos120^\\circ\\), \\(\\tan135^\\circ\\), \\(\\sec225^\\circ\\).Reveal solution\\(\\sin120^\\circ=\\sin60^\\circ=\\).\\(\\frac{\\sqrt3}{2}\\)\\(\\cos120^\\circ=-\\cos60^\\circ=\\).\\(-\\frac12\\)\\(\\tan135^\\circ=-\\tan45^\\circ=\\).\\(-1\\)\\(\\sec225^\\circ=\\frac{1}{\\cos225^\\circ}=\\frac{1}{-\\sqrt2/2}=\\).\\(-\\sqrt2\\)",
+              "solution_text": "\\(\\sin120^\\circ=\\sin60^\\circ=\\).\\(\\frac{\\sqrt3}{2}\\)\\(\\cos120^\\circ=-\\cos60^\\circ=\\).\\(-\\frac12\\)\\(\\tan135^\\circ=-\\tan45^\\circ=\\).\\(-1\\)\\(\\sec225^\\circ=\\frac{1}{\\cos225^\\circ}=\\frac{1}{-\\sqrt2/2}=\\).\\(-\\sqrt2\\)"
+            },
+            {
+              "label": "Trig equations on 0\u2264x\u22642\u03c0EX 48",
+              "question_hash": "7135970afcdfc7cc",
+              "solution_hash": "ba66c15eb121c30a",
+              "question_text": "Solve: 1) \\(\\sin x=\\frac12\\) 2) \\(\\cos(2x)=\\frac12\\) 3) \\(2\\sin^2x+\\cos x-2=0\\).Reveal solution1) .\\(x=\\frac{\\pi}{6},\\frac{5\\pi}{6}\\)2) \\(2x=\\frac{\\pi}{3},\\frac{5\\pi}{3},\\frac{7\\pi}{3},\\frac{11\\pi}{3}\\Rightarrow\\).\\(x=\\frac{\\pi}{6},\\frac{5\\pi}{6},\\frac{7\\pi}{6},\\frac{11\\pi}{6}\\)3) Use \\(\\sin^2x=1-\\cos^2x\\): \\(2(1-\\cos^2x)+\\cos x-2=0\\Rightarrow\\cos x(1-2\\cos x)=0\\)..\\(x=\\frac{\\pi}{2},\\frac{3\\pi}{2},\\frac{\\pi}{3},\\frac{5\\pi}{3}\\)",
+              "solution_text": "1) .\\(x=\\frac{\\pi}{6},\\frac{5\\pi}{6}\\)2) \\(2x=\\frac{\\pi}{3},\\frac{5\\pi}{3},\\frac{7\\pi}{3},\\frac{11\\pi}{3}\\Rightarrow\\).\\(x=\\frac{\\pi}{6},\\frac{5\\pi}{6},\\frac{7\\pi}{6},\\frac{11\\pi}{6}\\)3) Use \\(\\sin^2x=1-\\cos^2x\\): \\(2(1-\\cos^2x)+\\cos x-2=0\\Rightarrow\\cos x(1-2\\cos x)=0\\)..\\(x=\\frac{\\pi}{2},\\frac{3\\pi}{2},\\frac{\\pi}{3},\\frac{5\\pi}{3}\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "s12",
+          "heading": "Mathematical Induction",
+          "intro_hash": "c83adeea10158948",
+          "key_hashes": [
+            "d49af087b7cc8f7f",
+            "7c6624473ddcda83",
+            "3921b62ad93da1a9"
+          ],
+          "example_count": 3,
+          "examples": [
+            {
+              "label": "Sum of integersEX 50",
+              "question_hash": "2c21fa6223073fa3",
+              "solution_hash": "97bf6df8fbecf2b3",
+              "question_text": "Prove \\(\\sum_{r=1}^{n}r=\\frac{n(n+1)}{2}\\) for all \\(n\\ge1\\).Reveal solutionBase \\(n=1\\): LHS \\(=1\\), RHS \\(=\\frac{1(2)}{2}=1\\).Assume \\(\\sum_{r=1}^{k}r=\\frac{k(k+1)}{2}\\).Then \\(\\sum_{r=1}^{k+1}r=\\frac{k(k+1)}{2}+(k+1)=\\frac{(k+1)(k+2)}{2}\\).That is the formula with \\(n=k+1\\). Done.",
+              "solution_text": "Base \\(n=1\\): LHS \\(=1\\), RHS \\(=\\frac{1(2)}{2}=1\\).Assume \\(\\sum_{r=1}^{k}r=\\frac{k(k+1)}{2}\\).Then \\(\\sum_{r=1}^{k+1}r=\\frac{k(k+1)}{2}+(k+1)=\\frac{(k+1)(k+2)}{2}\\).That is the formula with \\(n=k+1\\). Done."
+            },
+            {
+              "label": "Sum of squaresEX 51",
+              "question_hash": "29ef186ce805fa70",
+              "solution_hash": "9a70eac01b143503",
+              "question_text": "Prove \\(\\sum_{r=1}^{n}r^2=\\frac{n(n+1)(2n+1)}{6}\\).Reveal solutionBase n=1: both sides =1.Assume true for \\(k\\). Add \\((k+1)^2\\):\\(\\frac{k(k+1)(2k+1)}{6}+(k+1)^2=\\frac{(k+1)[k(2k+1)+6(k+1)]}{6}\\).Inside \\(=2k^2+7k+6=(k+2)(2k+3)\\). So result = , the formula for \\(k+1\\).\\(\\frac{(k+1)(k+2)(2k+3)}{6}\\)",
+              "solution_text": "Base n=1: both sides =1.Assume true for \\(k\\). Add \\((k+1)^2\\):\\(\\frac{k(k+1)(2k+1)}{6}+(k+1)^2=\\frac{(k+1)[k(2k+1)+6(k+1)]}{6}\\).Inside \\(=2k^2+7k+6=(k+2)(2k+3)\\). So result = , the formula for \\(k+1\\).\\(\\frac{(k+1)(k+2)(2k+3)}{6}\\)"
+            },
+            {
+              "label": "InequalitiesEX 52 and 53",
+              "question_hash": "d2100e538aa56bb2",
+              "solution_hash": "6ae845e9d6f31d35",
+              "question_text": "1) Prove \\(n!\\gt 2^n\\) for \\(n\\ge4\\). 2) Bernoulli: for \\(x\\gt -1\\) and \\(x\\ne0\\), prove \\((1+x)^n\\gt 1+nx\\) for \\(n\\ge2\\).Reveal solution1) Base \\(n=4\\): \\(24\\gt 16\\). If \\(k!\\gt 2^k\\) and \\(k+1\\gt 2\\), then \\((k+1)!=(k+1)k!\\gt 2\\cdot2^k=2^{k+1}\\).2) Base \\(n=2\\): \\((1+x)^2=1+2x+x^2\\gt 1+2x\\) because \\(x^2\\gt 0\\).Assume \\((1+x)^k\\gt 1+kx\\). Since \\(1+x\\gt 0\\), multiply: \\((1+x)^{k+1}\\gt (1+kx)(1+x)=1+(k+1)x+kx^2\\).If \\(x\\gt -1\\) and \\(x\\ne0\\), \\(kx^2\\gt 0\\), so .\\((1+x)^{k+1}\\gt 1+(k+1)x\\)",
+              "solution_text": "1) Base \\(n=4\\): \\(24\\gt 16\\). If \\(k!\\gt 2^k\\) and \\(k+1\\gt 2\\), then \\((k+1)!=(k+1)k!\\gt 2\\cdot2^k=2^{k+1}\\).2) Base \\(n=2\\): \\((1+x)^2=1+2x+x^2\\gt 1+2x\\) because \\(x^2\\gt 0\\).Assume \\((1+x)^k\\gt 1+kx\\). Since \\(1+x\\gt 0\\), multiply: \\((1+x)^{k+1}\\gt (1+kx)(1+x)=1+(k+1)x+kx^2\\).If \\(x\\gt -1\\) and \\(x\\ne0\\), \\(kx^2\\gt 0\\), so .\\((1+x)^{k+1}\\gt 1+(k+1)x\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "s13",
+          "heading": "Chapter Exercises",
+          "intro_hash": "5777c442ed10dbc5",
+          "key_hashes": [],
+          "example_count": 11,
+          "examples": [
+            {
+              "label": "SetsQ1",
+              "question_hash": "2a4dd295b5e719b1",
+              "solution_hash": "5f97246d18d6bbf1",
+              "question_text": "\\(A=[0,4]\\), \\(B=(1,3)\\), \\(C=\\mathbb{Z}\\). Find \\(A\\cup B\\), \\(A\\cap B\\), \\(A\\setminus B\\), \\(B\\setminus A\\), \\(B\\cup C\\), \\(B\\setminus C\\), \\(A\\cap(B\\cup C)\\), \\((A\\cap B)\\cup(A\\cap C)\\).Reveal solution\\(A\\cup B=\\), \\(A\\cap B=\\).\\([0,4]\\)\\((1,3)\\)\\(A\\setminus B=\\), \\(B\\setminus A=\\).\\([0,1]\\cup[3,4]\\)\\(\\varnothing\\)\\(B\\cup C=\\), \\(B\\setminus C=\\).\\(\\mathbb{Z}\\cup(1,3)\\)\\((1,2)\\cup(2,3)\\)\\(A\\cap(B\\cup C)=\\).\\(\\{0,1,2,3,4\\}\\cup(1,3)\\)\\((A\\cap B)\\cup(A\\cap C)=\\). Same as previous.\\((1,3)\\cup\\{0,1,2,3,4\\}\\)",
+              "solution_text": "\\(A\\cup B=\\), \\(A\\cap B=\\).\\([0,4]\\)\\((1,3)\\)\\(A\\setminus B=\\), \\(B\\setminus A=\\).\\([0,1]\\cup[3,4]\\)\\(\\varnothing\\)\\(B\\cup C=\\), \\(B\\setminus C=\\).\\(\\mathbb{Z}\\cup(1,3)\\)\\((1,2)\\cup(2,3)\\)\\(A\\cap(B\\cup C)=\\).\\(\\{0,1,2,3,4\\}\\cup(1,3)\\)\\((A\\cap B)\\cup(A\\cap C)=\\). Same as previous.\\((1,3)\\cup\\{0,1,2,3,4\\}\\)"
+            },
+            {
+              "label": "Integer setQ2",
+              "question_hash": "b872a28846015ce9",
+              "solution_hash": "0bc1aef7451c542c",
+              "question_text": "\\(S=\\{x\\in\\mathbb{Z}:(x-10)(x+10)\\lt 0\\}\\). List \\(S\\).Reveal solutionProduct is negative between roots \\(-10\\) and \\(10\\)..\\(S=\\{-9,-8,\\ldots,-1,0,1,\\ldots,8,9\\}\\)",
+              "solution_text": "Product is negative between roots \\(-10\\) and \\(10\\)..\\(S=\\{-9,-8,\\ldots,-1,0,1,\\ldots,8,9\\}\\)"
+            },
+            {
+              "label": "Set proofsQ3 and Q4",
+              "question_hash": "cb17b4069638856d",
+              "solution_hash": "435927ddfd0709c4",
+              "question_text": "Prove \\(A\\cap(B\\cup C)=(A\\cap B)\\cup(A\\cap C)\\). Then prove De Morgan laws.Reveal solutionDistributive law: \\(x\\in A\\cap(B\\cup C)\\) iff \\(x\\in A\\) and \\((x\\in B\\text{ or }x\\in C)\\) iff \\((x\\in A\\text{ and }x\\in B)\\) or \\((x\\in A\\text{ and }x\\in C)\\).So \\(x\\in(A\\cap B)\\cup(A\\cap C)\\).\\((A\\cup B)^c\\): \\(x\\) not in \\(A\\) or \\(B\\) iff \\(x\\notin A\\) and \\(x\\notin B\\), so .\\(A^c\\cap B^c\\)\\((A\\cap B)^c\\): not both means \\(x\\notin A\\) or \\(x\\notin B\\), so .\\(A^c\\cup B^c\\)",
+              "solution_text": "Distributive law: \\(x\\in A\\cap(B\\cup C)\\) iff \\(x\\in A\\) and \\((x\\in B\\text{ or }x\\in C)\\) iff \\((x\\in A\\text{ and }x\\in B)\\) or \\((x\\in A\\text{ and }x\\in C)\\).So \\(x\\in(A\\cap B)\\cup(A\\cap C)\\).\\((A\\cup B)^c\\): \\(x\\) not in \\(A\\) or \\(B\\) iff \\(x\\notin A\\) and \\(x\\notin B\\), so .\\(A^c\\cap B^c\\)\\((A\\cap B)^c\\): not both means \\(x\\notin A\\) or \\(x\\notin B\\), so .\\(A^c\\cup B^c\\)"
+            },
+            {
+              "label": "DomainsQ5",
+              "question_hash": "83b65708fe0f9a4e",
+              "solution_hash": "b18a34aef5dd25e3",
+              "question_text": "Find domains of \\(\\frac{1}{x^2-4x-12}\\), \\(\\sqrt{x^2-4x-12}\\), \\(\\frac{1}{\\sqrt{x^2-4x-12}}\\), \\(\\ln(\\sqrt{x^2-4x-12})\\).Reveal solution\\(x^2-4x-12=(x-6)(x+2)\\).1) denominator nonzero: .\\(\\mathbb{R}\\setminus\\{-2,6\\}\\)2) radical \\(\\ge0\\): .\\((-\\infty,-2]\\cup[6,\\infty)\\)3) radical in denominator, need \\(\\gt 0\\): .\\((-\\infty,-2)\\cup(6,\\infty)\\)4) \\(\\ln(\\sqrt{\\cdots})\\) needs \\(\\sqrt{\\cdots}\\gt 0\\), same: .\\((-\\infty,-2)\\cup(6,\\infty)\\)",
+              "solution_text": "\\(x^2-4x-12=(x-6)(x+2)\\).1) denominator nonzero: .\\(\\mathbb{R}\\setminus\\{-2,6\\}\\)2) radical \\(\\ge0\\): .\\((-\\infty,-2]\\cup[6,\\infty)\\)3) radical in denominator, need \\(\\gt 0\\): .\\((-\\infty,-2)\\cup(6,\\infty)\\)4) \\(\\ln(\\sqrt{\\cdots})\\) needs \\(\\sqrt{\\cdots}\\gt 0\\), same: .\\((-\\infty,-2)\\cup(6,\\infty)\\)"
+            },
+            {
+              "label": "Composition and inverseQ6 and Q7",
+              "question_hash": "5000f520e2c3650b",
+              "solution_hash": "ae45366429e92ca2",
+              "question_text": "Compute \\(f\\circ g\\): (a) \\(f(x)=\\sqrt{x-1}\\), \\(g(x)=x^2+1\\); (b) \\(f(x)=x^2+2\\), \\(g(x)=\\sqrt{x-2}\\). Inverses: \\(3x+4\\), \\(\\frac{1}{x+1}\\), \\(x^2+4x+3\\) for \\(x\\ge2\\).Reveal solution6a: . 6b: for \\(x\\ge2\\).\\(|x|\\)\\(x\\)Inverse of \\(3x+4\\): .\\(\\frac{x-4}{3}\\)\\(y=\\frac{1}{x+1}\\Rightarrow x=\\frac1y-1\\), so , \\(x\\ne0\\).\\(f^{-1}(x)=\\frac1x-1\\)\\(y=x^2+4x+3=(x+2)^2-1\\). Since \\(x\\ge2\\), \\(x+2\\ge4\\): , domain \\(x\\ge15\\).\\(f^{-1}(x)=-2+\\sqrt{x+1}\\)",
+              "solution_text": "6a: . 6b: for \\(x\\ge2\\).\\(|x|\\)\\(x\\)Inverse of \\(3x+4\\): .\\(\\frac{x-4}{3}\\)\\(y=\\frac{1}{x+1}\\Rightarrow x=\\frac1y-1\\), so , \\(x\\ne0\\).\\(f^{-1}(x)=\\frac1x-1\\)\\(y=x^2+4x+3=(x+2)^2-1\\). Since \\(x\\ge2\\), \\(x+2\\ge4\\): , domain \\(x\\ge15\\).\\(f^{-1}(x)=-2+\\sqrt{x+1}\\)"
+            },
+            {
+              "label": "Complete square and rangeQ7b",
+              "question_hash": "9db9a56479b2257a",
+              "solution_hash": "30e55407a1666475",
+              "question_text": "Complete squares for \\(x^2+6x+10\\) and \\(2x^2+6x+9\\). Hence ranges of \\(f(x)\\) and \\(\\frac1{g(x)}\\).Reveal solution\\(f=(x+3)^2+1\\), so range .\\([1,\\infty)\\)\\(g=2(x+\\frac32)^2+\\frac92\\), so \\(g\\) range \\([\\frac92,\\infty)\\).\\(\\frac1g\\) is positive and at most \\(\\frac29\\), approaching \\(0\\) but never \\(0\\). Range .\\((0,\\frac29]\\)",
+              "solution_text": "\\(f=(x+3)^2+1\\), so range .\\([1,\\infty)\\)\\(g=2(x+\\frac32)^2+\\frac92\\), so \\(g\\) range \\([\\frac92,\\infty)\\).\\(\\frac1g\\) is positive and at most \\(\\frac29\\), approaching \\(0\\) but never \\(0\\). Range .\\((0,\\frac29]\\)"
+            },
+            {
+              "label": "Absolute valueQ8",
+              "question_hash": "a76bac310c38d9c6",
+              "solution_hash": "3b651d42ca8c6b31",
+              "question_text": "Solve \\(|2x-5|=1\\), \\(|x+3|\\ge7\\), \\(|x+1|\\gt -1\\).Reveal solution\\(2x-5=\\pm1\\Rightarrow\\).\\(x=2\\text{ or }3\\)Distance from \\(-3\\) at least \\(7\\): .\\(x\\le-10\\text{ or }x\\ge4\\)\\(|x+1|\\) is always \\(\\ge0\\), and \\(0\\gt -1\\), so .all real \\(x\\)",
+              "solution_text": "\\(2x-5=\\pm1\\Rightarrow\\).\\(x=2\\text{ or }3\\)Distance from \\(-3\\) at least \\(7\\): .\\(x\\le-10\\text{ or }x\\ge4\\)\\(|x+1|\\) is always \\(\\ge0\\), and \\(0\\gt -1\\), so .all real \\(x\\)"
+            },
+            {
+              "label": "LogsQ9",
+              "question_hash": "053bc8508775704f",
+              "solution_hash": "b14766c37a10055e",
+              "question_text": "Simplify \\(\\log_8 2\\), \\(\\log_9 27\\), \\(4^{\\log_2 3}\\), \\(\\ln\\sqrt{e}-\\log_{100}10\\).Reveal solution\\(\\log_8 2=\\frac{\\log_2 2}{\\log_2 8}=\\).\\(\\frac13\\)\\(\\log_9 27=\\frac32\\). \\(4^{\\log_2 3}=(2^2)^{\\log_2 3}=\\).\\(9\\)\\(\\ln\\sqrt e=\\frac12\\) and \\(\\log_{100}10=\\frac12\\), so result .\\(0\\)",
+              "solution_text": "\\(\\log_8 2=\\frac{\\log_2 2}{\\log_2 8}=\\).\\(\\frac13\\)\\(\\log_9 27=\\frac32\\). \\(4^{\\log_2 3}=(2^2)^{\\log_2 3}=\\).\\(9\\)\\(\\ln\\sqrt e=\\frac12\\) and \\(\\log_{100}10=\\frac12\\), so result .\\(0\\)"
+            },
+            {
+              "label": "Sigma notationQ10",
+              "question_hash": "9abea648b5ebd56d",
+              "solution_hash": "5a36a6ce6ecaa47d",
+              "question_text": "Write in sigma notation: odd numbers \\(1\\) to \\(99\\); \\(\\frac13+\\frac19+\\cdots+\\frac{1}{243}\\); \\(\\frac13+\\frac18+\\frac{1}{15}+\\frac{1}{24}+\\frac{1}{35}+\\frac{1}{48}\\).Reveal solution.\\(\\sum_{k=1}^{50}(2k-1)\\).\\(\\sum_{k=1}^{5}\\left(\\frac13\\right)^k\\)Denominators \\(3,8,15,24,35,48=k^2+2k=k(k+2)\\), \\(k=1,\\ldots,6\\). .\\(\\sum_{k=1}^{6}\\frac{1}{k(k+2)}\\)",
+              "solution_text": ".\\(\\sum_{k=1}^{50}(2k-1)\\).\\(\\sum_{k=1}^{5}\\left(\\frac13\\right)^k\\)Denominators \\(3,8,15,24,35,48=k^2+2k=k(k+2)\\), \\(k=1,\\ldots,6\\). .\\(\\sum_{k=1}^{6}\\frac{1}{k(k+2)}\\)"
+            },
+            {
+              "label": "Trig equationsQ11",
+              "question_hash": "d2588f7c50f181ad",
+              "solution_hash": "610110bfe5a1681a",
+              "question_text": "Solve \\(\\sin5\\theta=\\frac12\\) and \\(\\sin4\\theta=\\frac{\\sqrt3}{2}\\) for \\(-\\pi\\le\\theta\\le\\pi\\).Reveal solutionFor \\(\\sin5\\theta=\\frac12\\), let \\(u=5\\theta\\), so \\(-5\\pi\\le u\\le5\\pi\\). \\(u=\\frac{\\pi}{6}+2k\\pi\\) or \\(u=\\frac{5\\pi}{6}+2k\\pi\\)..\\(\\theta\\in\\{-\\frac{23\\pi}{30},-\\frac{19\\pi}{30},-\\frac{11\\pi}{30},-\\frac{7\\pi}{30},\\frac{\\pi}{30},\\frac{\\pi}{6},\\frac{13\\pi}{30},\\frac{17\\pi}{30},\\frac{25\\pi}{30},\\frac{29\\pi}{30}\\}\\)For \\(\\sin4\\theta=\\frac{\\sqrt3}{2}\\), \\(u=4\\theta\\) in \\([-4\\pi,4\\pi]\\). \\(u=\\frac{\\pi}{3}+2k\\pi\\) or \\(u=\\frac{2\\pi}{3}+2k\\pi\\)..\\(\\theta\\in\\{-\\frac{11\\pi}{12},-\\frac{5\\pi}{6},-\\frac{5\\pi}{12},-\\frac{\\pi}{3},\\frac{\\pi}{12},\\frac{\\pi}{6},\\frac{7\\pi}{12},\\frac{2\\pi}{3}\\}\\)",
+              "solution_text": "For \\(\\sin5\\theta=\\frac12\\), let \\(u=5\\theta\\), so \\(-5\\pi\\le u\\le5\\pi\\). \\(u=\\frac{\\pi}{6}+2k\\pi\\) or \\(u=\\frac{5\\pi}{6}+2k\\pi\\)..\\(\\theta\\in\\{-\\frac{23\\pi}{30},-\\frac{19\\pi}{30},-\\frac{11\\pi}{30},-\\frac{7\\pi}{30},\\frac{\\pi}{30},\\frac{\\pi}{6},\\frac{13\\pi}{30},\\frac{17\\pi}{30},\\frac{25\\pi}{30},\\frac{29\\pi}{30}\\}\\)For \\(\\sin4\\theta=\\frac{\\sqrt3}{2}\\), \\(u=4\\theta\\) in \\([-4\\pi,4\\pi]\\). \\(u=\\frac{\\pi}{3}+2k\\pi\\) or \\(u=\\frac{2\\pi}{3}+2k\\pi\\)..\\(\\theta\\in\\{-\\frac{11\\pi}{12},-\\frac{5\\pi}{6},-\\frac{5\\pi}{12},-\\frac{\\pi}{3},\\frac{\\pi}{12},\\frac{\\pi}{6},\\frac{7\\pi}{12},\\frac{2\\pi}{3}\\}\\)"
+            },
+            {
+              "label": "InductionQ12 and Q13",
+              "question_hash": "6a88e4092c0e06ed",
+              "solution_hash": "2d2af895c646e8fd",
+              "question_text": "Guess \\(\\sum_{k=m}^{\\infty}r^k\\) for \\(|r|\\lt 1\\). Prove one: \\(1+5+\\cdots+(4n-3)=n(2n-1)\\).Reveal solutionGeometric tail: .\\(\\sum_{k=m}^{\\infty}r^k=\\frac{r^m}{1-r}\\)Base \\(n=1\\): \\(1=1(1)\\).Assume sum to \\(k\\) is \\(k(2k-1)\\). Add next term \\(4(k+1)-3=4k+1\\).\\(k(2k-1)+4k+1=2k^2+3k+1=(k+1)(2k+1)\\), which is formula for \\(k+1\\).",
+              "solution_text": "Geometric tail: .\\(\\sum_{k=m}^{\\infty}r^k=\\frac{r^m}{1-r}\\)Base \\(n=1\\): \\(1=1(1)\\).Assume sum to \\(k\\) is \\(k(2k-1)\\). Add next term \\(4(k+1)-3=4k+1\\).\\(k(2k-1)+4k+1=2k^2+3k+1=(k+1)(2k+1)\\), which is formula for \\(k+1\\)."
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "s14",
+          "heading": "Study Sheet",
+          "intro_hash": "40916796a77e7561",
+          "key_hashes": [],
+          "example_count": 0,
+          "examples": [],
+          "visual_count": 0
+        }
+      ]
+    },
+    {
+      "file": "chapters/chapter-1.html",
+      "section_count": 12,
+      "sections": [
+        {
+          "id": "c1s1",
+          "heading": "Why Complex Numbers?",
+          "intro_hash": "290518234b132a23",
+          "key_hashes": [
+            "1e505fb0606e7081",
+            "626611a20cd52d84",
+            "827537c22dbde498"
+          ],
+          "example_count": 1,
+          "examples": [
+            {
+              "label": "Powers of \\(i\\)TRY",
+              "question_hash": "3c1f82d1353ff163",
+              "solution_hash": "dab813e7918fb85e",
+              "question_text": "Evaluate \\(i^{179}+i^{2017}\\).Reveal solutionFind remainders mod \\(4\\): \\(179=4(44)+3\\), so \\(i^{179}=i^3=-i\\).\\(2017=4(504)+1\\), so \\(i^{2017}=i\\)..\\(-i+i=0\\)",
+              "solution_text": "Find remainders mod \\(4\\): \\(179=4(44)+3\\), so \\(i^{179}=i^3=-i\\).\\(2017=4(504)+1\\), so \\(i^{2017}=i\\)..\\(-i+i=0\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "c1s2",
+          "heading": "Rectangular Form & Equality",
+          "intro_hash": "58516594174e3646",
+          "key_hashes": [
+            "8c80e59f2460086d",
+            "55db3065bfcd2851",
+            "06779c42a260aa1d"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Match real and imaginary partsEXAMPLE 5",
+              "question_hash": "5e503de86a5e5db5",
+              "solution_hash": "6ea3822568108a6c",
+              "question_text": "Suppose \\(x,y\\in\\mathbb R\\) and \\((2x-3)+5i=(x+7)-(y+1)i\\). Find \\(x\\) and \\(y\\).Reveal solutionReal parts: \\(2x-3=x+7\\Rightarrow x=10\\).Imaginary parts: \\(5=-(y+1)\\Rightarrow y+1=-5\\Rightarrow y=-6\\)..\\(x=10,\\ y=-6\\)",
+              "solution_text": "Real parts: \\(2x-3=x+7\\Rightarrow x=10\\).Imaginary parts: \\(5=-(y+1)\\Rightarrow y+1=-5\\Rightarrow y=-6\\)..\\(x=10,\\ y=-6\\)"
+            },
+            {
+              "label": "Quick equalityTRY",
+              "question_hash": "c795e6b77b563ee6",
+              "solution_hash": "90f096cf0e3737ed",
+              "question_text": "If \\((a+2)+bi=7+(3a-1)i\\), find \\(a,b\\).Reveal solutionReal parts: \\(a+2=7\\Rightarrow a=5\\).Imaginary parts: \\(b=3a-1=15-1=14\\)..\\(a=5,\\ b=14\\)",
+              "solution_text": "Real parts: \\(a+2=7\\Rightarrow a=5\\).Imaginary parts: \\(b=3a-1=15-1=14\\)..\\(a=5,\\ b=14\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c1s3",
+          "heading": "Argand Diagram",
+          "intro_hash": "0bc648978e325cd9",
+          "key_hashes": [
+            "9042725e73b2bea9",
+            "bdb54fe9d0d7367f",
+            "e861a79f58968f33"
+          ],
+          "example_count": 0,
+          "examples": [],
+          "visual_count": 1
+        },
+        {
+          "id": "c1s4",
+          "heading": "Modulus, Argument & Polar Form",
+          "intro_hash": "d8ac8c90bcc6eb75",
+          "key_hashes": [
+            "6c7e57ac343b4ee8",
+            "8a9f58328640837a",
+            "cbf538bc4a1e901f"
+          ],
+          "example_count": 3,
+          "examples": [
+            {
+              "label": "From rectangular to polarEXAMPLE 7",
+              "question_hash": "ab279019746e5785",
+              "solution_hash": "0b10d2341d65b22e",
+              "question_text": "Let \\(z=3-3i\\). Find \\(|z|\\), the principal argument, polar form, and exponential form.Reveal solution\\(|z|=\\sqrt{3^2+(-3)^2}=\\sqrt{18}=3\\sqrt2\\).The point \\((3,-3)\\) is in quadrant IV, with reference angle \\(\\pi/4\\).Principal argument: \\(\\theta=-\\pi/4\\).Polar: .\\(z=3\\sqrt2\\left(\\cos(-\\pi/4)+i\\sin(-\\pi/4)\\right)\\)Exponential: .\\(z=3\\sqrt2\\,e^{-i\\pi/4}\\)",
+              "solution_text": "\\(|z|=\\sqrt{3^2+(-3)^2}=\\sqrt{18}=3\\sqrt2\\).The point \\((3,-3)\\) is in quadrant IV, with reference angle \\(\\pi/4\\).Principal argument: \\(\\theta=-\\pi/4\\).Polar: .\\(z=3\\sqrt2\\left(\\cos(-\\pi/4)+i\\sin(-\\pi/4)\\right)\\)Exponential: .\\(z=3\\sqrt2\\,e^{-i\\pi/4}\\)"
+            },
+            {
+              "label": "From exponential to rectangularEXAMPLE 8",
+              "question_hash": "c559c97fdcaf0966",
+              "solution_hash": "f3f93d3d9ceb4382",
+              "question_text": "Express \\(z=5e^{-\\frac{5\\pi}{3}i}\\) in rectangular form.Reveal solutionUse \\(e^{i\\theta}=\\cos\\theta+i\\sin\\theta\\).\\(-\\frac{5\\pi}{3}\\) is coterminal with \\(\\frac{\\pi}{3}\\).\\(z=5\\left(\\cos\\frac{\\pi}{3}+i\\sin\\frac{\\pi}{3}\\right)=5\\left(\\frac12+i\\frac{\\sqrt3}{2}\\right)\\)..\\(z=\\frac52+\\frac{5\\sqrt3}{2}i\\)",
+              "solution_text": "Use \\(e^{i\\theta}=\\cos\\theta+i\\sin\\theta\\).\\(-\\frac{5\\pi}{3}\\) is coterminal with \\(\\frac{\\pi}{3}\\).\\(z=5\\left(\\cos\\frac{\\pi}{3}+i\\sin\\frac{\\pi}{3}\\right)=5\\left(\\frac12+i\\frac{\\sqrt3}{2}\\right)\\)..\\(z=\\frac52+\\frac{5\\sqrt3}{2}i\\)"
+            },
+            {
+              "label": "Four quadrantsTRY",
+              "question_hash": "2c89886c21488747",
+              "solution_hash": "794dcdeb265984fe",
+              "question_text": "Find \\(|z|\\) and principal \\(\\arg z\\) for \\(z=-1-\\sqrt3\\,i\\).Reveal solution\\(|z|=\\sqrt{(-1)^2+(-\\sqrt3)^2}=2\\).The point is in quadrant III. Reference angle is \\(\\pi/3\\).Principal argument must be in \\((-\\pi,\\pi]\\), so .\\(\\arg z=-\\frac{2\\pi}{3}\\)Polar form: .\\(2\\,\\mathrm{cis}\\left(-\\frac{2\\pi}{3}\\right)\\)",
+              "solution_text": "\\(|z|=\\sqrt{(-1)^2+(-\\sqrt3)^2}=2\\).The point is in quadrant III. Reference angle is \\(\\pi/3\\).Principal argument must be in \\((-\\pi,\\pi]\\), so .\\(\\arg z=-\\frac{2\\pi}{3}\\)Polar form: .\\(2\\,\\mathrm{cis}\\left(-\\frac{2\\pi}{3}\\right)\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c1s5",
+          "heading": "Conjugates",
+          "intro_hash": "11d887ec86576330",
+          "key_hashes": [
+            "c9fc1fe7247e4f12",
+            "69ecc771c950361a"
+          ],
+          "example_count": 1,
+          "examples": [
+            {
+              "label": "Conjugate in polar formTRY",
+              "question_hash": "84a235b8c84e4f66",
+              "solution_hash": "053593c942c82d06",
+              "question_text": "If \\(z=2\\left(\\cos\\frac{\\pi}{3}+i\\sin\\frac{\\pi}{3}\\right)\\), write \\(\\bar z\\) in polar and rectangular form.Reveal solutionPolar conjugate: .\\(\\bar z=2\\left(\\cos(-\\frac{\\pi}{3})+i\\sin(-\\frac{\\pi}{3})\\right)\\)Rectangular: \\(z=1+\\sqrt3 i\\), so .\\(\\bar z=1-\\sqrt3 i\\)",
+              "solution_text": "Polar conjugate: .\\(\\bar z=2\\left(\\cos(-\\frac{\\pi}{3})+i\\sin(-\\frac{\\pi}{3})\\right)\\)Rectangular: \\(z=1+\\sqrt3 i\\), so .\\(\\bar z=1-\\sqrt3 i\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "c1s6",
+          "heading": "Addition, Subtraction & Multiplication",
+          "intro_hash": "fa5f126fe4fc0187",
+          "key_hashes": [
+            "619e682c2b886021",
+            "3e09b0794131eae7",
+            "7cc668675431401d"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "MultiplyEXAMPLE 15",
+              "question_hash": "e9b56d03e312227d",
+              "solution_hash": "383066a3694f90fd",
+              "question_text": "Evaluate \\((3+5i)(2-i)\\).Reveal solutionExpand: \\((3+5i)(2-i)=6-3i+10i-5i^2\\).Since \\(i^2=-1\\), \\(-5i^2=5\\).Collect: \\(6+5+7i\\)..\\((3+5i)(2-i)=11+7i\\)",
+              "solution_text": "Expand: \\((3+5i)(2-i)=6-3i+10i-5i^2\\).Since \\(i^2=-1\\), \\(-5i^2=5\\).Collect: \\(6+5+7i\\)..\\((3+5i)(2-i)=11+7i\\)"
+            },
+            {
+              "label": "Multiplication as rotationTRY",
+              "question_hash": "78c78b50dc3fcc40",
+              "solution_hash": "8bc0731e0f0b0420",
+              "question_text": "Let \\(z=2\\,\\mathrm{cis}\\frac{\\pi}{6}\\). What does multiplying by \\(\\mathrm{cis}\\frac{\\pi}{2}\\) do to \\(z\\)?Reveal solutionThe modulus stays \\(2\\), because \\(|\\mathrm{cis}\\frac{\\pi}{2}|=1\\).The argument increases by \\(\\frac{\\pi}{2}\\): \\(\\frac{\\pi}{6}+\\frac{\\pi}{2}=\\frac{2\\pi}{3}\\).. Geometrically: rotate \\(z\\) anticlockwise by \\(90^\\circ\\).Result: \\(2\\,\\mathrm{cis}\\frac{2\\pi}{3}\\)",
+              "solution_text": "The modulus stays \\(2\\), because \\(|\\mathrm{cis}\\frac{\\pi}{2}|=1\\).The argument increases by \\(\\frac{\\pi}{2}\\): \\(\\frac{\\pi}{6}+\\frac{\\pi}{2}=\\frac{2\\pi}{3}\\).. Geometrically: rotate \\(z\\) anticlockwise by \\(90^\\circ\\).Result: \\(2\\,\\mathrm{cis}\\frac{2\\pi}{3}\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c1s7",
+          "heading": "Division",
+          "intro_hash": "037b49b7ab97bf70",
+          "key_hashes": [
+            "76dfc7d12ff74363",
+            "0dbc0dedacedfa7a",
+            "fd52243a35d105b7"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Divide by a complex numberEXAMPLE 18",
+              "question_hash": "1153e84268b5e442",
+              "solution_hash": "974eca9aee93a6e6",
+              "question_text": "Evaluate \\(\\displaystyle \\frac{3+5i}{2-i}\\).Reveal solutionMultiply top and bottom by the conjugate \\(2+i\\).\\(\\displaystyle \\frac{3+5i}{2-i}\\cdot\\frac{2+i}{2+i}=\\frac{(3+5i)(2+i)}{(2-i)(2+i)}\\).Top: \\(6+3i+10i+5i^2=1+13i\\).Bottom: \\(4-i^2=5\\)..\\(\\displaystyle \\frac{3+5i}{2-i}=\\frac15+\\frac{13}{5}i\\)",
+              "solution_text": "Multiply top and bottom by the conjugate \\(2+i\\).\\(\\displaystyle \\frac{3+5i}{2-i}\\cdot\\frac{2+i}{2+i}=\\frac{(3+5i)(2+i)}{(2-i)(2+i)}\\).Top: \\(6+3i+10i+5i^2=1+13i\\).Bottom: \\(4-i^2=5\\)..\\(\\displaystyle \\frac{3+5i}{2-i}=\\frac15+\\frac{13}{5}i\\)"
+            },
+            {
+              "label": "Reciprocal of a unit complex numberEXAMPLE 19",
+              "question_hash": "1e449d52f9cc0013",
+              "solution_hash": "ac2187a436683ba6",
+              "question_text": "Let \\(z=\\cos\\theta+i\\sin\\theta\\). Find \\(|z|\\) and show \\(\\frac1z=\\bar z\\).Reveal solution\\(|z|=\\sqrt{\\cos^2\\theta+\\sin^2\\theta}=1\\).\\(\\displaystyle \\frac1z=\\frac{\\bar z}{z\\bar z}=\\frac{\\cos\\theta-i\\sin\\theta}{1}\\)..\\(\\displaystyle \\frac1z=\\cos\\theta-i\\sin\\theta=\\bar z\\)",
+              "solution_text": "\\(|z|=\\sqrt{\\cos^2\\theta+\\sin^2\\theta}=1\\).\\(\\displaystyle \\frac1z=\\frac{\\bar z}{z\\bar z}=\\frac{\\cos\\theta-i\\sin\\theta}{1}\\)..\\(\\displaystyle \\frac1z=\\cos\\theta-i\\sin\\theta=\\bar z\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c1s8",
+          "heading": "Quadratics & Conjugate Roots",
+          "intro_hash": "ce95c6b18a203d8a",
+          "key_hashes": [
+            "4eeef9a735bc3827",
+            "5812c91070d97685",
+            "05952ae82e6f715c",
+            "b01ae135b1626e78"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Irreducible quadraticEXAMPLE 21",
+              "question_hash": "667d353b06ea8081",
+              "solution_hash": "36b41b3ad8d0b6ff",
+              "question_text": "Solve \\(2x^2-3x+5=0\\).Reveal solution\\(D=(-3)^2-4(2)(5)=9-40=-31\\).\\(\\displaystyle x=\\frac{-(-3)\\pm i\\sqrt{31}}{2(2)}\\)..\\(\\displaystyle x=\\frac{3\\pm i\\sqrt{31}}{4}\\)",
+              "solution_text": "\\(D=(-3)^2-4(2)(5)=9-40=-31\\).\\(\\displaystyle x=\\frac{-(-3)\\pm i\\sqrt{31}}{2(2)}\\)..\\(\\displaystyle x=\\frac{3\\pm i\\sqrt{31}}{4}\\)"
+            },
+            {
+              "label": "Use the conjugate rootTRY",
+              "question_hash": "0c1182b1ebef6e82",
+              "solution_hash": "7b6425d221591b62",
+              "question_text": "Given \\(1+i\\) is a root of \\(x^3-x^2+2=0\\), find all roots.Reveal solutionSince coefficients are real, \\(1-i\\) is also a root.Quadratic factor: \\((x-(1+i))(x-(1-i))=((x-1)-i)((x-1)+i)=(x-1)^2+1=x^2-2x+2\\).Divide \\(x^3-x^2+2\\) by \\(x^2-2x+2\\), giving \\(x+1\\)..Roots: \\(1+i,\\ 1-i,\\ -1\\)",
+              "solution_text": "Since coefficients are real, \\(1-i\\) is also a root.Quadratic factor: \\((x-(1+i))(x-(1-i))=((x-1)-i)((x-1)+i)=(x-1)^2+1=x^2-2x+2\\).Divide \\(x^3-x^2+2\\) by \\(x^2-2x+2\\), giving \\(x+1\\)..Roots: \\(1+i,\\ 1-i,\\ -1\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c1s9",
+          "heading": "De Moivre's Theorem",
+          "intro_hash": "de1460863cfe46ec",
+          "key_hashes": [
+            "f5458f91c7f9430b"
+          ],
+          "example_count": 3,
+          "examples": [
+            {
+              "label": "Read the powerEXAMPLE 25",
+              "question_hash": "2dfe86c57a7d6fc6",
+              "solution_hash": "983377c01b834e61",
+              "question_text": "Express in the form \\(\\cos(n\\theta)+i\\sin(n\\theta)\\): (a) \\((\\cos\\theta+i\\sin\\theta)^9\\), (b) \\((\\cos\\theta+i\\sin\\theta)^{-4}\\).Reveal solution(a) .\\(\\cos9\\theta+i\\sin9\\theta\\)(b) , also \\(\\cos4\\theta-i\\sin4\\theta\\).\\(\\cos(-4\\theta)+i\\sin(-4\\theta)\\)",
+              "solution_text": "(a) .\\(\\cos9\\theta+i\\sin9\\theta\\)(b) , also \\(\\cos4\\theta-i\\sin4\\theta\\).\\(\\cos(-4\\theta)+i\\sin(-4\\theta)\\)"
+            },
+            {
+              "label": "Simplify powersEXAMPLE 26",
+              "question_hash": "81979029835d18c5",
+              "solution_hash": "1d267e9d16f92016",
+              "question_text": "Simplify: (a) \\(\\left(\\cos\\frac{\\pi}{4}+i\\sin\\frac{\\pi}{4}\\right)^{-2}\\), (b) \\(\\left(\\cos\\frac{\\pi}{3}+i\\sin\\frac{\\pi}{3}\\right)^9\\).Reveal solution(a) Angle becomes \\(-2\\cdot\\frac{\\pi}{4}=-\\frac{\\pi}{2}\\). Result: \\(\\cos(-\\frac{\\pi}{2})+i\\sin(-\\frac{\\pi}{2})=\\).\\(-i\\)(b) Angle becomes \\(9\\cdot\\frac{\\pi}{3}=3\\pi\\). Result: \\(\\cos3\\pi+i\\sin3\\pi=\\).\\(-1\\)",
+              "solution_text": "(a) Angle becomes \\(-2\\cdot\\frac{\\pi}{4}=-\\frac{\\pi}{2}\\). Result: \\(\\cos(-\\frac{\\pi}{2})+i\\sin(-\\frac{\\pi}{2})=\\).\\(-i\\)(b) Angle becomes \\(9\\cdot\\frac{\\pi}{3}=3\\pi\\). Result: \\(\\cos3\\pi+i\\sin3\\pi=\\).\\(-1\\)"
+            },
+            {
+              "label": "Reverse De MoivreTRY",
+              "question_hash": "654fc2909a2830c2",
+              "solution_hash": "9e54b72b3bb92937",
+              "question_text": "Write \\(\\cos5\\theta-i\\sin5\\theta\\) in the form \\((\\cos\\theta+i\\sin\\theta)^n\\).Reveal solution\\(\\cos5\\theta-i\\sin5\\theta=\\cos(-5\\theta)+i\\sin(-5\\theta)\\).By De Moivre, this equals .\\((\\cos\\theta+i\\sin\\theta)^{-5}\\)",
+              "solution_text": "\\(\\cos5\\theta-i\\sin5\\theta=\\cos(-5\\theta)+i\\sin(-5\\theta)\\).By De Moivre, this equals .\\((\\cos\\theta+i\\sin\\theta)^{-5}\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c1s10",
+          "heading": "Nth Roots & Roots of Unity",
+          "intro_hash": "e27c292cf01d0fdc",
+          "key_hashes": [
+            "2825a5f021501f50",
+            "02c4d28721b3e892",
+            "2b3e6244e2faa4d9",
+            "5d668de08307617e"
+          ],
+          "example_count": 3,
+          "examples": [
+            {
+              "label": "Cube rootsEXAMPLE 28",
+              "question_hash": "3475f3cea609bd09",
+              "solution_hash": "79296b3f3eccc737",
+              "question_text": "Find all distinct cube roots of \\(\\cos\\frac{\\pi}{3}+i\\sin\\frac{\\pi}{3}\\).Reveal solutionHere \\(r=1\\), \\(\\alpha=\\frac{\\pi}{3}\\), \\(n=3\\).\\(\\displaystyle \\theta_k=\\frac{\\alpha+2k\\pi}{3}=\\frac{\\pi/3+2k\\pi}{3}\\), for \\(k=0,1,2\\)..\\(\\mathrm{cis}\\frac{\\pi}{9},\\quad \\mathrm{cis}\\frac{7\\pi}{9},\\quad \\mathrm{cis}\\frac{13\\pi}{9}\\)",
+              "solution_text": "Here \\(r=1\\), \\(\\alpha=\\frac{\\pi}{3}\\), \\(n=3\\).\\(\\displaystyle \\theta_k=\\frac{\\alpha+2k\\pi}{3}=\\frac{\\pi/3+2k\\pi}{3}\\), for \\(k=0,1,2\\)..\\(\\mathrm{cis}\\frac{\\pi}{9},\\quad \\mathrm{cis}\\frac{7\\pi}{9},\\quad \\mathrm{cis}\\frac{13\\pi}{9}\\)"
+            },
+            {
+              "label": "Fifth rootsEXAMPLE 31",
+              "question_hash": "4bce56110f22ef23",
+              "solution_hash": "da1fd48de8d92d05",
+              "question_text": "Find all fifth roots of \\(\\sqrt3+i\\).Reveal solution\\(\\sqrt3+i=2\\left(\\cos\\frac{\\pi}{6}+i\\sin\\frac{\\pi}{6}\\right)\\).\\(\\sqrt[5]{r}=\\sqrt[5]{2}\\).\\(\\displaystyle \\theta_k=\\frac{\\pi/6+2k\\pi}{5}=\\frac{\\pi}{30}+\\frac{2k\\pi}{5}\\), \\(k=0,1,2,3,4\\)..\\(\\displaystyle z_k=\\sqrt[5]{2}\\,\\mathrm{cis}\\left(\\frac{\\pi}{30}+\\frac{2k\\pi}{5}\\right)\\)",
+              "solution_text": "\\(\\sqrt3+i=2\\left(\\cos\\frac{\\pi}{6}+i\\sin\\frac{\\pi}{6}\\right)\\).\\(\\sqrt[5]{r}=\\sqrt[5]{2}\\).\\(\\displaystyle \\theta_k=\\frac{\\pi/6+2k\\pi}{5}=\\frac{\\pi}{30}+\\frac{2k\\pi}{5}\\), \\(k=0,1,2,3,4\\)..\\(\\displaystyle z_k=\\sqrt[5]{2}\\,\\mathrm{cis}\\left(\\frac{\\pi}{30}+\\frac{2k\\pi}{5}\\right)\\)"
+            },
+            {
+              "label": "Fourth roots of \\(-16i\\)TRY",
+              "question_hash": "d54015e5847425b5",
+              "solution_hash": "6d8403a3ba474610",
+              "question_text": "Find all four distinct fourth roots of \\(-16i\\).Reveal solution\\(-16i=16\\,\\mathrm{cis}\\left(-\\frac{\\pi}{2}\\right)\\).Fourth root modulus: \\(\\sqrt[4]{16}=2\\).\\(\\displaystyle \\theta_k=\\frac{-\\pi/2+2k\\pi}{4}=-\\frac{\\pi}{8}+\\frac{k\\pi}{2}\\), \\(k=0,1,2,3\\)..\\(\\displaystyle z_k=2\\,\\mathrm{cis}\\left(-\\frac{\\pi}{8}+\\frac{k\\pi}{2}\\right)\\)",
+              "solution_text": "\\(-16i=16\\,\\mathrm{cis}\\left(-\\frac{\\pi}{2}\\right)\\).Fourth root modulus: \\(\\sqrt[4]{16}=2\\).\\(\\displaystyle \\theta_k=\\frac{-\\pi/2+2k\\pi}{4}=-\\frac{\\pi}{8}+\\frac{k\\pi}{2}\\), \\(k=0,1,2,3\\)..\\(\\displaystyle z_k=2\\,\\mathrm{cis}\\left(-\\frac{\\pi}{8}+\\frac{k\\pi}{2}\\right)\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "c1s11",
+          "heading": "De Moivre for Trig Identities & Practice",
+          "intro_hash": "961f45fd1da9ce9e",
+          "key_hashes": [
+            "b2ce9c0137df3ed8",
+            "574946e9c0a8933f",
+            "2309b7921d02a99e"
+          ],
+          "example_count": 5,
+          "examples": [
+            {
+              "label": "Derive \\(\\sin3\\theta\\)EXAMPLE 35",
+              "question_hash": "ec0ee03817ddee5a",
+              "solution_hash": "707df6c66dfe86be",
+              "question_text": "Express \\(\\sin3\\theta\\) in terms of powers of \\(\\sin\\theta\\).Reveal solutionLet \\(c=\\cos\\theta\\), \\(s=\\sin\\theta\\). By De Moivre, \\(\\cos3\\theta+i\\sin3\\theta=(c+is)^3\\).Expand: \\((c+is)^3=c^3+3c^2is+3ci^2s^2+i^3s^3\\).\\(=c^3-3cs^2+i(3c^2s-s^3)\\).Imaginary part: \\(\\sin3\\theta=3c^2s-s^3\\).Use \\(c^2=1-s^2\\): \\(\\sin3\\theta=3(1-s^2)s-s^3\\)..\\(\\sin3\\theta=3\\sin\\theta-4\\sin^3\\theta\\)",
+              "solution_text": "Let \\(c=\\cos\\theta\\), \\(s=\\sin\\theta\\). By De Moivre, \\(\\cos3\\theta+i\\sin3\\theta=(c+is)^3\\).Expand: \\((c+is)^3=c^3+3c^2is+3ci^2s^2+i^3s^3\\).\\(=c^3-3cs^2+i(3c^2s-s^3)\\).Imaginary part: \\(\\sin3\\theta=3c^2s-s^3\\).Use \\(c^2=1-s^2\\): \\(\\sin3\\theta=3(1-s^2)s-s^3\\)..\\(\\sin3\\theta=3\\sin\\theta-4\\sin^3\\theta\\)"
+            },
+            {
+              "label": "Express \\(\\cos^3\\theta\\)EXAMPLE 36",
+              "question_hash": "d6039bc560ca628f",
+              "solution_hash": "67c8ce38444702fb",
+              "question_text": "Prove \\(\\displaystyle \\cos^3\\theta=\\frac14(\\cos3\\theta+3\\cos\\theta)\\).Reveal solutionLet \\(z=\\cos\\theta+i\\sin\\theta\\), so \\(\\cos\\theta=\\frac12(z+\\frac1z)\\).\\(\\displaystyle \\cos^3\\theta=\\left[\\frac12\\left(z+\\frac1z\\right)\\right]^3\\).\\(\\displaystyle =\\frac18\\left(z^3+3z+\\frac{3}{z}+\\frac{1}{z^3}\\right)\\).Group pairs: \\(z^3+\\frac1{z^3}=2\\cos3\\theta\\), and \\(z+\\frac1z=2\\cos\\theta\\)..\\(\\displaystyle \\cos^3\\theta=\\frac14(\\cos3\\theta+3\\cos\\theta)\\)",
+              "solution_text": "Let \\(z=\\cos\\theta+i\\sin\\theta\\), so \\(\\cos\\theta=\\frac12(z+\\frac1z)\\).\\(\\displaystyle \\cos^3\\theta=\\left[\\frac12\\left(z+\\frac1z\\right)\\right]^3\\).\\(\\displaystyle =\\frac18\\left(z^3+3z+\\frac{3}{z}+\\frac{1}{z^3}\\right)\\).Group pairs: \\(z^3+\\frac1{z^3}=2\\cos3\\theta\\), and \\(z+\\frac1z=2\\cos\\theta\\)..\\(\\displaystyle \\cos^3\\theta=\\frac14(\\cos3\\theta+3\\cos\\theta)\\)"
+            },
+            {
+              "label": "Regions in the complex planePRACTICE 1",
+              "question_hash": "d1d4ef048a2b4e23",
+              "solution_hash": "eaf269a5f44b9c4a",
+              "question_text": "Describe the region \\(|z-(1+i)|\\le2\\).Reveal solutionLet \\(z=x+yi\\). Then \\(z-(1+i)=(x-1)+(y-1)i\\).\\(|z-(1+i)|\\le2\\) means distance from \\((x,y)\\) to \\((1,1)\\) is at most \\(2\\)..Closed disk centred at \\(1+i\\), radius \\(2\\)",
+              "solution_text": "Let \\(z=x+yi\\). Then \\(z-(1+i)=(x-1)+(y-1)i\\).\\(|z-(1+i)|\\le2\\) means distance from \\((x,y)\\) to \\((1,1)\\) is at most \\(2\\)..Closed disk centred at \\(1+i\\), radius \\(2\\)"
+            },
+            {
+              "label": "Solve a polynomialPRACTICE 2",
+              "question_hash": "0e3cbd35656b34a0",
+              "solution_hash": "8064cdabee98d401",
+              "question_text": "Solve \\(z^4+1=0\\).Reveal solution\\(z^4=-1=\\mathrm{cis}\\,\\pi\\).\\(\\displaystyle z_k=\\mathrm{cis}\\left(\\frac{\\pi+2k\\pi}{4}\\right)\\), \\(k=0,1,2,3\\)..\\(\\mathrm{cis}\\frac{\\pi}{4},\\ \\mathrm{cis}\\frac{3\\pi}{4},\\ \\mathrm{cis}\\frac{5\\pi}{4},\\ \\mathrm{cis}\\frac{7\\pi}{4}\\)",
+              "solution_text": "\\(z^4=-1=\\mathrm{cis}\\,\\pi\\).\\(\\displaystyle z_k=\\mathrm{cis}\\left(\\frac{\\pi+2k\\pi}{4}\\right)\\), \\(k=0,1,2,3\\)..\\(\\mathrm{cis}\\frac{\\pi}{4},\\ \\mathrm{cis}\\frac{3\\pi}{4},\\ \\mathrm{cis}\\frac{5\\pi}{4},\\ \\mathrm{cis}\\frac{7\\pi}{4}\\)"
+            },
+            {
+              "label": "Real expressionPRACTICE 3",
+              "question_hash": "9292b19d12b3377d",
+              "solution_hash": "d3d856943b07040c",
+              "question_text": "Show \\((\\sqrt3+i)^n+(\\sqrt3-i)^n\\) is real. Find its value when \\(n=12\\).Reveal solution\\(\\sqrt3+i=2\\,\\mathrm{cis}\\frac{\\pi}{6}\\), and \\(\\sqrt3-i=2\\,\\mathrm{cis}\\left(-\\frac{\\pi}{6}\\right)\\).Sum: \\(2^n\\left[\\mathrm{cis}\\frac{n\\pi}{6}+\\mathrm{cis}\\left(-\\frac{n\\pi}{6}\\right)\\right]\\).The imaginary parts cancel, so the expression is real.For \\(n=12\\): \\(2^{12}[\\mathrm{cis}(2\\pi)+\\mathrm{cis}(-2\\pi)]=4096(1+1)\\)..Value \\(=8192\\)",
+              "solution_text": "\\(\\sqrt3+i=2\\,\\mathrm{cis}\\frac{\\pi}{6}\\), and \\(\\sqrt3-i=2\\,\\mathrm{cis}\\left(-\\frac{\\pi}{6}\\right)\\).Sum: \\(2^n\\left[\\mathrm{cis}\\frac{n\\pi}{6}+\\mathrm{cis}\\left(-\\frac{n\\pi}{6}\\right)\\right]\\).The imaginary parts cancel, so the expression is real.For \\(n=12\\): \\(2^{12}[\\mathrm{cis}(2\\pi)+\\mathrm{cis}(-2\\pi)]=4096(1+1)\\)..Value \\(=8192\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c1s12",
+          "heading": "Study Sheet",
+          "intro_hash": "45b44a02c4a7b5e7",
+          "key_hashes": [],
+          "example_count": 0,
+          "examples": [],
+          "visual_count": 0
+        }
+      ]
+    },
+    {
+      "file": "chapters/chapter-2.html",
+      "section_count": 12,
+      "sections": [
+        {
+          "id": "c2s1",
+          "heading": "Vectors as Directed Segments",
+          "intro_hash": "2e0abf6b702e430e",
+          "key_hashes": [
+            "d408291f82c3affa",
+            "869a3a7747d868e2",
+            "15b758bcb1f9c8fc"
+          ],
+          "example_count": 1,
+          "examples": [
+            {
+              "label": "Equal or not?TRY",
+              "question_hash": "8f9a75a25b92a7e8",
+              "solution_hash": "b4992545634f9910",
+              "question_text": "Two arrows have the same length, but one points northeast and one points southwest. Are they equal vectors?Reveal solutionNo. Equal vectors need the same magnitude and the same direction.They are negatives of each other if their directions are exactly opposite.",
+              "solution_text": "No. Equal vectors need the same magnitude and the same direction.They are negatives of each other if their directions are exactly opposite."
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "c2s2",
+          "heading": "Addition & Scalar Multiplication",
+          "intro_hash": "790da6d2a43ffd10",
+          "key_hashes": [
+            "743319dccabffbfe",
+            "8e46bdc509208dc0"
+          ],
+          "example_count": 1,
+          "examples": [
+            {
+              "label": "Quick vector algebraTRY",
+              "question_hash": "524fec652e954001",
+              "solution_hash": "edbaf3cabf134b61",
+              "question_text": "If \\(\\overrightarrow{OA}=\\mathbf u\\) and \\(\\overrightarrow{OB}=\\mathbf v\\), express \\(\\overrightarrow{AB}\\).Reveal solutionMove from \\(A\\) back to \\(O\\), then from \\(O\\) to \\(B\\).\\(\\overrightarrow{AB}=\\overrightarrow{OB}-\\overrightarrow{OA}\\)..\\(\\overrightarrow{AB}=\\mathbf v-\\mathbf u\\)",
+              "solution_text": "Move from \\(A\\) back to \\(O\\), then from \\(O\\) to \\(B\\).\\(\\overrightarrow{AB}=\\overrightarrow{OB}-\\overrightarrow{OA}\\)..\\(\\overrightarrow{AB}=\\mathbf v-\\mathbf u\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "c2s3",
+          "heading": "Coordinate Vectors",
+          "intro_hash": "dfeef595fb088051",
+          "key_hashes": [
+            "aa4c0cb3c8ddf03a",
+            "e7e680b4397f8edb"
+          ],
+          "example_count": 1,
+          "examples": [
+            {
+              "label": "Components from pointsEXAMPLE",
+              "question_hash": "f5b2b3f85b5ee1f2",
+              "solution_hash": "786c8bcec51f5901",
+              "question_text": "Find \\(\\overrightarrow{PQ}\\) for \\(P=(1,2,3)\\) and \\(Q=(4,-1,5)\\).Reveal solutionSubtract start from end.\\(\\overrightarrow{PQ}=Q-P=(4-1,-1-2,5-3)\\)..\\(\\overrightarrow{PQ}=(3,-3,2)\\)",
+              "solution_text": "Subtract start from end.\\(\\overrightarrow{PQ}=Q-P=(4-1,-1-2,5-3)\\)..\\(\\overrightarrow{PQ}=(3,-3,2)\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "c2s4",
+          "heading": "Length, Distance & Unit Vectors",
+          "intro_hash": "453fb18bf97527f3",
+          "key_hashes": [
+            "cee776149f1f02f2",
+            "e7c98f939528021e"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Norms from the notesEXAMPLE 1",
+              "question_hash": "7af1aec6174c34eb",
+              "solution_hash": "fd6218e0c615542b",
+              "question_text": "Evaluate the norms of \\(\\mathbf u=(2,-5)\\), \\(\\mathbf v=(-1,2,2)\\), and \\(\\mathbf w=\\left(-\\frac1{\\sqrt2},0,\\frac1{\\sqrt2}\\right)\\).Reveal solution\\(\\|\\mathbf u\\|=\\sqrt{2^2+(-5)^2}=\\sqrt{29}\\).\\(\\|\\mathbf v\\|=\\sqrt{(-1)^2+2^2+2^2}=3\\).\\(\\|\\mathbf w\\|=\\sqrt{\\frac12+0+\\frac12}=1\\)..\\(\\sqrt{29},\\ 3,\\ 1\\)",
+              "solution_text": "\\(\\|\\mathbf u\\|=\\sqrt{2^2+(-5)^2}=\\sqrt{29}\\).\\(\\|\\mathbf v\\|=\\sqrt{(-1)^2+2^2+2^2}=3\\).\\(\\|\\mathbf w\\|=\\sqrt{\\frac12+0+\\frac12}=1\\)..\\(\\sqrt{29},\\ 3,\\ 1\\)"
+            },
+            {
+              "label": "Unit vectorTRY",
+              "question_hash": "4862d2e04a31cf8e",
+              "solution_hash": "8e4a8d01caae0fc3",
+              "question_text": "Find the unit vector in the direction of \\(\\mathbf a=(2,-1,2)\\).Reveal solution\\(\\|\\mathbf a\\|=\\sqrt{2^2+(-1)^2+2^2}=3\\)..\\(\\hat{\\mathbf a}=\\left(\\frac23,-\\frac13,\\frac23\\right)\\)",
+              "solution_text": "\\(\\|\\mathbf a\\|=\\sqrt{2^2+(-1)^2+2^2}=3\\)..\\(\\hat{\\mathbf a}=\\left(\\frac23,-\\frac13,\\frac23\\right)\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c2s5",
+          "heading": "Dot Product & Angles",
+          "intro_hash": "60aa9d373e246a7f",
+          "key_hashes": [
+            "e067e2d8ed36601c",
+            "3c55ae2bb67f7c3f",
+            "054e8f5c419498bd"
+          ],
+          "example_count": 3,
+          "examples": [
+            {
+              "label": "Dot product signEXAMPLE 4",
+              "question_hash": "93254376cbe1697d",
+              "solution_hash": "bd9a7a86bcf0686a",
+              "question_text": "Find \\(\\mathbf u\\cdot\\mathbf v\\) for \\(\\mathbf u=(2,3,-1)\\) and \\(\\mathbf v=(1,0,5)\\).Reveal solution\\(\\mathbf u\\cdot\\mathbf v=2(1)+3(0)+(-1)(5)\\)., so the angle is obtuse.\\(\\mathbf u\\cdot\\mathbf v=-3\\)",
+              "solution_text": "\\(\\mathbf u\\cdot\\mathbf v=2(1)+3(0)+(-1)(5)\\)., so the angle is obtuse.\\(\\mathbf u\\cdot\\mathbf v=-3\\)"
+            },
+            {
+              "label": "Angle between vectorsEXAMPLE 5",
+              "question_hash": "57b635e34927627b",
+              "solution_hash": "896a999919169e1a",
+              "question_text": "Find the angle between \\(\\mathbf u=\\mathbf i+2\\mathbf j-2\\mathbf k\\) and \\(\\mathbf v=2\\mathbf i+3\\mathbf j-6\\mathbf k\\).Reveal solution\\(\\mathbf u\\cdot\\mathbf v=1(2)+2(3)+(-2)(-6)=20\\).\\(\\|\\mathbf u\\|=3\\), \\(\\|\\mathbf v\\|=7\\).\\(\\cos\\theta=\\frac{20}{3\\cdot7}=\\frac{20}{21}\\)..\\(\\theta=\\cos^{-1}\\left(\\frac{20}{21}\\right)\\approx0.310\\text{ rad}\\)",
+              "solution_text": "\\(\\mathbf u\\cdot\\mathbf v=1(2)+2(3)+(-2)(-6)=20\\).\\(\\|\\mathbf u\\|=3\\), \\(\\|\\mathbf v\\|=7\\).\\(\\cos\\theta=\\frac{20}{3\\cdot7}=\\frac{20}{21}\\)..\\(\\theta=\\cos^{-1}\\left(\\frac{20}{21}\\right)\\approx0.310\\text{ rad}\\)"
+            },
+            {
+              "label": "Orthogonal valueTRY",
+              "question_hash": "94294bbd39824d9c",
+              "solution_hash": "eb261f794a341135",
+              "question_text": "For which \\(k\\) are \\(\\mathbf x=(k,k,1)\\) and \\(\\mathbf y=(k,5,6)\\) perpendicular?Reveal solutionPerpendicular means dot product \\(=0\\).\\(\\mathbf x\\cdot\\mathbf y=k^2+5k+6=(k+2)(k+3)\\)..\\(k=-2\\) or \\(k=-3\\)",
+              "solution_text": "Perpendicular means dot product \\(=0\\).\\(\\mathbf x\\cdot\\mathbf y=k^2+5k+6=(k+2)(k+3)\\)..\\(k=-2\\) or \\(k=-3\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c2s6",
+          "heading": "Work Done & Projections",
+          "intro_hash": "aeef253471a166d4",
+          "key_hashes": [
+            "f37a188a084c4e33",
+            "fa896ed425a4289e",
+            "db8e1c2212f2499f"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Work doneEXAMPLE 7",
+              "question_hash": "0c7f4d21dd7b35a0",
+              "solution_hash": "4e3159d950e1f0d1",
+              "question_text": "If \\(\\|\\mathbf F\\|=50\\text{ N}\\), \\(\\|\\mathbf D\\|=30\\text{ m}\\), and \\(\\theta=45^\\circ\\), find the work done.Reveal solution\\(W=\\|\\mathbf F\\|\\,\\|\\mathbf D\\|\\cos\\theta\\).\\(W=50(30)\\cos45^\\circ=1500\\cdot\\frac1{\\sqrt2}\\)..\\(W=750\\sqrt2\\text{ J}\\)",
+              "solution_text": "\\(W=\\|\\mathbf F\\|\\,\\|\\mathbf D\\|\\cos\\theta\\).\\(W=50(30)\\cos45^\\circ=1500\\cdot\\frac1{\\sqrt2}\\)..\\(W=750\\sqrt2\\text{ J}\\)"
+            },
+            {
+              "label": "Vector projectionEXAMPLE 8",
+              "question_hash": "c5f54ceb6e26ddc8",
+              "solution_hash": "7f65fac7cf346aa5",
+              "question_text": "Find \\(\\operatorname{proj}_{\\mathbf v}\\mathbf u\\) for \\(\\mathbf u=\\mathbf i-2\\mathbf j+2\\mathbf k\\), \\(\\mathbf v=2\\mathbf i+3\\mathbf j-6\\mathbf k\\).Reveal solution\\(\\mathbf u\\cdot\\mathbf v=2-6-12=-16\\), and \\(\\|\\mathbf v\\|^2=49\\)..\\(\\operatorname{proj}_{\\mathbf v}\\mathbf u=-\\frac{16}{49}(2\\mathbf i+3\\mathbf j-6\\mathbf k)\\)",
+              "solution_text": "\\(\\mathbf u\\cdot\\mathbf v=2-6-12=-16\\), and \\(\\|\\mathbf v\\|^2=49\\)..\\(\\operatorname{proj}_{\\mathbf v}\\mathbf u=-\\frac{16}{49}(2\\mathbf i+3\\mathbf j-6\\mathbf k)\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "c2s7",
+          "heading": "Cross Product",
+          "intro_hash": "f6b67d81d9851718",
+          "key_hashes": [
+            "201c5de8e47d0f28",
+            "9606691ac39f5bf6",
+            "54dc4251a5d8f6e0"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Cross productEXAMPLE 12",
+              "question_hash": "15c6e689cdb3391e",
+              "solution_hash": "5b7baaef9bb02a4f",
+              "question_text": "Find \\(\\mathbf u\\times\\mathbf v\\) if \\(\\mathbf u=(1,1,1)\\) and \\(\\mathbf v=(1,0,1)\\).Reveal solution\\(\\mathbf u\\times\\mathbf v=(1\\cdot1-1\\cdot0,\\ 1\\cdot1-1\\cdot1,\\ 1\\cdot0-1\\cdot1)\\)..\\(\\mathbf u\\times\\mathbf v=(1,0,-1)\\)",
+              "solution_text": "\\(\\mathbf u\\times\\mathbf v=(1\\cdot1-1\\cdot0,\\ 1\\cdot1-1\\cdot1,\\ 1\\cdot0-1\\cdot1)\\)..\\(\\mathbf u\\times\\mathbf v=(1,0,-1)\\)"
+            },
+            {
+              "label": "Unit normalTRY",
+              "question_hash": "9977edd409e76151",
+              "solution_hash": "791b281d7729a5e5",
+              "question_text": "Find a unit vector perpendicular to both \\((1,1,1)\\) and \\((1,0,1)\\).Reveal solutionFrom the previous example, a perpendicular vector is \\((1,0,-1)\\).Its norm is \\(\\sqrt2\\)..\\(\\hat{\\mathbf n}=\\frac1{\\sqrt2}(1,0,-1)\\)",
+              "solution_text": "From the previous example, a perpendicular vector is \\((1,0,-1)\\).Its norm is \\(\\sqrt2\\)..\\(\\hat{\\mathbf n}=\\frac1{\\sqrt2}(1,0,-1)\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "c2s8",
+          "heading": "Areas & Scalar Triple Product",
+          "intro_hash": "26aa9d2082761cf9",
+          "key_hashes": [
+            "4210a297a3668922"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Triangle areaEXAMPLE 14",
+              "question_hash": "551a5fe93e769da3",
+              "solution_hash": "86dd2d3ab20ee7af",
+              "question_text": "Find the area of the triangle with vertices \\(A=(1,0,0)\\), \\(B=(0,1,0)\\), \\(C=(0,0,1)\\).Reveal solution\\(\\overrightarrow{AB}=(-1,1,0)\\), \\(\\overrightarrow{AC}=(-1,0,1)\\).\\(\\overrightarrow{AB}\\times\\overrightarrow{AC}=(1,1,1)\\).Area \\(=\\frac12\\sqrt{1^2+1^2+1^2}\\)..\\(\\frac{\\sqrt3}{2}\\)",
+              "solution_text": "\\(\\overrightarrow{AB}=(-1,1,0)\\), \\(\\overrightarrow{AC}=(-1,0,1)\\).\\(\\overrightarrow{AB}\\times\\overrightarrow{AC}=(1,1,1)\\).Area \\(=\\frac12\\sqrt{1^2+1^2+1^2}\\)..\\(\\frac{\\sqrt3}{2}\\)"
+            },
+            {
+              "label": "VolumeEXAMPLE 16",
+              "question_hash": "f827ea6b0f58dd0a",
+              "solution_hash": "919f35fc96672403",
+              "question_text": "Find the volume of the parallelepiped formed by \\(\\mathbf u=(1,2,3)\\), \\(\\mathbf v=(-1,1,0)\\), \\(\\mathbf w=(1,2,1)\\).Reveal solution\\(\\mathbf v\\times\\mathbf w=(1,1,-3)\\).\\(\\mathbf u\\cdot(\\mathbf v\\times\\mathbf w)=1+2-9=-6\\).Volume is the absolute value: .\\(6\\)",
+              "solution_text": "\\(\\mathbf v\\times\\mathbf w=(1,1,-3)\\).\\(\\mathbf u\\cdot(\\mathbf v\\times\\mathbf w)=1+2-9=-6\\).Volume is the absolute value: .\\(6\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c2s9",
+          "heading": "Lines in 3 Space",
+          "intro_hash": "7ae2efd50277c118",
+          "key_hashes": [
+            "a1a80485041ea4b8",
+            "e2ca19e4b937e4b7",
+            "e41bb18348ba4c3d"
+          ],
+          "example_count": 3,
+          "examples": [
+            {
+              "label": "Line through a point, parallel to a segmentEXAMPLE 17",
+              "question_hash": "8cdfbf9af04fe356",
+              "solution_hash": "23297dad2f880b96",
+              "question_text": "Let \\(A=(1,1,0)\\), \\(B=(0,1,0)\\), \\(C=(0,0,1)\\). Find a vector equation for the line through \\(A\\) parallel to \\(\\overrightarrow{BC}\\).Reveal solutionDirection: \\(\\overrightarrow{BC}=C-B=(0,-1,1)\\).Point: \\(A=(1,1,0)\\)., \\(t\\in\\mathbb R\\).\\(\\mathbf r(t)=(1,1,0)+t(0,-1,1)\\)",
+              "solution_text": "Direction: \\(\\overrightarrow{BC}=C-B=(0,-1,1)\\).Point: \\(A=(1,1,0)\\)., \\(t\\in\\mathbb R\\).\\(\\mathbf r(t)=(1,1,0)+t(0,-1,1)\\)"
+            },
+            {
+              "label": "Cartesian to parametricEXAMPLE 18",
+              "question_hash": "7c5e93141e26c509",
+              "solution_hash": "59c69afea790e14c",
+              "question_text": "For \\(\\ell: x-1=\\frac{y+1}{2}=\\frac z3\\), find vector and parametric equations.Reveal solutionCompare with \\(\\frac{x-x_0}{v_1}=\\frac{y-y_0}{v_2}=\\frac{z-z_0}{v_3}\\).Point \\((1,-1,0)\\), direction \\((1,2,3)\\).Vector: .\\(\\mathbf r=(1,-1,0)+t(1,2,3)\\)Parametric: .\\(x=1+t,\\ y=-1+2t,\\ z=3t\\)",
+              "solution_text": "Compare with \\(\\frac{x-x_0}{v_1}=\\frac{y-y_0}{v_2}=\\frac{z-z_0}{v_3}\\).Point \\((1,-1,0)\\), direction \\((1,2,3)\\).Vector: .\\(\\mathbf r=(1,-1,0)+t(1,2,3)\\)Parametric: .\\(x=1+t,\\ y=-1+2t,\\ z=3t\\)"
+            },
+            {
+              "label": "Angle with the \\(z\\) axisTRY",
+              "question_hash": "b7a4c35832eb3cc3",
+              "solution_hash": "4ab8e78898d2db5e",
+              "question_text": "Find the acute angle between the \\(z\\) axis and \\(x=1-t,\\ y=3+\\sqrt2\\,t,\\ z=5+t\\).Reveal solutionDirection of the line: \\((-1,\\sqrt2,1)\\). Direction of \\(z\\) axis: \\((0,0,1)\\).\\(\\cos\\theta=\\frac{|1|}{\\sqrt{1+2+1}\\cdot1}=\\frac12\\)..\\(\\theta=\\frac{\\pi}{3}=60^\\circ\\)",
+              "solution_text": "Direction of the line: \\((-1,\\sqrt2,1)\\). Direction of \\(z\\) axis: \\((0,0,1)\\).\\(\\cos\\theta=\\frac{|1|}{\\sqrt{1+2+1}\\cdot1}=\\frac12\\)..\\(\\theta=\\frac{\\pi}{3}=60^\\circ\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c2s10",
+          "heading": "Planes, Distances & Angles",
+          "intro_hash": "014779918aa0fd38",
+          "key_hashes": [
+            "d5e6d7852c3c5752",
+            "143211df762c7bdb",
+            "774af55524b24a54"
+          ],
+          "example_count": 5,
+          "examples": [
+            {
+              "label": "Plane from point and normalEXAMPLE 21",
+              "question_hash": "1f0af39fad359b29",
+              "solution_hash": "fac6a8032b18e82f",
+              "question_text": "Find the scalar equation for the plane through \\(P_0=(1,2,3)\\) perpendicular to \\(\\mathbf n=(4,5,6)\\).Reveal solutionUse \\(4(x-1)+5(y-2)+6(z-3)=0\\).Simplify: \\(4x+5y+6z-32=0\\)..\\(4x+5y+6z=32\\)",
+              "solution_text": "Use \\(4(x-1)+5(y-2)+6(z-3)=0\\).Simplify: \\(4x+5y+6z-32=0\\)..\\(4x+5y+6z=32\\)"
+            },
+            {
+              "label": "Plane through three pointsEXAMPLE 22",
+              "question_hash": "3bb673a5a701277e",
+              "solution_hash": "31b0bd3d5ab91c8b",
+              "question_text": "Find the plane through \\(A=(1,0,0)\\), \\(B=(0,1,0)\\), \\(C=(0,0,1)\\).Reveal solution\\(\\overrightarrow{AB}=(-1,1,0)\\), \\(\\overrightarrow{AC}=(-1,0,1)\\).Normal: \\(\\overrightarrow{AB}\\times\\overrightarrow{AC}=(1,1,1)\\).Through \\(A\\): \\((x-1)+y+z=0\\)..\\(x+y+z=1\\)",
+              "solution_text": "\\(\\overrightarrow{AB}=(-1,1,0)\\), \\(\\overrightarrow{AC}=(-1,0,1)\\).Normal: \\(\\overrightarrow{AB}\\times\\overrightarrow{AC}=(1,1,1)\\).Through \\(A\\): \\((x-1)+y+z=0\\)..\\(x+y+z=1\\)"
+            },
+            {
+              "label": "Distance from point to lineEXAMPLE 20",
+              "question_hash": "cbb3415b999d37cc",
+              "solution_hash": "df253507e705e632",
+              "question_text": "Find the distance from \\(S=(1,3,2)\\) to \\(\\ell:\\mathbf r=(0,1,2)+t(1,0,1)\\).Reveal solutionTake \\(P=(0,1,2)\\), \\(\\mathbf v=(1,0,1)\\), \\(\\overrightarrow{PS}=(1,2,0)\\).\\(\\overrightarrow{PS}\\times\\mathbf v=(2,-1,-2)\\), norm \\(3\\).\\(\\|\\mathbf v\\|=\\sqrt2\\)..Distance \\(=\\frac{3}{\\sqrt2}\\)",
+              "solution_text": "Take \\(P=(0,1,2)\\), \\(\\mathbf v=(1,0,1)\\), \\(\\overrightarrow{PS}=(1,2,0)\\).\\(\\overrightarrow{PS}\\times\\mathbf v=(2,-1,-2)\\), norm \\(3\\).\\(\\|\\mathbf v\\|=\\sqrt2\\)..Distance \\(=\\frac{3}{\\sqrt2}\\)"
+            },
+            {
+              "label": "Distance from point to planeEXAMPLE 23",
+              "question_hash": "f4ec7956c3d1741d",
+              "solution_hash": "0b700c05c3205a69",
+              "question_text": "Find the distance from \\(S=(1,0,-1)\\) to \\(x-2y+z=1\\).Reveal solutionNormal \\(\\mathbf n=(1,-2,1)\\), so \\(\\|\\mathbf n\\|=\\sqrt6\\).Use point \\(P=(0,0,1)\\) on the plane. Then \\(\\overrightarrow{PS}=(1,0,-2)\\).\\(|\\overrightarrow{PS}\\cdot\\mathbf n|=|1+0-2|=1\\)..Distance \\(=\\frac1{\\sqrt6}\\)",
+              "solution_text": "Normal \\(\\mathbf n=(1,-2,1)\\), so \\(\\|\\mathbf n\\|=\\sqrt6\\).Use point \\(P=(0,0,1)\\) on the plane. Then \\(\\overrightarrow{PS}=(1,0,-2)\\).\\(|\\overrightarrow{PS}\\cdot\\mathbf n|=|1+0-2|=1\\)..Distance \\(=\\frac1{\\sqrt6}\\)"
+            },
+            {
+              "label": "Angle between planesTRY",
+              "question_hash": "b7583b4b5452c24f",
+              "solution_hash": "a8e49c6baf52352b",
+              "question_text": "Find the acute angle between \\(x-2y+2z=1\\) and \\(6x-4y+3z=7\\).Reveal solutionNormals: \\(\\mathbf n_1=(1,-2,2)\\), \\(\\mathbf n_2=(6,-4,3)\\).\\(\\mathbf n_1\\cdot\\mathbf n_2=6+8+6=20\\).\\(\\|\\mathbf n_1\\|=3\\), \\(\\|\\mathbf n_2\\|=\\sqrt{61}\\)..\\(\\theta=\\cos^{-1}\\left(\\frac{20}{3\\sqrt{61}}\\right)\\)",
+              "solution_text": "Normals: \\(\\mathbf n_1=(1,-2,2)\\), \\(\\mathbf n_2=(6,-4,3)\\).\\(\\mathbf n_1\\cdot\\mathbf n_2=6+8+6=20\\).\\(\\|\\mathbf n_1\\|=3\\), \\(\\|\\mathbf n_2\\|=\\sqrt{61}\\)..\\(\\theta=\\cos^{-1}\\left(\\frac{20}{3\\sqrt{61}}\\right)\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c2s11",
+          "heading": "Chapter Practice",
+          "intro_hash": "8873eb40970940be",
+          "key_hashes": [],
+          "example_count": 5,
+          "examples": [
+            {
+              "label": "Dot, cross, projectionPRACTICE 1",
+              "question_hash": "2fab4c62ee2fddfb",
+              "solution_hash": "a4a91c7e9e282b1d",
+              "question_text": "Let \\(\\mathbf u=\\mathbf i+\\mathbf j-5\\mathbf k\\) and \\(\\mathbf v=2\\mathbf i+\\mathbf j-\\mathbf k\\). Find \\(\\|\\mathbf u\\|\\), \\(\\|\\mathbf v\\|\\), \\(\\mathbf u\\cdot\\mathbf v\\), \\(\\mathbf u\\times\\mathbf v\\), \\(\\mathbf v\\times\\mathbf u\\), and \\(\\operatorname{proj}_{\\mathbf v}\\mathbf u\\).Reveal solution\\(\\|\\mathbf u\\|=\\sqrt{27}=3\\sqrt3\\), \\(\\|\\mathbf v\\|=\\sqrt6\\).\\(\\mathbf u\\cdot\\mathbf v=1(2)+1(1)+(-5)(-1)=8\\).\\(\\mathbf u\\times\\mathbf v=(4,-9,-1)\\), so \\(\\mathbf v\\times\\mathbf u=(-4,9,1)\\).\\(\\operatorname{proj}_{\\mathbf v}\\mathbf u=\\frac{8}{6}(2,1,-1)=\\).\\(\\left(\\frac83,\\frac43,-\\frac43\\right)\\)",
+              "solution_text": "\\(\\|\\mathbf u\\|=\\sqrt{27}=3\\sqrt3\\), \\(\\|\\mathbf v\\|=\\sqrt6\\).\\(\\mathbf u\\cdot\\mathbf v=1(2)+1(1)+(-5)(-1)=8\\).\\(\\mathbf u\\times\\mathbf v=(4,-9,-1)\\), so \\(\\mathbf v\\times\\mathbf u=(-4,9,1)\\).\\(\\operatorname{proj}_{\\mathbf v}\\mathbf u=\\frac{8}{6}(2,1,-1)=\\).\\(\\left(\\frac83,\\frac43,-\\frac43\\right)\\)"
+            },
+            {
+              "label": "ParallelogramPRACTICE 2",
+              "question_hash": "416777f2c116e8fc",
+              "solution_hash": "83df9eb6706975f0",
+              "question_text": "For parallelogram \\(ABPC\\), let \\(A=(1,0,0)\\), \\(B=(0,1,0)\\), \\(C=(0,0,1)\\). Find its area, vertex \\(P\\), and angle between the diagonals.Reveal solution\\(\\overrightarrow{AB}=(-1,1,0)\\), \\(\\overrightarrow{AC}=(-1,0,1)\\).Area \\(=\\|\\overrightarrow{AB}\\times\\overrightarrow{AC}\\|=\\sqrt3\\).For parallelogram \\(ABPC\\), \\(P=B+C-A=(-1,1,1)\\).Diagonals: \\(\\overrightarrow{AP}=(-2,1,1)\\), \\(\\overrightarrow{BC}=(0,-1,1)\\). Dot \\(=0\\), so angle is .\\(\\frac{\\pi}{2}\\)",
+              "solution_text": "\\(\\overrightarrow{AB}=(-1,1,0)\\), \\(\\overrightarrow{AC}=(-1,0,1)\\).Area \\(=\\|\\overrightarrow{AB}\\times\\overrightarrow{AC}\\|=\\sqrt3\\).For parallelogram \\(ABPC\\), \\(P=B+C-A=(-1,1,1)\\).Diagonals: \\(\\overrightarrow{AP}=(-2,1,1)\\), \\(\\overrightarrow{BC}=(0,-1,1)\\). Dot \\(=0\\), so angle is .\\(\\frac{\\pi}{2}\\)"
+            },
+            {
+              "label": "LinesPRACTICE 3",
+              "question_hash": "266bbb5d772adfde",
+              "solution_hash": "736ea30b15a9d87d",
+              "question_text": "Find the parametric equation of the line through \\(R=(2,4,5)\\) and perpendicular to the plane \\(3x+7y-5z=21\\).Reveal solutionA line perpendicular to a plane is parallel to the plane normal.Normal vector is \\((3,7,-5)\\)., \\(t\\in\\mathbb R\\).\\(x=2+3t,\\ y=4+7t,\\ z=5-5t\\)",
+              "solution_text": "A line perpendicular to a plane is parallel to the plane normal.Normal vector is \\((3,7,-5)\\)., \\(t\\in\\mathbb R\\).\\(x=2+3t,\\ y=4+7t,\\ z=5-5t\\)"
+            },
+            {
+              "label": "Plane and distancePRACTICE 4",
+              "question_hash": "9c79d247b2b65b9f",
+              "solution_hash": "e908c06bf4172c62",
+              "question_text": "Let \\(\\mathbf u=\\mathbf i+\\mathbf j+2\\mathbf k\\), \\(\\mathbf v=2\\mathbf i+\\mathbf j-2\\mathbf k\\). Find a unit vector perpendicular to both, then the plane through \\((1,1,0)\\) parallel to both vectors. Also find its distance from the parallel plane through the origin.Reveal solution\\(\\mathbf u\\times\\mathbf v=(-4,6,-1)\\), norm \\(\\sqrt{53}\\).Unit normal: .\\(\\frac1{\\sqrt{53}}(-4,6,-1)\\)Through \\((1,1,0)\\): \\(-4(x-1)+6(y-1)-z=0\\)..\\(-4x+6y-z=2\\)The parallel plane through the origin is \\(-4x+6y-z=0\\), so distance is .\\(\\frac2{\\sqrt{53}}\\)",
+              "solution_text": "\\(\\mathbf u\\times\\mathbf v=(-4,6,-1)\\), norm \\(\\sqrt{53}\\).Unit normal: .\\(\\frac1{\\sqrt{53}}(-4,6,-1)\\)Through \\((1,1,0)\\): \\(-4(x-1)+6(y-1)-z=0\\)..\\(-4x+6y-z=2\\)The parallel plane through the origin is \\(-4x+6y-z=0\\), so distance is .\\(\\frac2{\\sqrt{53}}\\)"
+            },
+            {
+              "label": "DistancesPRACTICE 5",
+              "question_hash": "63de79ab94182fa3",
+              "solution_hash": "1aab6c648f1357a6",
+              "question_text": "Find distances: (a) \\(S=(3,-1,4)\\) to \\(\\ell:x=4-t,\\ y=3+2t,\\ z=-5+3t\\). (b) \\(S=(2,-3,4)\\) to \\(x+2y+2z=13\\).Reveal solution(a) Use point \\(P=(4,3,-5)\\) and direction \\(\\mathbf v=(-1,2,3)\\). \\(\\overrightarrow{PS}=(-1,-4,9)\\).\\(\\|\\overrightarrow{PS}\\times\\mathbf v\\|=18\\sqrt3\\), and \\(\\|\\mathbf v\\|=\\sqrt{14}\\).Distance \\(=\\frac{18\\sqrt3}{\\sqrt{14}}=\\).\\(\\frac{9\\sqrt{42}}{7}\\)(b) Normal \\((1,2,2)\\), norm \\(3\\). Substitute \\(S\\): \\(2-6+8-13=-9\\). Distance \\(=\\).\\(3\\)",
+              "solution_text": "(a) Use point \\(P=(4,3,-5)\\) and direction \\(\\mathbf v=(-1,2,3)\\). \\(\\overrightarrow{PS}=(-1,-4,9)\\).\\(\\|\\overrightarrow{PS}\\times\\mathbf v\\|=18\\sqrt3\\), and \\(\\|\\mathbf v\\|=\\sqrt{14}\\).Distance \\(=\\frac{18\\sqrt3}{\\sqrt{14}}=\\).\\(\\frac{9\\sqrt{42}}{7}\\)(b) Normal \\((1,2,2)\\), norm \\(3\\). Substitute \\(S\\): \\(2-6+8-13=-9\\). Distance \\(=\\).\\(3\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c2s12",
+          "heading": "Study Sheet",
+          "intro_hash": "60b7624a4de539e9",
+          "key_hashes": [],
+          "example_count": 0,
+          "examples": [],
+          "visual_count": 0
+        }
+      ]
+    },
+    {
+      "file": "chapters/chapter-3.html",
+      "section_count": 13,
+      "sections": [
+        {
+          "id": "c3s1",
+          "heading": "Matrix Notation",
+          "intro_hash": "63aa54444c332ff0",
+          "key_hashes": [
+            "d21ed1dbb7552274",
+            "e030ef02d1851a41",
+            "0c6048b90a98ff4e"
+          ],
+          "example_count": 1,
+          "examples": [
+            {
+              "label": "Entry readingTRY",
+              "question_hash": "3f3600a7b039bc98",
+              "solution_hash": "f2abf0b9854dacdc",
+              "question_text": "For \\(A=\\begin{bmatrix}1&3&5&7\\\\9&6&3&0\\\\-2&-4&-8&\\sqrt2\\end{bmatrix}\\), find \\(A_{34}\\).Reveal solutionRow \\(3\\) is \\((-2,-4,-8,\\sqrt2)\\).Column \\(4\\) is the last entry of that row..\\(A_{34}=\\sqrt2\\)",
+              "solution_text": "Row \\(3\\) is \\((-2,-4,-8,\\sqrt2)\\).Column \\(4\\) is the last entry of that row..\\(A_{34}=\\sqrt2\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "c3s2",
+          "heading": "Matrix Types",
+          "intro_hash": "d40e97595e236275",
+          "key_hashes": [
+            "c123a005bf768ed8",
+            "2810b372330b3845"
+          ],
+          "example_count": 1,
+          "examples": [
+            {
+              "label": "ClassifyTRY",
+              "question_hash": "16b504f7b27f49f5",
+              "solution_hash": "44681c2474300bec",
+              "question_text": "Classify \\(B=\\begin{bmatrix}3&0&0&0\\\\0&3&0&0\\\\0&0&0&0\\\\0&0&0&\\pi\\end{bmatrix}\\).Reveal solutionAll entries away from the main diagonal are zero.. It is also square.\\(B\\) is diagonal",
+              "solution_text": "All entries away from the main diagonal are zero.. It is also square.\\(B\\) is diagonal"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c3s3",
+          "heading": "Equality & Entry Rules",
+          "intro_hash": "3cfa9fdbe2b9a635",
+          "key_hashes": [
+            "6c1f2cc173a7e785",
+            "2a9ac355e721806d"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Matrix equationEXAMPLE 1",
+              "question_hash": "7f59c0ac4e303b10",
+              "solution_hash": "1bc168d3bedf09a2",
+              "question_text": "Solve for \\(a,b,c,d\\): \\[ \\begin{bmatrix}a-b&b;+c\\\\3d+c&2a-4d\\end{bmatrix} = \\begin{bmatrix}8&1\\\\7&6\\end{bmatrix}. \\] Reveal solutionMatch entries: \\(a-b=8,\\ b+c=1,\\ 3d+c=7,\\ 2a-4d=6\\).From \\(a-b=8\\), \\(b=a-8\\). From \\(b+c=1\\), \\(c=9-a\\).Then \\(d=(7-c)/3=(a-2)/3\\).Use \\(2a-4d=6\\): \\(2a-\\frac{4(a-2)}3=6\\), so \\(a=5\\)..\\(a=5,\\ b=-3,\\ c=4,\\ d=1\\)",
+              "solution_text": "Match entries: \\(a-b=8,\\ b+c=1,\\ 3d+c=7,\\ 2a-4d=6\\).From \\(a-b=8\\), \\(b=a-8\\). From \\(b+c=1\\), \\(c=9-a\\).Then \\(d=(7-c)/3=(a-2)/3\\).Use \\(2a-4d=6\\): \\(2a-\\frac{4(a-2)}3=6\\), so \\(a=5\\)..\\(a=5,\\ b=-3,\\ c=4,\\ d=1\\)"
+            },
+            {
+              "label": "Build from a ruleTRY",
+              "question_hash": "b6cf9951be1de541",
+              "solution_hash": "8ba31e3239ed8a6b",
+              "question_text": "Let \\(B=[b_{ij}]\\) be \\(3\\times3\\), where \\(b_{ij}=0\\) if \\(i=j\\), \\(b_{ij}=i+j\\) if \\(i\\gt j\\), and \\(b_{ij}=-j\\) if \\(i\\lt j\\). Find \\(B\\).Reveal solutionDiagonal entries are \\(0\\).Below the diagonal use \\(i+j\\). Above the diagonal use \\(-j\\)..\\(B=\\begin{bmatrix}0&-2&-3\\\\3&0&-3\\\\4&5&0\\end{bmatrix}\\)",
+              "solution_text": "Diagonal entries are \\(0\\).Below the diagonal use \\(i+j\\). Above the diagonal use \\(-j\\)..\\(B=\\begin{bmatrix}0&-2&-3\\\\3&0&-3\\\\4&5&0\\end{bmatrix}\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c3s4",
+          "heading": "Addition & Scalar Multiplication",
+          "intro_hash": "356cc662be3ee010",
+          "key_hashes": [
+            "4436aa9815e55aee",
+            "6b9d3bd886be441e"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Entry arithmeticEXAMPLE 2",
+              "question_hash": "59b2432e62b7fdea",
+              "solution_hash": "1f28f59adbcc7202",
+              "question_text": "Let \\[ A=\\begin{bmatrix}4&3&2\\\\1&3&1\\end{bmatrix},\\quad B=\\begin{bmatrix}7&2&0\\\\-5&3&-1\\end{bmatrix},\\quad C=\\begin{bmatrix}3&-6&9\\\\3&0&12\\end{bmatrix}. \\] Find \\(2A-B+\\frac13C\\). Reveal solution\\(2A=\\begin{bmatrix}8&6&4\\\\2&6&2\\end{bmatrix}\\), and \\(\\frac13C=\\begin{bmatrix}1&-2&3\\\\1&0&4\\end{bmatrix}\\).Subtract \\(B\\), then add \\(\\frac13C\\)..\\(2A-B+\\frac13C=\\begin{bmatrix}2&2&7\\\\8&3&7\\end{bmatrix}\\)",
+              "solution_text": "\\(2A=\\begin{bmatrix}8&6&4\\\\2&6&2\\end{bmatrix}\\), and \\(\\frac13C=\\begin{bmatrix}1&-2&3\\\\1&0&4\\end{bmatrix}\\).Subtract \\(B\\), then add \\(\\frac13C\\)..\\(2A-B+\\frac13C=\\begin{bmatrix}2&2&7\\\\8&3&7\\end{bmatrix}\\)"
+            },
+            {
+              "label": "Size checkTRY",
+              "question_hash": "ba6907832ff6321a",
+              "solution_hash": "8fd2ac17667f4451",
+              "question_text": "Can \\(\\begin{bmatrix}1&2&3\\\\4&5&6\\end{bmatrix}+\\begin{bmatrix}7&8\\\\9&10\\end{bmatrix}\\) be computed?Reveal solutionThe first matrix is \\(2\\times3\\). The second is \\(2\\times2\\).. Addition needs the same size.No",
+              "solution_text": "The first matrix is \\(2\\times3\\). The second is \\(2\\times2\\).. Addition needs the same size.No"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c3s5",
+          "heading": "Matrix Multiplication",
+          "intro_hash": "93ca56ed133c338b",
+          "key_hashes": [
+            "1f811ccd37b39312",
+            "b63e1bda66540b94",
+            "86998f000a1bad03"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Product and sizeEXAMPLE 3",
+              "question_hash": "bace0a394016dddc",
+              "solution_hash": "b4849a75d6067d83",
+              "question_text": "Let \\(A=\\begin{bmatrix}1&2&-1\\\\3&1&4\\end{bmatrix}\\) and \\(B=\\begin{bmatrix}-2\\\\4\\\\2\\end{bmatrix}\\). Find \\(AB\\).Reveal solutionThe sizes are \\(2\\times3\\) and \\(3\\times1\\), so \\(AB\\) is \\(2\\times1\\).First entry: \\(1(-2)+2(4)+(-1)(2)=4\\).Second entry: \\(3(-2)+1(4)+4(2)=6\\)..\\(AB=\\begin{bmatrix}4\\\\6\\end{bmatrix}\\)",
+              "solution_text": "The sizes are \\(2\\times3\\) and \\(3\\times1\\), so \\(AB\\) is \\(2\\times1\\).First entry: \\(1(-2)+2(4)+(-1)(2)=4\\).Second entry: \\(3(-2)+1(4)+4(2)=6\\)..\\(AB=\\begin{bmatrix}4\\\\6\\end{bmatrix}\\)"
+            },
+            {
+              "label": "Order mattersTRY",
+              "question_hash": "cfbd20bc9c283b51",
+              "solution_hash": "9925cf12640cd98c",
+              "question_text": "For the \\(A\\) and \\(B\\) above, is \\(BA\\) defined?Reveal solution\\(B\\) is \\(3\\times1\\), and \\(A\\) is \\(2\\times3\\).The inner sizes would be \\(1\\) and \\(2\\), which do not match..\\(BA\\) is not defined",
+              "solution_text": "\\(B\\) is \\(3\\times1\\), and \\(A\\) is \\(2\\times3\\).The inner sizes would be \\(1\\) and \\(2\\), which do not match..\\(BA\\) is not defined"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "c3s6",
+          "heading": "Identity & Transpose",
+          "intro_hash": "160f7b1ec29a738a",
+          "key_hashes": [
+            "c1b45c340f426d8d",
+            "3a33b2137fa1a435",
+            "8af523d093c650af"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "TransposeEXAMPLE 4",
+              "question_hash": "fb319790e741e69a",
+              "solution_hash": "5723b0f83e1587f7",
+              "question_text": "Find \\(A^T\\) for \\(A=\\begin{bmatrix}4&3&2\\\\1&3&1\\end{bmatrix}\\).Reveal solutionRows of \\(A\\) become columns of \\(A^T\\)..\\(A^T=\\begin{bmatrix}4&1\\\\3&3\\\\2&1\\end{bmatrix}\\)",
+              "solution_text": "Rows of \\(A\\) become columns of \\(A^T\\)..\\(A^T=\\begin{bmatrix}4&1\\\\3&3\\\\2&1\\end{bmatrix}\\)"
+            },
+            {
+              "label": "Product transposeTRY",
+              "question_hash": "fd5fdfd5983dccf6",
+              "solution_hash": "222e9b25206625f6",
+              "question_text": "If \\(A\\) is \\(2\\times3\\) and \\(B\\) is \\(3\\times4\\), what is the size of \\((AB)^T\\)?Reveal solution\\(AB\\) is \\(2\\times4\\).Taking transpose swaps the size..\\((AB)^T\\) is \\(4\\times2\\)",
+              "solution_text": "\\(AB\\) is \\(2\\times4\\).Taking transpose swaps the size..\\((AB)^T\\) is \\(4\\times2\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c3s7",
+          "heading": "Inverse Matrices",
+          "intro_hash": "99f5500d21253a0e",
+          "key_hashes": [
+            "a7eacea4852fa80a",
+            "d598feda1f1fd24c",
+            "d826cc273c59f001"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Check invertibilityEXAMPLE 5",
+              "question_hash": "0adca28941961133",
+              "solution_hash": "442264e0f4c8c53c",
+              "question_text": "Determine whether \\(A=\\begin{bmatrix}5&3\\\\7&9\\end{bmatrix}\\) is invertible. If it is, find \\(A^{-1}\\).Reveal solutionCompute \\(ad-bc=5(9)-3(7)=24\\ne0\\).So \\(A\\) is invertible..\\(A^{-1}=\\frac1{24}\\begin{bmatrix}9&-3\\\\-7&5\\end{bmatrix}\\)",
+              "solution_text": "Compute \\(ad-bc=5(9)-3(7)=24\\ne0\\).So \\(A\\) is invertible..\\(A^{-1}=\\frac1{24}\\begin{bmatrix}9&-3\\\\-7&5\\end{bmatrix}\\)"
+            },
+            {
+              "label": "Singular or invertibleTRY",
+              "question_hash": "e47bcd91b16939a9",
+              "solution_hash": "36d21335a628772f",
+              "question_text": "Is \\(B=\\begin{bmatrix}-8&4\\\\6&-3\\end{bmatrix}\\) invertible?Reveal solution\\(ad-bc=(-8)(-3)-4(6)=24-24=0\\)..\\(B\\) is singular",
+              "solution_text": "\\(ad-bc=(-8)(-3)-4(6)=24-24=0\\)..\\(B\\) is singular"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c3s8",
+          "heading": "Diagonal Matrices & Powers",
+          "intro_hash": "322a67befae059f6",
+          "key_hashes": [
+            "bada45b9dacc8ad1",
+            "0f375bb313322e14",
+            "d81dd2eb0a541bdc"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Matrix powersEXAMPLE 6",
+              "question_hash": "d55267d8cc5c52cf",
+              "solution_hash": "1f9e41e0897c1937",
+              "question_text": "Let \\(A=\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}\\). Find \\(A^2,A^3,A^{-2}\\).Reveal solutionMultiplying shows \\(A^n=\\begin{bmatrix}1&n;\\\\0&1\\end{bmatrix}\\) for positive integers \\(n\\).Also \\(A^{-1}=\\begin{bmatrix}1&-1\\\\0&1\\end{bmatrix}\\)..\\(A^2=\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix},\\quad A^3=\\begin{bmatrix}1&3\\\\0&1\\end{bmatrix},\\quad A^{-2}=\\begin{bmatrix}1&-2\\\\0&1\\end{bmatrix}\\)",
+              "solution_text": "Multiplying shows \\(A^n=\\begin{bmatrix}1&n;\\\\0&1\\end{bmatrix}\\) for positive integers \\(n\\).Also \\(A^{-1}=\\begin{bmatrix}1&-1\\\\0&1\\end{bmatrix}\\)..\\(A^2=\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix},\\quad A^3=\\begin{bmatrix}1&3\\\\0&1\\end{bmatrix},\\quad A^{-2}=\\begin{bmatrix}1&-2\\\\0&1\\end{bmatrix}\\)"
+            },
+            {
+              "label": "Diagonal inverseTRY",
+              "question_hash": "56a6b55319a714e6",
+              "solution_hash": "fdc1200f6278a06b",
+              "question_text": "Find the inverse of \\(\\begin{bmatrix}2&0&0\\\\0&-5&0\\\\0&0&\\frac13\\end{bmatrix}\\).Reveal solutionInvert each diagonal entry..\\(\\begin{bmatrix}\\frac12&0&0\\\\0&-\\frac15&0\\\\0&0&3\\end{bmatrix}\\)",
+              "solution_text": "Invert each diagonal entry..\\(\\begin{bmatrix}\\frac12&0&0\\\\0&-\\frac15&0\\\\0&0&3\\end{bmatrix}\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c3s9",
+          "heading": "Determinants & Cofactors",
+          "intro_hash": "d720338993f11618",
+          "key_hashes": [
+            "cadca47e21c86785",
+            "16e3948cefd371d0",
+            "902e1253b8ecde74",
+            "ea188d53a94605ce"
+          ],
+          "example_count": 1,
+          "examples": [
+            {
+              "label": "CofactorTRY",
+              "question_hash": "3da7537a973d40c2",
+              "solution_hash": "242581bea6dbcaa6",
+              "question_text": "For \\(A=\\begin{bmatrix}1&5&0\\\\-3&2&1\\\\1&2&1\\end{bmatrix}\\), find \\(C_{31}\\).Reveal solutionDelete row \\(3\\), column \\(1\\): \\(\\begin{bmatrix}5&0\\\\2&1\\end{bmatrix}\\).Its determinant is \\(5(1)-0(2)=5\\).The sign is \\((-1)^{3+1}=+1\\)..\\(C_{31}=5\\)",
+              "solution_text": "Delete row \\(3\\), column \\(1\\): \\(\\begin{bmatrix}5&0\\\\2&1\\end{bmatrix}\\).Its determinant is \\(5(1)-0(2)=5\\).The sign is \\((-1)^{3+1}=+1\\)..\\(C_{31}=5\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "c3s10",
+          "heading": "Cofactor Expansion",
+          "intro_hash": "cdba4ece474df761",
+          "key_hashes": [
+            "87ac033eb8830446",
+            "8014cfa9059dafd8"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Expand along a rowEXAMPLE 7",
+              "question_hash": "eb82f6e7f7c0466d",
+              "solution_hash": "5a2cbf3a408a3e6f",
+              "question_text": "Find \\[ \\det\\begin{bmatrix}1&5&0\\\\-3&2&1\\\\1&2&1\\end{bmatrix}. \\] Reveal solutionExpand along row \\(3\\), with signs \\(+,-,+\\).\\(\\det(A)=1\\begin{vmatrix}5&0\\\\2&1\\end{vmatrix}-2\\begin{vmatrix}1&0\\\\-3&1\\end{vmatrix}+1\\begin{vmatrix}1&5\\\\-3&2\\end{vmatrix}\\).This is \\(5-2+17\\)..\\(\\det(A)=20\\)",
+              "solution_text": "Expand along row \\(3\\), with signs \\(+,-,+\\).\\(\\det(A)=1\\begin{vmatrix}5&0\\\\2&1\\end{vmatrix}-2\\begin{vmatrix}1&0\\\\-3&1\\end{vmatrix}+1\\begin{vmatrix}1&5\\\\-3&2\\end{vmatrix}\\).This is \\(5-2+17\\)..\\(\\det(A)=20\\)"
+            },
+            {
+              "label": "Use zerosTRY",
+              "question_hash": "5a82124859330b1f",
+              "solution_hash": "7aa8b88fc051cede",
+              "question_text": "Compute \\[ \\begin{vmatrix}3&1&2&2\\\\1&0&-2&1\\\\1&0&5&-1\\\\2&0&0&1\\end{vmatrix}. \\] Reveal solutionExpand down column \\(2\\), since it has three zeros.Only \\(a_{12}=1\\) contributes. Its sign is \\((-1)^{1+2}=-1\\).\\(\\det(A)=-\\begin{vmatrix}1&-2&1\\\\1&5&-1\\\\2&0&1\\end{vmatrix}\\).The \\(3\\times3\\) determinant is \\(1\\)..\\(\\det(A)=-1\\)",
+              "solution_text": "Expand down column \\(2\\), since it has three zeros.Only \\(a_{12}=1\\) contributes. Its sign is \\((-1)^{1+2}=-1\\).\\(\\det(A)=-\\begin{vmatrix}1&-2&1\\\\1&5&-1\\\\2&0&1\\end{vmatrix}\\).The \\(3\\times3\\) determinant is \\(1\\)..\\(\\det(A)=-1\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c3s11",
+          "heading": "Adjoint & Invertibility",
+          "intro_hash": "9cce82015c8b5ade",
+          "key_hashes": [
+            "eec0694da10560ab",
+            "f58a907c80b1692c",
+            "2ff386c0d7f136e0"
+          ],
+          "example_count": 2,
+          "examples": [
+            {
+              "label": "Inverse by adjointEXAMPLE 8",
+              "question_hash": "b7155867183999ff",
+              "solution_hash": "221e3c1fee9eb41c",
+              "question_text": "For \\(A=\\begin{bmatrix}1&5&0\\\\-3&2&1\\\\1&2&1\\end{bmatrix}\\), use \\[ \\operatorname{adj}(A)=\\begin{bmatrix}0&-5&5\\\\4&1&-1\\\\-8&3&17\\end{bmatrix},\\quad \\det(A)=20. \\] Find \\(A^{-1}\\).Reveal solutionUse \\(A^{-1}=\\frac1{\\det(A)}\\operatorname{adj}(A)\\)..\\(A^{-1}=\\frac1{20}\\begin{bmatrix}0&-5&5\\\\4&1&-1\\\\-8&3&17\\end{bmatrix}\\)",
+              "solution_text": "Use \\(A^{-1}=\\frac1{\\det(A)}\\operatorname{adj}(A)\\)..\\(A^{-1}=\\frac1{20}\\begin{bmatrix}0&-5&5\\\\4&1&-1\\\\-8&3&17\\end{bmatrix}\\)"
+            },
+            {
+              "label": "Determinant of inverseTRY",
+              "question_hash": "d5b8208eedc21b58",
+              "solution_hash": "faec44526f3eb5d7",
+              "question_text": "If \\(\\det(A)=5\\), what is \\(\\det(A^{-1})\\)?Reveal solutionSince \\(AA^{-1}=I\\), \\(\\det(A)\\det(A^{-1})=\\det(I)=1\\)..\\(\\det(A^{-1})=\\frac15\\)",
+              "solution_text": "Since \\(AA^{-1}=I\\), \\(\\det(A)\\det(A^{-1})=\\det(I)=1\\)..\\(\\det(A^{-1})=\\frac15\\)"
+            }
+          ],
+          "visual_count": 0
+        },
+        {
+          "id": "c3s12",
+          "heading": "Cramer's Rule & Practice",
+          "intro_hash": "eff226ff73260e23",
+          "key_hashes": [
+            "cd7ff3918989e8e2",
+            "9a65d99b50f427f4",
+            "fabf9cc1833f9f6d"
+          ],
+          "example_count": 5,
+          "examples": [
+            {
+              "label": "Cramer's ruleEXAMPLE 9",
+              "question_hash": "3a40e804b02356ac",
+              "solution_hash": "2a9d8ea145a07dc1",
+              "question_text": "Solve \\[ 4x+5y=2,\\quad 11x+y+2z=3,\\quad x+5y+2z=1 \\] using Cramer's rule.Reveal solutionThe coefficient matrix is \\(A=\\begin{bmatrix}4&5&0\\\\11&1&2\\\\1&5&2\\end{bmatrix}\\), and \\(\\det(A)=-132\\ne0\\).\\(\\det(A_x)=-36\\), \\(\\det(A_y)=-24\\), \\(\\det(A_z)=12\\).Divide each by \\(\\det(A)\\)..\\(x=\\frac3{11},\\ y=\\frac2{11},\\ z=-\\frac1{11}\\)",
+              "solution_text": "The coefficient matrix is \\(A=\\begin{bmatrix}4&5&0\\\\11&1&2\\\\1&5&2\\end{bmatrix}\\), and \\(\\det(A)=-132\\ne0\\).\\(\\det(A_x)=-36\\), \\(\\det(A_y)=-24\\), \\(\\det(A_z)=12\\).Divide each by \\(\\det(A)\\)..\\(x=\\frac3{11},\\ y=\\frac2{11},\\ z=-\\frac1{11}\\)"
+            },
+            {
+              "label": "Matrix productPRACTICE 1",
+              "question_hash": "34d68feba592b7e6",
+              "solution_hash": "0c3cad3b5a1ccc3b",
+              "question_text": "Let \\(A=\\begin{bmatrix}3&0\\\\-1&2\\\\1&1\\end{bmatrix}\\) and \\(B=\\begin{bmatrix}4&-1\\\\0&2\\end{bmatrix}\\). Is \\(BA\\) defined?Reveal solution\\(B\\) is \\(2\\times2\\), and \\(A\\) is \\(3\\times2\\).The inner sizes are \\(2\\) and \\(3\\), which do not match..\\(BA\\) is not defined",
+              "solution_text": "\\(B\\) is \\(2\\times2\\), and \\(A\\) is \\(3\\times2\\).The inner sizes are \\(2\\) and \\(3\\), which do not match..\\(BA\\) is not defined"
+            },
+            {
+              "label": "Inverse with parameterPRACTICE 2",
+              "question_hash": "a074f3733c7e4694",
+              "solution_hash": "dc466bc9cbbf528e",
+              "question_text": "For \\(A=\\begin{bmatrix}2&k-2;\\\\3&k;\\end{bmatrix}\\), state when \\(A\\) is invertible.Reveal solutionCompute \\(ad-bc=2k-3(k-2)=6-k\\).The matrix is invertible when this is not zero..\\(A\\) is invertible when \\(k\\ne6\\)",
+              "solution_text": "Compute \\(ad-bc=2k-3(k-2)=6-k\\).The matrix is invertible when this is not zero..\\(A\\) is invertible when \\(k\\ne6\\)"
+            },
+            {
+              "label": "Cofactor expansionPRACTICE 3",
+              "question_hash": "0b5b18ed98054cb3",
+              "solution_hash": "0ff8758aa28901ae",
+              "question_text": "For \\[ A=\\begin{bmatrix}2&1&3&3\\\\1&0&1&1\\\\0&2&2&0\\\\0&1&2&3\\end{bmatrix}, \\] evaluate \\(\\det(A)\\).Reveal solutionExpanding carefully, the determinant is \\(-2\\).A good route is to expand along the first column, since it has two zeros..\\(\\det(A)=-2\\)",
+              "solution_text": "Expanding carefully, the determinant is \\(-2\\).A good route is to expand along the first column, since it has two zeros..\\(\\det(A)=-2\\)"
+            },
+            {
+              "label": "Reciprocal substitutionPRACTICE 4",
+              "question_hash": "9b404d41f925df39",
+              "solution_hash": "712591e0d019adb9",
+              "question_text": "Solve \\[ \\frac1x+\\frac2y+\\frac1z=1,\\quad \\frac3x+\\frac4y+\\frac1z=5,\\quad \\frac8x+\\frac6y+\\frac7z=0. \\] Reveal solutionLet \\(X=\\frac1x\\), \\(Y=\\frac1y\\), and \\(Z=\\frac1z\\).Solve \\(\\begin{bmatrix}1&2&1\\\\3&4&1\\\\8&6&7\\end{bmatrix}\\begin{bmatrix}X\\\\Y\\\\Z\\end{bmatrix}=\\begin{bmatrix}1\\\\5\\\\0\\end{bmatrix}\\).This gives \\(X=1,\\ Y=1,\\ Z=-2\\)..\\(x=1,\\ y=1,\\ z=-\\frac12\\)",
+              "solution_text": "Let \\(X=\\frac1x\\), \\(Y=\\frac1y\\), and \\(Z=\\frac1z\\).Solve \\(\\begin{bmatrix}1&2&1\\\\3&4&1\\\\8&6&7\\end{bmatrix}\\begin{bmatrix}X\\\\Y\\\\Z\\end{bmatrix}=\\begin{bmatrix}1\\\\5\\\\0\\end{bmatrix}\\).This gives \\(X=1,\\ Y=1,\\ Z=-2\\)..\\(x=1,\\ y=1,\\ z=-\\frac12\\)"
+            }
+          ],
+          "visual_count": 1
+        },
+        {
+          "id": "c3s13",
+          "heading": "Study Sheet",
+          "intro_hash": "f2a84283fd6a9128",
+          "key_hashes": [],
+          "example_count": 0,
+          "examples": [],
+          "visual_count": 0
+        }
+      ]
+    }
+  ]
+}
