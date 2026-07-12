@@ -24,6 +24,7 @@
 <p class="intro">An \(m\times n\) matrix is a rectangular array with \(m\) rows and \(n\) columns. It is written \(A=(a_{ij})\), where \(a_{ij}\) denotes the entry in row \(i\), column \(j\).</p>
 <div class="key"><b>Definition</b>The dimensions \(m\times n\) determine which matrix operations are defined. Rows are indexed by \(i\), columns by \(j\), and entries are written \(a_{ij}\) or \(A_{ij}\).</div>
 <div class="key"><b>Important link</b><div>The first subscript is always the row number. The second subscript is always the column number.</div><div>For \(A_{ij}\), read \(i\) first, then \(j\).</div></div>
+<div class="key"><b>Course checklist</b><div>\(A=(a_{ij})_{m\times n}\) means \(1\le i\le m\) and \(1\le j\le n\).</div><div>The entry \(a_{ij}\) is a scalar, while \(A\) is the whole matrix.</div><div>A square matrix has the same number of rows and columns.</div></div>
 <div class="viz">
 <svg viewBox="0 0 620 250">
 <rect x="130" y="38" width="360" height="170" rx="12" fill="#fff" stroke="#dedfd6"/>
@@ -53,6 +54,7 @@
 <section id="c3s2">
 <div class="sk">Section 2 of 13</div><h2><span class="swipe">Matrix Types</span></h2>
 <p class="intro">Matrix types are classified by dimensions and by restrictions on their entries, such as zero entries outside a diagonal.</p>
+<div class="key"><b>Course checklist</b><div>A row matrix has size \(1\times n\). A column matrix has size \(m\times1\).</div><div>A scalar matrix is a diagonal matrix whose diagonal entries are all equal.</div><div>The identity matrix \(I_n\) is the scalar matrix with every diagonal entry equal to \(1\).</div></div>
 <div class="grid2">
   <div class="card"><b>Row matrix</b><div class="big">\(\begin{bmatrix}a_1&a_2&\cdots&a_n\end{bmatrix}\)</div></div>
   <div class="card"><b>Column matrix</b><div class="big">\(\begin{bmatrix}b_1\\b_2\\\vdots\\b_m\end{bmatrix}\)</div></div>
@@ -71,6 +73,7 @@
 <div class="sk">Section 3 of 13</div><h2><span class="swipe">Equality & Entry Rules</span></h2>
 <p class="intro">Two matrices are equal exactly when they have the same dimensions and all corresponding entries are equal.</p>
 <div class="key"><b>Equality test</b>If \(A\) and \(B\) are both \(m\times n\), then \(A=B\) means \(A_{ij}=B_{ij}\) for every valid \(i,j\).</div>
+<div class="key"><b>Course checklist</b><div>Entrywise comparison is valid only after confirming that the two matrices have the same size.</div><div>A matrix equation often becomes several scalar equations, one from each matching entry.</div></div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 1</span> Matrix equation</div><div class="exb">Solve for \(a,b,c,d\):
 \[
 \begin{bmatrix}a-b&b+c\\3d+c&2a-4d\end{bmatrix}
@@ -103,6 +106,7 @@ Find \(2A-B+\frac13C\).
 <p class="intro">If \(A\) is \(m\times r\) and \(B\) is \(r\times n\), then \(AB\) is defined and has size \(m\times n\). Each entry is computed from one row of \(A\) and one column of \(B\).</p>
 <div class="key"><b>Product rule</b>If \(A\) is \(m\times r\) and \(B\) is \(r\times n\), then \(AB\) is \(m\times n\), and \((AB)_{ij}=\sum_{k=1}^{r}A_{ik}B_{kj}\).</div>
 <div class="key"><b>Important link</b><div>The inner dimensions decide whether multiplication is defined. The outer dimensions give the size of the answer.</div><div>Matrix multiplication is not usually commutative, so \(AB\) and \(BA\) can be different or one may not exist.</div></div>
+<div class="key"><b>Course checklist</b><div>The entry \((AB)_{ij}\) uses row \(i\) of \(A\) and column \(j\) of \(B\).</div><div>The summation index \(k\) runs over the shared inner dimension.</div><div>Even when both \(AB\) and \(BA\) are defined, they need not be equal.</div></div>
 <div class="viz">
 <div class="btnrow">
   <button class="vbtn on" onclick="c3ProductDemo('11',this)">Entry \(11\)</button>
@@ -137,6 +141,7 @@ Find \(2A-B+\frac13C\).
 <section id="c3s6">
 <div class="sk">Section 6 of 13</div><h2><span class="swipe">Identity & Transpose</span></h2>
 <p class="intro">The identity matrix \(I_n\) is the \(n\times n\) matrix with ones on the main diagonal and zeros elsewhere. The transpose \(A^T\) swaps rows and columns.</p>
+<div class="key"><b>Course checklist</b><div>The main diagonal consists of entries \(a_{11},a_{22},\ldots\).</div><div>Transposing an \(m\times n\) matrix gives an \(n\times m\) matrix.</div><div>The identity matrix used on the left and right may have different sizes when \(A\) is not square.</div></div>
 <div class="grid2">
   <div class="card"><b>Identity</b><div class="big">If \(A\) is \(m\times n\), then \(AI_n=A\) and \(I_mA=A\).</div></div>
   <div class="card"><b>Transpose</b><div class="big">\((A^T)_{ij}=A_{ji}\)</div></div>
@@ -152,6 +157,7 @@ Find \(2A-B+\frac13C\).
 <p class="intro">A square matrix \(A\) is invertible if a matrix \(A^{-1}\) exists such that \(AA^{-1}=I\) and \(A^{-1}A=I\). Non square matrices do not have two sided inverses of this type.</p>
 <div class="key"><b>Definition</b>A square matrix \(A\) is invertible if there is a square matrix \(B\) such that \(AB=I\) and \(BA=I\). The inverse is unique and is written \(A^{-1}\).</div>
 <div class="key"><b>Important link</b><div>\(A^{-1}\) is the inverse matrix, not the reciprocal of every entry.</div><div>A matrix with determinant \(0\) is singular, so its inverse does not exist.</div></div>
+<div class="key"><b>Course checklist</b><div>Only square matrices can be invertible in the two sided sense used here.</div><div>If \(A^{-1}\) exists, then \(AA^{-1}=A^{-1}A=I_n\).</div><div>A matrix that is not invertible is called singular.</div></div>
 <div class="grid2">
   <div class="card"><b>Singular clues</b><ul class="clean"><li>A row of zeros</li><li>A column of zeros</li><li>One row is a multiple of another</li><li>A row is a linear combination of other rows</li></ul></div>
   <div class="card"><b>2 by 2 formula</b><div class="big">For \(A=\begin{bmatrix}a&b\\c&d\end{bmatrix}\), if \(ad-bc\ne0\), then \(A^{-1}=\dfrac1{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}\).</div></div>
@@ -163,6 +169,7 @@ Find \(2A-B+\frac13C\).
 <section id="c3s8">
 <div class="sk">Section 8 of 13</div><h2><span class="swipe">Diagonal Matrices & Powers</span></h2>
 <p class="intro">A diagonal matrix has possible nonzero entries only on the main diagonal. A triangular matrix has all entries zero on one side of the main diagonal.</p>
+<div class="key"><b>Course checklist</b><div>Matrix powers \(A^n\) require \(A\) to be square.</div><div>\(A^0=I_n\) for an \(n\times n\) matrix \(A\).</div><div>Negative powers such as \(A^{-2}\) require \(A\) to be invertible.</div></div>
 <div class="grid2">
   <div class="card"><b>Diagonal inverse</b><div class="big">\(\operatorname{diag}(a,b,c,d)^{-1}=\operatorname{diag}\!\left(\frac1a,\frac1b,\frac1c,\frac1d\right)\)</div></div>
   <div class="card"><b>Power notation</b><div class="big">\(A^0=I,\quad A^n=AA\cdots A,\quad A^{-n}=(A^{-1})^n\)</div></div>
@@ -178,6 +185,7 @@ Find \(2A-B+\frac13C\).
 <p class="intro">The determinant is a scalar defined only for square matrices. It tests invertibility and appears in area, volume, inverse, and system solving formulas.</p>
 <div class="key"><b>Base cases</b>\(\det([a])=a\), and \(\det\begin{bmatrix}a&b\\c&d\end{bmatrix}=ad-bc\).</div>
 <div class="key"><b>Important link</b><div>Only square matrices have determinants.</div><div>A zero determinant means the matrix is not invertible. A nonzero determinant means the matrix is invertible.</div></div>
+<div class="key"><b>Course checklist</b><div>The determinant of a triangular matrix is the product of its diagonal entries.</div><div>If two rows are equal or one row is a scalar multiple of another, the determinant is \(0\).</div><div>The determinant of a product satisfies \(\det(AB)=\det(A)\det(B)\) for square matrices of the same size.</div></div>
 <div class="viz">
 <div class="btnrow">
   <button class="vbtn on" onclick="c3CofactorDemo('11',this)">\(C_{11}\)</button>
@@ -228,6 +236,7 @@ Find \(2A-B+\frac13C\).
 <div class="sk">Section 11 of 13</div><h2><span class="swipe">Adjoint & Invertibility</span></h2>
 <p class="intro">The adjoint of \(A\) is the transpose of the cofactor matrix. If \(\det(A)\ne0\), it gives the inverse formula \(A^{-1}=\frac1{\det(A)}\operatorname{adj}(A)\).</p>
 <div class="key"><b>Adjoint</b>The cofactor matrix is \(C=[C_{ij}]\). The adjoint is \(\operatorname{adj}(A)=C^T\).</div>
+<div class="key"><b>Course checklist</b><div>The adjoint is built from cofactors, then transposed.</div><div>\(\operatorname{adj}(A)\) is not usually the inverse by itself.</div><div>The formula \(A^{-1}=\frac1{\det(A)}\operatorname{adj}(A)\) requires \(\det(A)\ne0\).</div></div>
 <div class="grid2">
   <div class="card"><b>Main identity</b><div class="big">\(A\operatorname{adj}(A)=\det(A)I\)</div></div>
   <div class="card"><b>Inverse test</b><div class="big">\(A\) is invertible exactly when \(\det(A)\ne0\).</div></div>
@@ -246,6 +255,7 @@ Find \(A^{-1}\).<button class="btn" onclick="rv(this)">Reveal solution</button><
 <p class="intro">Cramer's rule applies to a square system \(Ax=b\) when \(\det(A)\ne0\). It expresses each unknown as a ratio of determinants.</p>
 <div class="key"><b>Cramer's rule</b>If \(A\) is \(n\times n\) and \(\det(A)\ne0\), then the unique solution of \(Ax=b\) is \(x_j=\dfrac{\det(A_j)}{\det(A)}\), where \(A_j\) replaces column \(j\) of \(A\) by \(b\).</div>
 <div class="key"><b>Important link</b><div>Cramer's rule needs a square coefficient matrix and a nonzero determinant.</div><div>\(A_j\) means replace only column \(j\) of \(A\) by the constants column \(b\).</div></div>
+<div class="key"><b>Course checklist</b><div>The vector \(b\) is the constants column on the right side of the system.</div><div>If \(\det(A)=0\), Cramer's rule does not apply.</div><div>When \(\det(A)\ne0\), the system has exactly one solution.</div></div>
 <div class="viz">
 <div class="btnrow">
   <button class="vbtn on" onclick="c3CramerDemo('x',this)">Solve \(x\)</button>

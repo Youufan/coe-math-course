@@ -24,6 +24,7 @@
 <p class="intro">A vector is a quantity with magnitude and direction. Equal free vectors have the same magnitude and direction, regardless of where they are drawn.</p>
 <div class="key"><b>Core idea</b>The directed segment from \(A\) to \(B\) is \(\overrightarrow{AB}\). Its length \(|AB|\) is the magnitude. Lowercase bold letters such as \(\mathbf u,\mathbf v,\mathbf w\) can also denote vectors.</div>
 <div class="key"><b>Important link</b><div>\(\overrightarrow{AB}\) means end point minus start point.</div><div>The zero vector has magnitude \(0\) and no single direction.</div></div>
+<div class="key"><b>Course checklist</b><div>A directed segment has an initial point and a terminal point. The direction is from the initial point to the terminal point.</div><div>Free vectors are equal when they have the same magnitude and direction, even if their starting points differ.</div><div>The zero vector is written \(\mathbf0\). It can be added to any vector without changing it.</div></div>
 <div class="grid2">
   <div class="card"><b>Equal vectors</b><br>Same magnitude and same direction, even if drawn in different places.</div>
   <div class="card"><b>Negative vector</b><br>\(-\mathbf v\) has the same magnitude as \(\mathbf v\), but points in the opposite direction.</div>
@@ -79,6 +80,7 @@
   <div class="card"><b>3 space</b><div class="big">\(\mathbf v=(v_1,v_2,v_3)=v_1\mathbf i+v_2\mathbf j+v_3\mathbf k\)</div></div>
 </div>
 <div class="key"><b>Component rules</b>If \(\mathbf u=(u_1,u_2,u_3)\) and \(\mathbf v=(v_1,v_2,v_3)\), then \(\mathbf u+\mathbf v=(u_1+v_1,u_2+v_2,u_3+v_3)\) and \(k\mathbf u=(ku_1,ku_2,ku_3)\).</div>
+<div class="key"><b>Course checklist</b><div>In \(\mathbb R^2\), the standard basis vectors are \(\mathbf i=(1,0)\) and \(\mathbf j=(0,1)\).</div><div>In \(\mathbb R^3\), the standard basis vectors are \(\mathbf i=(1,0,0)\), \(\mathbf j=(0,1,0)\), and \(\mathbf k=(0,0,1)\).</div><div>For points \(P\) and \(Q\), \(\overrightarrow{PQ}=Q-P\). This gives the displacement from \(P\) to \(Q\).</div></div>
 <div class="viz">
 <svg viewBox="0 0 430 240">
 <defs><marker id="c2coord" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6z" fill="#3457c5"/></marker></defs>
@@ -107,6 +109,7 @@
 <p class="intro">For \(\mathbf u,\mathbf v\in\mathbb R^n\), the dot product \(\mathbf u\cdot\mathbf v=\sum_{i=1}^{n}u_iv_i\) is a scalar. For nonzero vectors it also equals \(\|\mathbf u\|\|\mathbf v\|\cos\theta\), which determines the angle \(\theta\) between them.</p>
 <div class="key"><b>Two forms</b>In coordinates, multiply corresponding components and add. In angle form, \(\mathbf u\cdot\mathbf v=\|\mathbf u\|\,\|\mathbf v\|\cos\theta\), valid for nonzero vectors when \(\theta\) is the angle between them.</div>
 <div class="key"><b>Important link</b><div>The dot product is a number, not a vector.</div><div>If \(\mathbf u\cdot\mathbf v=0\) and both vectors are nonzero, then the vectors are perpendicular.</div></div>
+<div class="key"><b>Course checklist</b><div>The angle \(\theta\) between two nonzero vectors is chosen in \(0\le\theta\le\pi\).</div><div>Use \(\displaystyle \cos\theta=\frac{\mathbf u\cdot\mathbf v}{\|\mathbf u\|\|\mathbf v\|}\) only when both vectors are nonzero.</div><div>The sign of the dot product tells whether the angle is acute, right, or obtuse.</div></div>
 <div class="grid3">
   <div class="card"><b>Positive</b><br>Acute angle.</div>
   <div class="card"><b>Zero</b><br>Perpendicular vectors.</div>
@@ -135,6 +138,7 @@
 </div>
 <div class="key"><b>Projection formula</b>\(\operatorname{proj}_{\mathbf v}\mathbf u=\dfrac{\mathbf u\cdot\mathbf v}{\|\mathbf v\|^2}\mathbf v\). Work done: \(W=\mathbf F\cdot\mathbf D=\|\mathbf F\|\,\|\mathbf D\|\cos\theta\).</div>
 <div class="key"><b>Important link</b><div>The vector being projected onto must be nonzero.</div><div>A negative scalar projection means the component points opposite to the chosen direction vector.</div></div>
+<div class="key"><b>Course checklist</b><div>The scalar projection of \(\mathbf u\) on \(\mathbf v\) is \(\displaystyle \frac{\mathbf u\cdot\mathbf v}{\|\mathbf v\|}\), where \(\mathbf v\ne\mathbf0\).</div><div>The vector projection is a vector parallel to \(\mathbf v\): \(\displaystyle \operatorname{proj}_{\mathbf v}\mathbf u=\frac{\mathbf u\cdot\mathbf v}{\|\mathbf v\|^2}\mathbf v\).</div><div>Work done is positive, zero, or negative according to whether the force has a component along, perpendicular to, or opposite the displacement.</div></div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 7</span> Work done</div><div class="exb">If \(\|\mathbf F\|=50\text{ N}\), \(\|\mathbf D\|=30\text{ m}\), and \(\theta=45^\circ\), find the work done.<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(W=\|\mathbf F\|\,\|\mathbf D\|\cos\theta\).</span><span class="step">\(W=50(30)\cos45^\circ=1500\cdot\frac1{\sqrt2}\).</span><span class="step"><span class="ans">\(W=750\sqrt2\text{ J}\)</span>.</span></div></div></div>
 <div class="ex"><div class="exh"><span class="tag">EXAMPLE 8</span> Vector projection</div><div class="exb">Find \(\operatorname{proj}_{\mathbf v}\mathbf u\) for \(\mathbf u=\mathbf i-2\mathbf j+2\mathbf k\), \(\mathbf v=2\mathbf i+3\mathbf j-6\mathbf k\).<button class="btn" onclick="rv(this)">Reveal solution</button><div class="sol"><span class="step">\(\mathbf u\cdot\mathbf v=2-6-12=-16\), and \(\|\mathbf v\|^2=49\).</span><span class="step"><span class="ans">\(\operatorname{proj}_{\mathbf v}\mathbf u=-\frac{16}{49}(2\mathbf i+3\mathbf j-6\mathbf k)\)</span>.</span></div></div></div>
 </section>
@@ -144,6 +148,7 @@
 <p class="intro">For \(\mathbf u,\mathbf v\in\mathbb R^3\), the cross product \(\mathbf u\times\mathbf v\) is a vector perpendicular to both inputs.</p>
 <div class="key"><b>Definition</b>\(\mathbf u\times\mathbf v=(\|\mathbf u\|\,\|\mathbf v\|\sin\theta)\hat{\mathbf n}\), where \(\hat{\mathbf n}\) is the unit normal chosen by the right hand rule. Its magnitude is the area of the parallelogram formed by the two vectors.</div>
 <div class="key"><b>Important link</b><div>The cross product is defined here only for vectors in \(\mathbb R^3\).</div><div>Order matters: \(\mathbf u\times\mathbf v=-(\mathbf v\times\mathbf u)\).</div></div>
+<div class="key"><b>Course checklist</b><div>If \(\mathbf u\) and \(\mathbf v\) are parallel, then \(\mathbf u\times\mathbf v=\mathbf0\).</div><div>The direction of \(\mathbf u\times\mathbf v\) is chosen by the right hand rule, not by the left hand rule.</div><div>The magnitude \(\|\mathbf u\times\mathbf v\|=\|\mathbf u\|\|\mathbf v\|\sin\theta\) is an area, so it is non negative.</div></div>
 <div class="card"><b>Coordinate formula</b><div class="big">\(\mathbf u\times\mathbf v=(u_2v_3-u_3v_2,\ u_3v_1-u_1v_3,\ u_1v_2-u_2v_1)\)</div></div>
 <div class="viz">
 <svg viewBox="0 0 420 230">
@@ -161,6 +166,7 @@
 <section id="c2s8">
 <div class="sk">Section 8 of 12</div><h2><span class="swipe">Areas & Scalar Triple Product</span></h2>
 <p class="intro">The magnitude of a cross product gives parallelogram area in \(\mathbb R^3\). The scalar triple product gives the signed volume of the parallelepiped formed by three vectors.</p>
+<div class="key"><b>Course checklist</b><div>The scalar triple product \(\mathbf u\cdot(\mathbf v\times\mathbf w)\) is a scalar.</div><div>Its absolute value is volume. Without absolute value, the sign records orientation.</div><div>The volume is \(0\) exactly when the three vectors are coplanar.</div></div>
 <div class="grid2">
   <div class="card"><b>Area</b><div class="big">\(\text{Area parallelogram}=\|\mathbf u\times\mathbf v\|\)<br>\(\text{Area triangle}=\frac12\|\mathbf u\times\mathbf v\|\)</div></div>
   <div class="card"><b>Volume</b><div class="big">\(V=|\mathbf u\cdot(\mathbf v\times\mathbf w)|\)</div></div>
@@ -174,6 +180,7 @@
 <p class="intro">A line in three dimensional space is determined by a point with position vector \(\mathbf r_0\) and a nonzero direction vector \(\mathbf v\).</p>
 <div class="key"><b>Vector equation</b>If a line passes through position vector \(\mathbf r_0\) and is parallel to \(\mathbf v\), then \(\mathbf r(t)=\mathbf r_0+t\mathbf v,\ t\in\mathbb R\).</div>
 <div class="key"><b>Important link</b><div>The parameter \(t\) can be any real number, so it moves along the whole line.</div><div>Cartesian form divides by direction components, so if a component is \(0\), write the matching coordinate as a constant instead.</div></div>
+<div class="key"><b>Course checklist</b><div>The direction vector of a line must be nonzero.</div><div>Two vector equations can describe the same line if their points lie on the same line and their direction vectors are parallel.</div><div>The angle between two lines is the acute angle between their direction vectors, unless a directed angle is explicitly requested.</div></div>
 <div class="grid2">
   <div class="card"><b>Parametric form</b><div class="big">\(x=x_0+tv_1,\ y=y_0+tv_2,\ z=z_0+tv_3\)</div></div>
   <div class="card"><b>Cartesian form</b><div class="big">\(\dfrac{x-x_0}{v_1}=\dfrac{y-y_0}{v_2}=\dfrac{z-z_0}{v_3}\)</div></div>
@@ -188,6 +195,7 @@
 <p class="intro">A plane in three dimensional space is determined by a point and a nonzero normal vector \(\mathbf n\). Points on the plane satisfy \(\mathbf n\cdot(\mathbf r-\mathbf r_0)=0\).</p>
 <div class="key"><b>Plane equation</b>For normal \(\mathbf n=(a,b,c)\) through \(P_0=(x_0,y_0,z_0)\): \(a(x-x_0)+b(y-y_0)+c(z-z_0)=0\). Equivalently, \(ax+by+cz=d\).</div>
 <div class="key"><b>Important link</b><div>A normal vector is perpendicular to every direction vector lying in the plane.</div><div>Distance formulas require a point on the line or plane and the correct direction or normal vector.</div></div>
+<div class="key"><b>Course checklist</b><div>The normal vector of \(ax+by+cz=d\) is \((a,b,c)\), and it must be nonzero.</div><div>The angle between two planes is the acute angle between their normal vectors.</div><div>A line is perpendicular to a plane when its direction vector is parallel to the plane normal.</div></div>
 <div class="grid2">
   <div class="card"><b>Point to line</b><div class="big">\(\displaystyle d=\frac{\|\overrightarrow{PS}\times\mathbf v\|}{\|\mathbf v\|}\)</div></div>
   <div class="card"><b>Point to plane</b><div class="big">\(\displaystyle d=\frac{|\overrightarrow{PS}\cdot\mathbf n|}{\|\mathbf n\|}\)</div></div>
